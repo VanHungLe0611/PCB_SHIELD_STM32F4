@@ -694,17 +694,23 @@ design rules under a new name.</description>
 <signal name="N$21">
 <contactref element="IC1" pad="21"/>
 </signal>
-<signal name="N$22">
+<signal name="FMC_A10">
 <contactref element="IC1" pad="22"/>
 </signal>
-<signal name="N$23">
+<signal name="FMC_A1">
 <contactref element="IC1" pad="24"/>
+<contactref element="U1" pad="CN11_51"/>
+<wire x1="41.262" y1="49.15" x2="78.74" y2="74.29" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$24">
+<signal name="FMC_A2">
 <contactref element="IC1" pad="25"/>
+<contactref element="U1" pad="CN11_52"/>
+<wire x1="41.262" y1="48.35" x2="76.2" y2="74.29" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$25">
+<signal name="FMC_A3">
 <contactref element="IC1" pad="26"/>
+<contactref element="U1" pad="CN12_58"/>
+<wire x1="41.262" y1="47.55" x2="15.24" y2="81.91" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$26">
 <contactref element="IC1" pad="27"/>
@@ -763,32 +769,424 @@ design rules under a new name.</description>
 <signal name="N$44">
 <contactref element="IC1" pad="37"/>
 </signal>
-<signal name="N$45">
+<signal name="FMC_A12">
 <contactref element="IC1" pad="36"/>
 </signal>
-<signal name="N$46">
+<signal name="FMC_A11">
 <contactref element="IC1" pad="35"/>
 </signal>
-<signal name="N$47">
+<signal name="FMC_A9">
 <contactref element="IC1" pad="34"/>
+<contactref element="U1" pad="CN12_60"/>
+<wire x1="15.24" y1="84.45" x2="52.718" y2="51.55" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$48">
+<signal name="FMC_A8">
 <contactref element="IC1" pad="33"/>
+<contactref element="U1" pad="CN12_50"/>
+<wire x1="15.24" y1="71.75" x2="52.718" y2="50.75" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$49">
+<signal name="FMC_A7">
 <contactref element="IC1" pad="32"/>
+<contactref element="U1" pad="CN12_57"/>
+<wire x1="17.78" y1="81.91" x2="52.718" y2="49.95" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$50">
+<signal name="FMC_A6">
 <contactref element="IC1" pad="31"/>
+<contactref element="U1" pad="CN12_59"/>
+<wire x1="52.718" y1="49.15" x2="17.78" y2="84.45" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$51">
+<signal name="FMC_A5">
 <contactref element="IC1" pad="30"/>
+<contactref element="U1" pad="CN12_36"/>
+<wire x1="15.24" y1="53.97" x2="52.718" y2="48.35" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$52">
+<signal name="FMC_A4">
 <contactref element="IC1" pad="29"/>
+<contactref element="U1" pad="CN12_38"/>
+<wire x1="15.24" y1="56.51" x2="52.718" y2="47.55" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$53">
 <contactref element="IC1" pad="28"/>
+</signal>
+<signal name="N$23">
+<contactref element="U1" pad="CN11_1"/>
+</signal>
+<signal name="N$24">
+<contactref element="U1" pad="CN11_2"/>
+</signal>
+<signal name="N$25">
+<contactref element="U1" pad="CN11_3"/>
+</signal>
+<signal name="N$54">
+<contactref element="U1" pad="CN11_4"/>
+</signal>
+<signal name="N$55">
+<contactref element="U1" pad="CN11_5"/>
+</signal>
+<signal name="N$56">
+<contactref element="U1" pad="CN11_6"/>
+</signal>
+<signal name="N$57">
+<contactref element="U1" pad="CN11_7"/>
+</signal>
+<signal name="N$58">
+<contactref element="U1" pad="CN11_9"/>
+</signal>
+<signal name="N$59">
+<contactref element="U1" pad="CN11_11"/>
+</signal>
+<signal name="N$60">
+<contactref element="U1" pad="CN11_12"/>
+</signal>
+<signal name="N$61">
+<contactref element="U1" pad="CN11_13"/>
+</signal>
+<signal name="N$62">
+<contactref element="U1" pad="CN11_14"/>
+</signal>
+<signal name="N$63">
+<contactref element="U1" pad="CN11_15"/>
+</signal>
+<signal name="N$64">
+<contactref element="U1" pad="CN11_16"/>
+</signal>
+<signal name="N$65">
+<contactref element="U1" pad="CN11_17"/>
+</signal>
+<signal name="N$66">
+<contactref element="U1" pad="CN11_18"/>
+</signal>
+<signal name="N$67">
+<contactref element="U1" pad="CN11_8"/>
+<contactref element="U1" pad="CN11_19"/>
+<contactref element="U1" pad="CN11_22"/>
+<contactref element="U1" pad="CN11_49"/>
+<contactref element="U1" pad="CN11_20"/>
+<contactref element="U1" pad="CN11_60"/>
+<contactref element="U1" pad="CN11_71"/>
+<contactref element="U1" pad="CN11_72"/>
+<wire x1="76.2" y1="99.69" x2="78.74" y2="99.69" width="0" layer="19" extent="1-1"/>
+<wire x1="76.2" y1="84.45" x2="76.2" y2="99.69" width="0" layer="19" extent="1-1"/>
+<wire x1="78.74" y1="71.75" x2="76.2" y2="84.45" width="0" layer="19" extent="1-1"/>
+<wire x1="76.2" y1="36.19" x2="78.74" y2="71.75" width="0" layer="19" extent="1-1"/>
+<wire x1="76.2" y1="33.65" x2="76.2" y2="36.19" width="0" layer="19" extent="1-1"/>
+<wire x1="78.74" y1="33.65" x2="76.2" y2="33.65" width="0" layer="19" extent="1-1"/>
+<wire x1="76.2" y1="18.41" x2="76.2" y2="33.65" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$68">
+<contactref element="U1" pad="CN11_21"/>
+</signal>
+<signal name="N$69">
+<contactref element="U1" pad="CN11_23"/>
+</signal>
+<signal name="N$70">
+<contactref element="U1" pad="CN11_24"/>
+</signal>
+<signal name="N$71">
+<contactref element="U1" pad="CN11_25"/>
+</signal>
+<signal name="N$72">
+<contactref element="U1" pad="CN11_27"/>
+</signal>
+<signal name="N$73">
+<contactref element="U1" pad="CN11_28"/>
+</signal>
+<signal name="N$74">
+<contactref element="U1" pad="CN11_29"/>
+</signal>
+<signal name="N$75">
+<contactref element="U1" pad="CN11_30"/>
+</signal>
+<signal name="N$76">
+<contactref element="U1" pad="CN11_31"/>
+</signal>
+<signal name="N$77">
+<contactref element="U1" pad="CN11_32"/>
+</signal>
+<signal name="N$78">
+<contactref element="U1" pad="CN11_33"/>
+</signal>
+<signal name="N$79">
+<contactref element="U1" pad="CN11_34"/>
+</signal>
+<signal name="N$80">
+<contactref element="U1" pad="CN11_35"/>
+</signal>
+<signal name="N$81">
+<contactref element="U1" pad="CN11_36"/>
+</signal>
+<signal name="N$82">
+<contactref element="U1" pad="CN11_37"/>
+</signal>
+<signal name="N$83">
+<contactref element="U1" pad="CN11_38"/>
+</signal>
+<signal name="N$84">
+<contactref element="U1" pad="CN11_39"/>
+</signal>
+<signal name="N$85">
+<contactref element="U1" pad="CN11_40"/>
+</signal>
+<signal name="N$86">
+<contactref element="U1" pad="CN11_41"/>
+</signal>
+<signal name="N$87">
+<contactref element="U1" pad="CN11_42"/>
+</signal>
+<signal name="N$88">
+<contactref element="U1" pad="CN11_43"/>
+</signal>
+<signal name="N$89">
+<contactref element="U1" pad="CN11_44"/>
+</signal>
+<signal name="N$90">
+<contactref element="U1" pad="CN11_45"/>
+</signal>
+<signal name="N$91">
+<contactref element="U1" pad="CN11_46"/>
+</signal>
+<signal name="N$92">
+<contactref element="U1" pad="CN11_47"/>
+</signal>
+<signal name="N$93">
+<contactref element="U1" pad="CN11_48"/>
+</signal>
+<signal name="N$94">
+<contactref element="U1" pad="CN11_50"/>
+</signal>
+<signal name="N$97">
+<contactref element="U1" pad="CN11_54"/>
+</signal>
+<signal name="N$98">
+<contactref element="U1" pad="CN11_55"/>
+</signal>
+<signal name="N$99">
+<contactref element="U1" pad="CN11_56"/>
+</signal>
+<signal name="N$100">
+<contactref element="U1" pad="CN11_57"/>
+</signal>
+<signal name="N$101">
+<contactref element="U1" pad="CN11_58"/>
+</signal>
+<signal name="N$102">
+<contactref element="U1" pad="CN11_59"/>
+</signal>
+<signal name="N$103">
+<contactref element="U1" pad="CN11_61"/>
+</signal>
+<signal name="N$104">
+<contactref element="U1" pad="CN11_62"/>
+</signal>
+<signal name="N$105">
+<contactref element="U1" pad="CN11_63"/>
+</signal>
+<signal name="N$106">
+<contactref element="U1" pad="CN11_64"/>
+</signal>
+<signal name="N$107">
+<contactref element="U1" pad="CN11_65"/>
+</signal>
+<signal name="N$108">
+<contactref element="U1" pad="CN11_66"/>
+</signal>
+<signal name="N$109">
+<contactref element="U1" pad="CN11_68"/>
+</signal>
+<signal name="N$110">
+<contactref element="U1" pad="CN11_69"/>
+</signal>
+<signal name="N$111">
+<contactref element="U1" pad="CN11_70"/>
+</signal>
+<signal name="N$22">
+<contactref element="U1" pad="CN12_1"/>
+</signal>
+<signal name="N$45">
+<contactref element="U1" pad="CN12_2"/>
+</signal>
+<signal name="N$46">
+<contactref element="U1" pad="CN12_3"/>
+</signal>
+<signal name="N$47">
+<contactref element="U1" pad="CN12_4"/>
+</signal>
+<signal name="N$48">
+<contactref element="U1" pad="CN12_5"/>
+</signal>
+<signal name="N$49">
+<contactref element="U1" pad="CN12_6"/>
+</signal>
+<signal name="N$50">
+<contactref element="U1" pad="CN12_7"/>
+</signal>
+<signal name="N$51">
+<contactref element="U1" pad="CN12_8"/>
+</signal>
+<signal name="N$52">
+<contactref element="U1" pad="CN12_72"/>
+<contactref element="U1" pad="CN12_39"/>
+<contactref element="U1" pad="CN12_63"/>
+<contactref element="U1" pad="CN12_20"/>
+<contactref element="U1" pad="CN12_54"/>
+<contactref element="U1" pad="CN12_9"/>
+<contactref element="U1" pad="CN12_71"/>
+<wire x1="15.24" y1="99.69" x2="17.78" y2="99.69" width="0" layer="19" extent="1-1"/>
+<wire x1="17.78" y1="89.53" x2="17.78" y2="99.69" width="0" layer="19" extent="1-1"/>
+<wire x1="15.24" y1="76.83" x2="17.78" y2="89.53" width="0" layer="19" extent="1-1"/>
+<wire x1="17.78" y1="59.05" x2="15.24" y2="76.83" width="0" layer="19" extent="1-1"/>
+<wire x1="15.24" y1="33.65" x2="17.78" y2="59.05" width="0" layer="19" extent="1-1"/>
+<wire x1="17.78" y1="20.95" x2="15.24" y2="33.65" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$95">
+<contactref element="U1" pad="CN12_10"/>
+</signal>
+<signal name="N$96">
+<contactref element="U1" pad="CN12_11"/>
+</signal>
+<signal name="N$112">
+<contactref element="U1" pad="CN12_12"/>
+</signal>
+<signal name="N$113">
+<contactref element="U1" pad="CN12_13"/>
+</signal>
+<signal name="N$114">
+<contactref element="U1" pad="CN12_14"/>
+</signal>
+<signal name="N$115">
+<contactref element="U1" pad="CN12_15"/>
+</signal>
+<signal name="N$116">
+<contactref element="U1" pad="CN12_16"/>
+</signal>
+<signal name="N$117">
+<contactref element="U1" pad="CN12_17"/>
+</signal>
+<signal name="N$118">
+<contactref element="U1" pad="CN12_18"/>
+</signal>
+<signal name="N$119">
+<contactref element="U1" pad="CN12_19"/>
+</signal>
+<signal name="N$120">
+<contactref element="U1" pad="CN12_21"/>
+</signal>
+<signal name="N$121">
+<contactref element="U1" pad="CN12_22"/>
+</signal>
+<signal name="N$122">
+<contactref element="U1" pad="CN12_23"/>
+</signal>
+<signal name="N$123">
+<contactref element="U1" pad="CN12_24"/>
+</signal>
+<signal name="N$124">
+<contactref element="U1" pad="CN12_25"/>
+</signal>
+<signal name="N$125">
+<contactref element="U1" pad="CN12_26"/>
+</signal>
+<signal name="N$126">
+<contactref element="U1" pad="CN12_27"/>
+</signal>
+<signal name="N$127">
+<contactref element="U1" pad="CN12_28"/>
+</signal>
+<signal name="N$128">
+<contactref element="U1" pad="CN12_29"/>
+</signal>
+<signal name="N$129">
+<contactref element="U1" pad="CN12_30"/>
+</signal>
+<signal name="N$130">
+<contactref element="U1" pad="CN12_31"/>
+</signal>
+<signal name="N$131">
+<contactref element="U1" pad="CN12_32"/>
+</signal>
+<signal name="N$132">
+<contactref element="U1" pad="CN12_33"/>
+</signal>
+<signal name="N$133">
+<contactref element="U1" pad="CN12_34"/>
+</signal>
+<signal name="N$134">
+<contactref element="U1" pad="CN12_35"/>
+</signal>
+<signal name="N$136">
+<contactref element="U1" pad="CN12_37"/>
+</signal>
+<signal name="N$138">
+<contactref element="U1" pad="CN12_40"/>
+</signal>
+<signal name="N$139">
+<contactref element="U1" pad="CN12_41"/>
+</signal>
+<signal name="N$140">
+<contactref element="U1" pad="CN12_42"/>
+</signal>
+<signal name="N$141">
+<contactref element="U1" pad="CN12_43"/>
+</signal>
+<signal name="N$142">
+<contactref element="U1" pad="CN12_44"/>
+</signal>
+<signal name="N$143">
+<contactref element="U1" pad="CN12_45"/>
+</signal>
+<signal name="N$144">
+<contactref element="U1" pad="CN12_46"/>
+</signal>
+<signal name="N$145">
+<contactref element="U1" pad="CN12_47"/>
+</signal>
+<signal name="N$146">
+<contactref element="U1" pad="CN12_48"/>
+</signal>
+<signal name="N$147">
+<contactref element="U1" pad="CN12_49"/>
+</signal>
+<signal name="N$149">
+<contactref element="U1" pad="CN12_51"/>
+</signal>
+<signal name="N$150">
+<contactref element="U1" pad="CN12_52"/>
+</signal>
+<signal name="N$151">
+<contactref element="U1" pad="CN12_53"/>
+</signal>
+<signal name="N$152">
+<contactref element="U1" pad="CN12_55"/>
+</signal>
+<signal name="N$153">
+<contactref element="U1" pad="CN12_56"/>
+</signal>
+<signal name="N$158">
+<contactref element="U1" pad="CN12_61"/>
+</signal>
+<signal name="N$159">
+<contactref element="U1" pad="CN12_62"/>
+</signal>
+<signal name="N$160">
+<contactref element="U1" pad="CN12_64"/>
+</signal>
+<signal name="N$161">
+<contactref element="U1" pad="CN12_65"/>
+</signal>
+<signal name="N$162">
+<contactref element="U1" pad="CN12_66"/>
+</signal>
+<signal name="N$163">
+<contactref element="U1" pad="CN12_67"/>
+</signal>
+<signal name="N$164">
+<contactref element="U1" pad="CN12_68"/>
+</signal>
+<signal name="N$165">
+<contactref element="U1" pad="CN12_69"/>
+</signal>
+<signal name="N$166">
+<contactref element="U1" pad="CN12_70"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
