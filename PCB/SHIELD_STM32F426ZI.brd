@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -60,9 +60,9 @@
 <board>
 <plain>
 <wire x1="0" y1="0" x2="100" y2="0" width="0" layer="20"/>
-<wire x1="100" y1="0" x2="100" y2="80" width="0" layer="20"/>
-<wire x1="100" y1="80" x2="0" y2="80" width="0" layer="20"/>
-<wire x1="0" y1="80" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="100" y1="0" x2="100" y2="118.1" width="0" layer="20"/>
+<wire x1="100" y1="118.1" x2="0" y2="118.1" width="0" layer="20"/>
+<wire x1="0" y1="118.1" x2="0" y2="0" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="NUCLEO-F429ZI">
@@ -331,6 +331,86 @@
 </package>
 </packages>
 </library>
+<library name="sdram">
+<description>&lt;b&gt;https://componentsearchengine.com&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="SOP80P1176X120-54N">
+<description>&lt;b&gt;54 Pin TSSOP II&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-5.728" y="10.4" dx="1.295" dy="0.6" layer="1"/>
+<smd name="2" x="-5.728" y="9.6" dx="1.295" dy="0.6" layer="1"/>
+<smd name="3" x="-5.728" y="8.8" dx="1.295" dy="0.6" layer="1"/>
+<smd name="4" x="-5.728" y="8" dx="1.295" dy="0.6" layer="1"/>
+<smd name="5" x="-5.728" y="7.2" dx="1.295" dy="0.6" layer="1"/>
+<smd name="6" x="-5.728" y="6.4" dx="1.295" dy="0.6" layer="1"/>
+<smd name="7" x="-5.728" y="5.6" dx="1.295" dy="0.6" layer="1"/>
+<smd name="8" x="-5.728" y="4.8" dx="1.295" dy="0.6" layer="1"/>
+<smd name="9" x="-5.728" y="4" dx="1.295" dy="0.6" layer="1"/>
+<smd name="10" x="-5.728" y="3.2" dx="1.295" dy="0.6" layer="1"/>
+<smd name="11" x="-5.728" y="2.4" dx="1.295" dy="0.6" layer="1"/>
+<smd name="12" x="-5.728" y="1.6" dx="1.295" dy="0.6" layer="1"/>
+<smd name="13" x="-5.728" y="0.8" dx="1.295" dy="0.6" layer="1"/>
+<smd name="14" x="-5.728" y="0" dx="1.295" dy="0.6" layer="1"/>
+<smd name="15" x="-5.728" y="-0.8" dx="1.295" dy="0.6" layer="1"/>
+<smd name="16" x="-5.728" y="-1.6" dx="1.295" dy="0.6" layer="1"/>
+<smd name="17" x="-5.728" y="-2.4" dx="1.295" dy="0.6" layer="1"/>
+<smd name="18" x="-5.728" y="-3.2" dx="1.295" dy="0.6" layer="1"/>
+<smd name="19" x="-5.728" y="-4" dx="1.295" dy="0.6" layer="1"/>
+<smd name="20" x="-5.728" y="-4.8" dx="1.295" dy="0.6" layer="1"/>
+<smd name="21" x="-5.728" y="-5.6" dx="1.295" dy="0.6" layer="1"/>
+<smd name="22" x="-5.728" y="-6.4" dx="1.295" dy="0.6" layer="1"/>
+<smd name="23" x="-5.728" y="-7.2" dx="1.295" dy="0.6" layer="1"/>
+<smd name="24" x="-5.728" y="-8" dx="1.295" dy="0.6" layer="1"/>
+<smd name="25" x="-5.728" y="-8.8" dx="1.295" dy="0.6" layer="1"/>
+<smd name="26" x="-5.728" y="-9.6" dx="1.295" dy="0.6" layer="1"/>
+<smd name="27" x="-5.728" y="-10.4" dx="1.295" dy="0.6" layer="1"/>
+<smd name="28" x="5.728" y="-10.4" dx="1.295" dy="0.6" layer="1"/>
+<smd name="29" x="5.728" y="-9.6" dx="1.295" dy="0.6" layer="1"/>
+<smd name="30" x="5.728" y="-8.8" dx="1.295" dy="0.6" layer="1"/>
+<smd name="31" x="5.728" y="-8" dx="1.295" dy="0.6" layer="1"/>
+<smd name="32" x="5.728" y="-7.2" dx="1.295" dy="0.6" layer="1"/>
+<smd name="33" x="5.728" y="-6.4" dx="1.295" dy="0.6" layer="1"/>
+<smd name="34" x="5.728" y="-5.6" dx="1.295" dy="0.6" layer="1"/>
+<smd name="35" x="5.728" y="-4.8" dx="1.295" dy="0.6" layer="1"/>
+<smd name="36" x="5.728" y="-4" dx="1.295" dy="0.6" layer="1"/>
+<smd name="37" x="5.728" y="-3.2" dx="1.295" dy="0.6" layer="1"/>
+<smd name="38" x="5.728" y="-2.4" dx="1.295" dy="0.6" layer="1"/>
+<smd name="39" x="5.728" y="-1.6" dx="1.295" dy="0.6" layer="1"/>
+<smd name="40" x="5.728" y="-0.8" dx="1.295" dy="0.6" layer="1"/>
+<smd name="41" x="5.728" y="0" dx="1.295" dy="0.6" layer="1"/>
+<smd name="42" x="5.728" y="0.8" dx="1.295" dy="0.6" layer="1"/>
+<smd name="43" x="5.728" y="1.6" dx="1.295" dy="0.6" layer="1"/>
+<smd name="44" x="5.728" y="2.4" dx="1.295" dy="0.6" layer="1"/>
+<smd name="45" x="5.728" y="3.2" dx="1.295" dy="0.6" layer="1"/>
+<smd name="46" x="5.728" y="4" dx="1.295" dy="0.6" layer="1"/>
+<smd name="47" x="5.728" y="4.8" dx="1.295" dy="0.6" layer="1"/>
+<smd name="48" x="5.728" y="5.6" dx="1.295" dy="0.6" layer="1"/>
+<smd name="49" x="5.728" y="6.4" dx="1.295" dy="0.6" layer="1"/>
+<smd name="50" x="5.728" y="7.2" dx="1.295" dy="0.6" layer="1"/>
+<smd name="51" x="5.728" y="8" dx="1.295" dy="0.6" layer="1"/>
+<smd name="52" x="5.728" y="8.8" dx="1.295" dy="0.6" layer="1"/>
+<smd name="53" x="5.728" y="9.6" dx="1.295" dy="0.6" layer="1"/>
+<smd name="54" x="5.728" y="10.4" dx="1.295" dy="0.6" layer="1"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-6.625" y1="11.425" x2="6.625" y2="11.425" width="0.05" layer="51"/>
+<wire x1="6.625" y1="11.425" x2="6.625" y2="-11.425" width="0.05" layer="51"/>
+<wire x1="6.625" y1="-11.425" x2="-6.625" y2="-11.425" width="0.05" layer="51"/>
+<wire x1="-6.625" y1="-11.425" x2="-6.625" y2="11.425" width="0.05" layer="51"/>
+<wire x1="-5.08" y1="11.11" x2="5.08" y2="11.11" width="0.1" layer="51"/>
+<wire x1="5.08" y1="11.11" x2="5.08" y2="-11.11" width="0.1" layer="51"/>
+<wire x1="5.08" y1="-11.11" x2="-5.08" y2="-11.11" width="0.1" layer="51"/>
+<wire x1="-5.08" y1="-11.11" x2="-5.08" y2="11.11" width="0.1" layer="51"/>
+<wire x1="-5.08" y1="10.31" x2="-4.28" y2="11.11" width="0.1" layer="51"/>
+<wire x1="-4.73" y1="11.11" x2="4.73" y2="11.11" width="0.2" layer="21"/>
+<wire x1="4.73" y1="11.11" x2="4.73" y2="-11.11" width="0.2" layer="21"/>
+<wire x1="4.73" y1="-11.11" x2="-4.73" y2="-11.11" width="0.2" layer="21"/>
+<wire x1="-4.73" y1="-11.11" x2="-4.73" y2="11.11" width="0.2" layer="21"/>
+<wire x1="-6.375" y1="11.05" x2="-5.08" y2="11.05" width="0.2" layer="21"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -524,18 +604,590 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U1" library="NUCLEO-F429ZI" package="MODULE_NUCLEO-F429ZI" value="NUCLEO-F429ZI" x="-48.26" y="59.69" smashed="yes">
-<attribute name="AVAILABILITY" value="Unavailable" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value=" STM32 Nucleo-144 development board with STM32F429ZIT6 MCU, supports Arduino, ST Zio and Morpho " x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="STMicroelectronics" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MP" value="NUCLEO-F429ZI" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-83.66" y="111.55" size="1.778" layer="25"/>
-<attribute name="PACKAGE" value="None" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="PRICE" value="None" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-83.733" y="0.925" size="1.778" layer="27"/>
+<element name="U1" library="NUCLEO-F429ZI" package="MODULE_NUCLEO-F429ZI" value="NUCLEO-F429ZI" x="46.99" y="55.88" smashed="yes" rot="R180">
+<attribute name="AVAILABILITY" value="Unavailable" x="-1.27" y="115.57" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value=" STM32 Nucleo-144 development board with STM32F429ZIT6 MCU, supports Arduino, ST Zio and Morpho " x="-1.27" y="115.57" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="STMicroelectronics" x="-1.27" y="115.57" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MP" value="NUCLEO-F429ZI" x="-1.27" y="115.57" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="82.39" y="4.02" size="1.778" layer="25" rot="R180"/>
+<attribute name="PACKAGE" value="None" x="-1.27" y="115.57" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PRICE" value="None" x="-1.27" y="115.57" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="82.463" y="114.645" size="1.778" layer="27" rot="R180"/>
+</element>
+<element name="IC1" library="sdram" package="SOP80P1176X120-54N" value="AS4C16M16SA-6TCN" x="46.99" y="57.15" smashed="yes">
+<attribute name="DESCRIPTION" value="256M  (16Mx16bit) Synchronous DRAM (SDRAM)" x="46.99" y="57.15" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="1.2mm" x="46.99" y="57.15" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Alliance Memory" x="46.99" y="57.15" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="AS4C16M16SA-6TCN" x="46.99" y="57.15" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="913-4C16M16SA-6TCN" x="46.99" y="57.15" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=913-4C16M16SA-6TCN" x="46.99" y="57.15" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="45.72" y="53.34" size="1.27" layer="25" align="center"/>
+<attribute name="VALUE" x="46.99" y="60.96" size="1.27" layer="27" align="center"/>
 </element>
 </elements>
 <signals>
+<signal name="FMC_A0">
+<contactref element="U1" pad="CN11_53"/>
+<contactref element="IC1" pad="23"/>
+<wire x1="41.262" y1="49.95" x2="78.74" y2="76.83" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$1">
+<contactref element="IC1" pad="1"/>
+</signal>
+<signal name="N$2">
+<contactref element="IC1" pad="2"/>
+</signal>
+<signal name="N$3">
+<contactref element="IC1" pad="3"/>
+</signal>
+<signal name="N$4">
+<contactref element="IC1" pad="4"/>
+</signal>
+<signal name="N$5">
+<contactref element="IC1" pad="5"/>
+</signal>
+<signal name="N$6">
+<contactref element="IC1" pad="6"/>
+</signal>
+<signal name="N$7">
+<contactref element="IC1" pad="7"/>
+</signal>
+<signal name="N$8">
+<contactref element="IC1" pad="8"/>
+</signal>
+<signal name="N$9">
+<contactref element="IC1" pad="9"/>
+</signal>
+<signal name="N$10">
+<contactref element="IC1" pad="10"/>
+</signal>
+<signal name="N$11">
+<contactref element="IC1" pad="11"/>
+</signal>
+<signal name="N$12">
+<contactref element="IC1" pad="12"/>
+</signal>
+<signal name="N$13">
+<contactref element="IC1" pad="13"/>
+</signal>
+<signal name="N$14">
+<contactref element="IC1" pad="14"/>
+</signal>
+<signal name="N$15">
+<contactref element="IC1" pad="15"/>
+</signal>
+<signal name="N$16">
+<contactref element="IC1" pad="16"/>
+</signal>
+<signal name="N$17">
+<contactref element="IC1" pad="17"/>
+</signal>
+<signal name="N$18">
+<contactref element="IC1" pad="18"/>
+</signal>
+<signal name="N$19">
+<contactref element="IC1" pad="19"/>
+</signal>
+<signal name="N$20">
+<contactref element="IC1" pad="20"/>
+</signal>
+<signal name="N$21">
+<contactref element="IC1" pad="21"/>
+</signal>
+<signal name="FMC_A10">
+<contactref element="IC1" pad="22"/>
+</signal>
+<signal name="FMC_A1">
+<contactref element="IC1" pad="24"/>
+<contactref element="U1" pad="CN11_51"/>
+<wire x1="41.262" y1="49.15" x2="78.74" y2="74.29" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="FMC_A2">
+<contactref element="IC1" pad="25"/>
+<contactref element="U1" pad="CN11_52"/>
+<wire x1="41.262" y1="48.35" x2="76.2" y2="74.29" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="FMC_A3">
+<contactref element="IC1" pad="26"/>
+<contactref element="U1" pad="CN12_58"/>
+<wire x1="41.262" y1="47.55" x2="15.24" y2="81.91" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$26">
+<contactref element="IC1" pad="27"/>
+</signal>
+<signal name="N$27">
+<contactref element="IC1" pad="54"/>
+</signal>
+<signal name="N$28">
+<contactref element="IC1" pad="53"/>
+</signal>
+<signal name="N$29">
+<contactref element="IC1" pad="52"/>
+</signal>
+<signal name="N$30">
+<contactref element="IC1" pad="51"/>
+</signal>
+<signal name="N$31">
+<contactref element="IC1" pad="50"/>
+</signal>
+<signal name="N$32">
+<contactref element="IC1" pad="49"/>
+</signal>
+<signal name="N$33">
+<contactref element="IC1" pad="48"/>
+</signal>
+<signal name="N$34">
+<contactref element="IC1" pad="47"/>
+</signal>
+<signal name="N$35">
+<contactref element="IC1" pad="46"/>
+</signal>
+<signal name="N$36">
+<contactref element="IC1" pad="45"/>
+</signal>
+<signal name="N$37">
+<contactref element="IC1" pad="44"/>
+</signal>
+<signal name="N$38">
+<contactref element="IC1" pad="43"/>
+</signal>
+<signal name="N$39">
+<contactref element="IC1" pad="42"/>
+</signal>
+<signal name="N$40">
+<contactref element="IC1" pad="41"/>
+</signal>
+<signal name="N$41">
+<contactref element="IC1" pad="40"/>
+</signal>
+<signal name="N$42">
+<contactref element="IC1" pad="39"/>
+</signal>
+<signal name="N$43">
+<contactref element="IC1" pad="38"/>
+</signal>
+<signal name="N$44">
+<contactref element="IC1" pad="37"/>
+</signal>
+<signal name="FMC_A12">
+<contactref element="IC1" pad="36"/>
+</signal>
+<signal name="FMC_A11">
+<contactref element="IC1" pad="35"/>
+</signal>
+<signal name="FMC_A9">
+<contactref element="IC1" pad="34"/>
+<contactref element="U1" pad="CN12_60"/>
+<wire x1="15.24" y1="84.45" x2="52.718" y2="51.55" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="FMC_A8">
+<contactref element="IC1" pad="33"/>
+<contactref element="U1" pad="CN12_50"/>
+<wire x1="15.24" y1="71.75" x2="52.718" y2="50.75" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="FMC_A7">
+<contactref element="IC1" pad="32"/>
+<contactref element="U1" pad="CN12_57"/>
+<wire x1="17.78" y1="81.91" x2="52.718" y2="49.95" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="FMC_A6">
+<contactref element="IC1" pad="31"/>
+<contactref element="U1" pad="CN12_59"/>
+<wire x1="52.718" y1="49.15" x2="17.78" y2="84.45" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="FMC_A5">
+<contactref element="IC1" pad="30"/>
+<contactref element="U1" pad="CN12_36"/>
+<wire x1="15.24" y1="53.97" x2="52.718" y2="48.35" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="FMC_A4">
+<contactref element="IC1" pad="29"/>
+<contactref element="U1" pad="CN12_38"/>
+<wire x1="15.24" y1="56.51" x2="52.718" y2="47.55" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$53">
+<contactref element="IC1" pad="28"/>
+</signal>
+<signal name="N$23">
+<contactref element="U1" pad="CN11_1"/>
+</signal>
+<signal name="N$24">
+<contactref element="U1" pad="CN11_2"/>
+</signal>
+<signal name="N$25">
+<contactref element="U1" pad="CN11_3"/>
+</signal>
+<signal name="N$54">
+<contactref element="U1" pad="CN11_4"/>
+</signal>
+<signal name="N$55">
+<contactref element="U1" pad="CN11_5"/>
+</signal>
+<signal name="N$56">
+<contactref element="U1" pad="CN11_6"/>
+</signal>
+<signal name="N$57">
+<contactref element="U1" pad="CN11_7"/>
+</signal>
+<signal name="N$58">
+<contactref element="U1" pad="CN11_9"/>
+</signal>
+<signal name="N$59">
+<contactref element="U1" pad="CN11_11"/>
+</signal>
+<signal name="N$60">
+<contactref element="U1" pad="CN11_12"/>
+</signal>
+<signal name="N$61">
+<contactref element="U1" pad="CN11_13"/>
+</signal>
+<signal name="N$62">
+<contactref element="U1" pad="CN11_14"/>
+</signal>
+<signal name="N$63">
+<contactref element="U1" pad="CN11_15"/>
+</signal>
+<signal name="N$64">
+<contactref element="U1" pad="CN11_16"/>
+</signal>
+<signal name="N$65">
+<contactref element="U1" pad="CN11_17"/>
+</signal>
+<signal name="N$66">
+<contactref element="U1" pad="CN11_18"/>
+</signal>
+<signal name="N$67">
+<contactref element="U1" pad="CN11_8"/>
+<contactref element="U1" pad="CN11_19"/>
+<contactref element="U1" pad="CN11_22"/>
+<contactref element="U1" pad="CN11_49"/>
+<contactref element="U1" pad="CN11_20"/>
+<contactref element="U1" pad="CN11_60"/>
+<contactref element="U1" pad="CN11_71"/>
+<contactref element="U1" pad="CN11_72"/>
+<wire x1="76.2" y1="99.69" x2="78.74" y2="99.69" width="0" layer="19" extent="1-1"/>
+<wire x1="76.2" y1="84.45" x2="76.2" y2="99.69" width="0" layer="19" extent="1-1"/>
+<wire x1="78.74" y1="71.75" x2="76.2" y2="84.45" width="0" layer="19" extent="1-1"/>
+<wire x1="76.2" y1="36.19" x2="78.74" y2="71.75" width="0" layer="19" extent="1-1"/>
+<wire x1="76.2" y1="33.65" x2="76.2" y2="36.19" width="0" layer="19" extent="1-1"/>
+<wire x1="78.74" y1="33.65" x2="76.2" y2="33.65" width="0" layer="19" extent="1-1"/>
+<wire x1="76.2" y1="18.41" x2="76.2" y2="33.65" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$68">
+<contactref element="U1" pad="CN11_21"/>
+</signal>
+<signal name="N$69">
+<contactref element="U1" pad="CN11_23"/>
+</signal>
+<signal name="N$70">
+<contactref element="U1" pad="CN11_24"/>
+</signal>
+<signal name="N$71">
+<contactref element="U1" pad="CN11_25"/>
+</signal>
+<signal name="N$72">
+<contactref element="U1" pad="CN11_27"/>
+</signal>
+<signal name="N$73">
+<contactref element="U1" pad="CN11_28"/>
+</signal>
+<signal name="N$74">
+<contactref element="U1" pad="CN11_29"/>
+</signal>
+<signal name="N$75">
+<contactref element="U1" pad="CN11_30"/>
+</signal>
+<signal name="N$76">
+<contactref element="U1" pad="CN11_31"/>
+</signal>
+<signal name="N$77">
+<contactref element="U1" pad="CN11_32"/>
+</signal>
+<signal name="N$78">
+<contactref element="U1" pad="CN11_33"/>
+</signal>
+<signal name="N$79">
+<contactref element="U1" pad="CN11_34"/>
+</signal>
+<signal name="N$80">
+<contactref element="U1" pad="CN11_35"/>
+</signal>
+<signal name="N$81">
+<contactref element="U1" pad="CN11_36"/>
+</signal>
+<signal name="N$82">
+<contactref element="U1" pad="CN11_37"/>
+</signal>
+<signal name="N$83">
+<contactref element="U1" pad="CN11_38"/>
+</signal>
+<signal name="N$84">
+<contactref element="U1" pad="CN11_39"/>
+</signal>
+<signal name="N$85">
+<contactref element="U1" pad="CN11_40"/>
+</signal>
+<signal name="N$86">
+<contactref element="U1" pad="CN11_41"/>
+</signal>
+<signal name="N$87">
+<contactref element="U1" pad="CN11_42"/>
+</signal>
+<signal name="N$88">
+<contactref element="U1" pad="CN11_43"/>
+</signal>
+<signal name="N$89">
+<contactref element="U1" pad="CN11_44"/>
+</signal>
+<signal name="N$90">
+<contactref element="U1" pad="CN11_45"/>
+</signal>
+<signal name="N$91">
+<contactref element="U1" pad="CN11_46"/>
+</signal>
+<signal name="N$92">
+<contactref element="U1" pad="CN11_47"/>
+</signal>
+<signal name="N$93">
+<contactref element="U1" pad="CN11_48"/>
+</signal>
+<signal name="N$94">
+<contactref element="U1" pad="CN11_50"/>
+</signal>
+<signal name="N$97">
+<contactref element="U1" pad="CN11_54"/>
+</signal>
+<signal name="N$98">
+<contactref element="U1" pad="CN11_55"/>
+</signal>
+<signal name="N$99">
+<contactref element="U1" pad="CN11_56"/>
+</signal>
+<signal name="N$100">
+<contactref element="U1" pad="CN11_57"/>
+</signal>
+<signal name="N$101">
+<contactref element="U1" pad="CN11_58"/>
+</signal>
+<signal name="N$102">
+<contactref element="U1" pad="CN11_59"/>
+</signal>
+<signal name="N$103">
+<contactref element="U1" pad="CN11_61"/>
+</signal>
+<signal name="N$104">
+<contactref element="U1" pad="CN11_62"/>
+</signal>
+<signal name="N$105">
+<contactref element="U1" pad="CN11_63"/>
+</signal>
+<signal name="N$106">
+<contactref element="U1" pad="CN11_64"/>
+</signal>
+<signal name="N$107">
+<contactref element="U1" pad="CN11_65"/>
+</signal>
+<signal name="N$108">
+<contactref element="U1" pad="CN11_66"/>
+</signal>
+<signal name="N$109">
+<contactref element="U1" pad="CN11_68"/>
+</signal>
+<signal name="N$110">
+<contactref element="U1" pad="CN11_69"/>
+</signal>
+<signal name="N$111">
+<contactref element="U1" pad="CN11_70"/>
+</signal>
+<signal name="N$22">
+<contactref element="U1" pad="CN12_1"/>
+</signal>
+<signal name="N$45">
+<contactref element="U1" pad="CN12_2"/>
+</signal>
+<signal name="N$46">
+<contactref element="U1" pad="CN12_3"/>
+</signal>
+<signal name="N$47">
+<contactref element="U1" pad="CN12_4"/>
+</signal>
+<signal name="N$48">
+<contactref element="U1" pad="CN12_5"/>
+</signal>
+<signal name="N$49">
+<contactref element="U1" pad="CN12_6"/>
+</signal>
+<signal name="N$50">
+<contactref element="U1" pad="CN12_7"/>
+</signal>
+<signal name="N$51">
+<contactref element="U1" pad="CN12_8"/>
+</signal>
+<signal name="N$52">
+<contactref element="U1" pad="CN12_72"/>
+<contactref element="U1" pad="CN12_39"/>
+<contactref element="U1" pad="CN12_63"/>
+<contactref element="U1" pad="CN12_20"/>
+<contactref element="U1" pad="CN12_54"/>
+<contactref element="U1" pad="CN12_9"/>
+<contactref element="U1" pad="CN12_71"/>
+<wire x1="15.24" y1="99.69" x2="17.78" y2="99.69" width="0" layer="19" extent="1-1"/>
+<wire x1="17.78" y1="89.53" x2="17.78" y2="99.69" width="0" layer="19" extent="1-1"/>
+<wire x1="15.24" y1="76.83" x2="17.78" y2="89.53" width="0" layer="19" extent="1-1"/>
+<wire x1="17.78" y1="59.05" x2="15.24" y2="76.83" width="0" layer="19" extent="1-1"/>
+<wire x1="15.24" y1="33.65" x2="17.78" y2="59.05" width="0" layer="19" extent="1-1"/>
+<wire x1="17.78" y1="20.95" x2="15.24" y2="33.65" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$95">
+<contactref element="U1" pad="CN12_10"/>
+</signal>
+<signal name="N$96">
+<contactref element="U1" pad="CN12_11"/>
+</signal>
+<signal name="N$112">
+<contactref element="U1" pad="CN12_12"/>
+</signal>
+<signal name="N$113">
+<contactref element="U1" pad="CN12_13"/>
+</signal>
+<signal name="N$114">
+<contactref element="U1" pad="CN12_14"/>
+</signal>
+<signal name="N$115">
+<contactref element="U1" pad="CN12_15"/>
+</signal>
+<signal name="N$116">
+<contactref element="U1" pad="CN12_16"/>
+</signal>
+<signal name="N$117">
+<contactref element="U1" pad="CN12_17"/>
+</signal>
+<signal name="N$118">
+<contactref element="U1" pad="CN12_18"/>
+</signal>
+<signal name="N$119">
+<contactref element="U1" pad="CN12_19"/>
+</signal>
+<signal name="N$120">
+<contactref element="U1" pad="CN12_21"/>
+</signal>
+<signal name="N$121">
+<contactref element="U1" pad="CN12_22"/>
+</signal>
+<signal name="N$122">
+<contactref element="U1" pad="CN12_23"/>
+</signal>
+<signal name="N$123">
+<contactref element="U1" pad="CN12_24"/>
+</signal>
+<signal name="N$124">
+<contactref element="U1" pad="CN12_25"/>
+</signal>
+<signal name="N$125">
+<contactref element="U1" pad="CN12_26"/>
+</signal>
+<signal name="N$126">
+<contactref element="U1" pad="CN12_27"/>
+</signal>
+<signal name="N$127">
+<contactref element="U1" pad="CN12_28"/>
+</signal>
+<signal name="N$128">
+<contactref element="U1" pad="CN12_29"/>
+</signal>
+<signal name="N$129">
+<contactref element="U1" pad="CN12_30"/>
+</signal>
+<signal name="N$130">
+<contactref element="U1" pad="CN12_31"/>
+</signal>
+<signal name="N$131">
+<contactref element="U1" pad="CN12_32"/>
+</signal>
+<signal name="N$132">
+<contactref element="U1" pad="CN12_33"/>
+</signal>
+<signal name="N$133">
+<contactref element="U1" pad="CN12_34"/>
+</signal>
+<signal name="N$134">
+<contactref element="U1" pad="CN12_35"/>
+</signal>
+<signal name="N$136">
+<contactref element="U1" pad="CN12_37"/>
+</signal>
+<signal name="N$138">
+<contactref element="U1" pad="CN12_40"/>
+</signal>
+<signal name="N$139">
+<contactref element="U1" pad="CN12_41"/>
+</signal>
+<signal name="N$140">
+<contactref element="U1" pad="CN12_42"/>
+</signal>
+<signal name="N$141">
+<contactref element="U1" pad="CN12_43"/>
+</signal>
+<signal name="N$142">
+<contactref element="U1" pad="CN12_44"/>
+</signal>
+<signal name="N$143">
+<contactref element="U1" pad="CN12_45"/>
+</signal>
+<signal name="N$144">
+<contactref element="U1" pad="CN12_46"/>
+</signal>
+<signal name="N$145">
+<contactref element="U1" pad="CN12_47"/>
+</signal>
+<signal name="N$146">
+<contactref element="U1" pad="CN12_48"/>
+</signal>
+<signal name="N$147">
+<contactref element="U1" pad="CN12_49"/>
+</signal>
+<signal name="N$149">
+<contactref element="U1" pad="CN12_51"/>
+</signal>
+<signal name="N$150">
+<contactref element="U1" pad="CN12_52"/>
+</signal>
+<signal name="N$151">
+<contactref element="U1" pad="CN12_53"/>
+</signal>
+<signal name="N$152">
+<contactref element="U1" pad="CN12_55"/>
+</signal>
+<signal name="N$153">
+<contactref element="U1" pad="CN12_56"/>
+</signal>
+<signal name="N$158">
+<contactref element="U1" pad="CN12_61"/>
+</signal>
+<signal name="N$159">
+<contactref element="U1" pad="CN12_62"/>
+</signal>
+<signal name="N$160">
+<contactref element="U1" pad="CN12_64"/>
+</signal>
+<signal name="N$161">
+<contactref element="U1" pad="CN12_65"/>
+</signal>
+<signal name="N$162">
+<contactref element="U1" pad="CN12_66"/>
+</signal>
+<signal name="N$163">
+<contactref element="U1" pad="CN12_67"/>
+</signal>
+<signal name="N$164">
+<contactref element="U1" pad="CN12_68"/>
+</signal>
+<signal name="N$165">
+<contactref element="U1" pad="CN12_69"/>
+</signal>
+<signal name="N$166">
+<contactref element="U1" pad="CN12_70"/>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
