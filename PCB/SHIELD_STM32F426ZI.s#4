@@ -7095,10 +7095,6 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-7.62" y="22.86" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$5" pin="PE4"/>
-<wire x1="236.22" y1="86.36" x2="223.52" y2="86.36" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="STM32F4" gate="G$5" pin="PC11"/>
 <wire x1="236.22" y1="144.78" x2="223.52" y2="144.78" width="0.1524" layer="91"/>
 </segment>
