@@ -10771,12 +10771,6 @@ Metric Code Size 1005</description>
 <label x="-7.62" y="15.24" size="1.9304" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="STM32F4" gate="G$6" pin="PB8"/>
-<wire x1="73.66" y1="134.62" x2="86.36" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="SDIO_D1" class="0">
 <segment>
 <pinref part="STM32F4" gate="G$6" pin="PC9"/>
@@ -10802,6 +10796,12 @@ Metric Code Size 1005</description>
 <segment>
 <pinref part="STM32F4" gate="G$5" pin="PG10"/>
 <wire x1="236.22" y1="63.5" x2="223.52" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="A" class="0">
+<segment>
+<pinref part="STM32F4" gate="G$6" pin="PB8"/>
+<wire x1="73.66" y1="134.62" x2="86.36" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

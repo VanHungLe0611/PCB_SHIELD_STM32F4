@@ -9522,6 +9522,7 @@ Metric Code Size 1005</description>
 <part name="R31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="100k"/>
 <part name="R1" library="sicom_universal" library_urn="urn:adsk.eagle:library:5101580" deviceset="R_0402" device="WEB_0402" package3d_urn="urn:adsk.eagle:package:23679/2" value="4.7k"/>
 <part name="R2" library="sicom_universal" library_urn="urn:adsk.eagle:library:5101580" deviceset="R_0402" device="WEB_0402" package3d_urn="urn:adsk.eagle:package:23679/2" value="4.7k"/>
+<part name="R3" library="sicom_universal" library_urn="urn:adsk.eagle:library:5101580" deviceset="R_0402" device="WEB_0402" package3d_urn="urn:adsk.eagle:package:23679/2" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -9576,6 +9577,10 @@ Metric Code Size 1005</description>
 </instance>
 <instance part="SUPPLY2" gate="GND" x="-83.82" y="101.6" smashed="yes">
 <attribute name="VALUE" x="-85.725" y="98.425" size="1.778" layer="96"/>
+</instance>
+<instance part="R3" gate="G$1" x="-63.5" y="83.82" smashed="yes" rot="R90">
+<attribute name="NAME" x="-64.9986" y="80.01" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-60.198" y="80.01" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -9735,12 +9740,6 @@ Metric Code Size 1005</description>
 <pinref part="STM32F4" gate="G$6" pin="PF11"/>
 <wire x1="43.18" y1="60.96" x2="30.48" y2="60.96" width="0.1524" layer="91"/>
 <label x="20.32" y="60.96" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="CS#"/>
-<wire x1="-33.02" y1="76.2" x2="-45.72" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FMC_BA0" class="0">
@@ -10177,6 +10176,11 @@ Metric Code Size 1005</description>
 <wire x1="-33.02" y1="55.88" x2="-45.72" y2="55.88" width="0.1524" layer="91"/>
 <label x="-43.18" y="55.88" size="1.9304" layer="95"/>
 </segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="-63.5" y1="88.9" x2="-63.5" y2="93.98" width="0.1524" layer="91"/>
+<label x="-63.5" y="93.98" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$65" class="0">
 <segment>
@@ -10255,6 +10259,15 @@ Metric Code Size 1005</description>
 <pinref part="STM32F4" gate="G$5" pin="PC2"/>
 <wire x1="266.7" y1="101.6" x2="279.4" y2="101.6" width="0.1524" layer="91"/>
 <label x="274.32" y="101.6" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="CS#"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="-63.5" y1="78.74" x2="-63.5" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="76.2" x2="-33.02" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="76.2" x2="-63.5" y2="76.2" width="0.1524" layer="91"/>
+<junction x="-63.5" y="76.2"/>
+<label x="-78.74" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$81" class="0">
@@ -10771,12 +10784,6 @@ Metric Code Size 1005</description>
 <label x="-7.62" y="15.24" size="1.9304" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="STM32F4" gate="G$6" pin="PB8"/>
-<wire x1="73.66" y1="134.62" x2="86.36" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="SDIO_D1" class="0">
 <segment>
 <pinref part="STM32F4" gate="G$6" pin="PC9"/>
@@ -10802,6 +10809,12 @@ Metric Code Size 1005</description>
 <segment>
 <pinref part="STM32F4" gate="G$5" pin="PG10"/>
 <wire x1="236.22" y1="63.5" x2="223.52" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="A" class="0">
+<segment>
+<pinref part="STM32F4" gate="G$6" pin="PB8"/>
+<wire x1="73.66" y1="134.62" x2="86.36" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
