@@ -7101,7 +7101,6 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="STM32F4" gate="G$5" pin="PC11"/>
 <wire x1="236.22" y1="144.78" x2="223.52" y2="144.78" width="0.1524" layer="91"/>
-<label x="218.44" y="144.78" size="1.9304" layer="95"/>
 </segment>
 </net>
 <net name="DCMI_D3" class="0">

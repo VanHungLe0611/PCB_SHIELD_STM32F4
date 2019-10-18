@@ -6202,7 +6202,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="STM32F4" gate="G$5" pin="PF2"/>
 <wire x1="236.22" y1="81.28" x2="223.52" y2="81.28" width="0.1524" layer="91"/>
-<label x="220.98" y="81.28" size="1.778" layer="95"/>
+<label x="215.9" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_A3" class="0">
@@ -6455,12 +6455,6 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="STM32F4" gate="G$5" pin="PC10"/>
 <wire x1="266.7" y1="144.78" x2="279.4" y2="144.78" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$24" class="0">
-<segment>
-<pinref part="STM32F4" gate="G$5" pin="PC11"/>
-<wire x1="236.22" y1="144.78" x2="223.52" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -7103,7 +7097,11 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="STM32F4" gate="G$5" pin="PE4"/>
 <wire x1="236.22" y1="86.36" x2="223.52" y2="86.36" width="0.1524" layer="91"/>
-<label x="215.9" y="86.36" size="1.9304" layer="95"/>
+</segment>
+<segment>
+<pinref part="STM32F4" gate="G$5" pin="PC11"/>
+<wire x1="236.22" y1="144.78" x2="223.52" y2="144.78" width="0.1524" layer="91"/>
+<label x="218.44" y="144.78" size="1.9304" layer="95"/>
 </segment>
 </net>
 <net name="DCMI_D3" class="0">

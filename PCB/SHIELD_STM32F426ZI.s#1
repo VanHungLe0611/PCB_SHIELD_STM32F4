@@ -9433,6 +9433,68 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/104239-1430.p
 </deviceset>
 </devicesets>
 </library>
+<library name="sicom_universal" urn="urn:adsk.eagle:library:5101580">
+<description>Firmeninterne Bauteildatanbank&lt;br&gt;
+Bisher genutz für:&lt;br&gt;
+TLS-Projekt&lt;br&gt;
+Sensornetzwerk</description>
+<packages>
+<package name="C0402K" urn="urn:adsk.eagle:footprint:23186/1" library_version="21" library_locally_modified="yes">
+<description>&lt;b&gt;Ceramic Chip Capacitor KEMET 0204 reflow solder&lt;/b&gt;&lt;p&gt;
+Metric Code Size 1005</description>
+<wire x1="-0.425" y1="0.2" x2="0.425" y2="0.2" width="0.1016" layer="51"/>
+<wire x1="0.425" y1="-0.2" x2="-0.425" y2="-0.2" width="0.1016" layer="51"/>
+<smd name="1" x="-0.6" y="0" dx="0.925" dy="0.74" layer="1"/>
+<smd name="2" x="0.6" y="0" dx="0.925" dy="0.74" layer="1"/>
+<text x="-0.5" y="0.425" size="1.016" layer="25">&gt;NAME</text>
+<text x="-0.5" y="-1.45" size="1.016" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.5" y1="-0.25" x2="-0.225" y2="0.25" layer="51"/>
+<rectangle x1="0.225" y1="-0.25" x2="0.5" y2="0.25" layer="51"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="C0402K" urn="urn:adsk.eagle:package:23679/2" type="model" library_version="21" library_locally_modified="yes">
+<description>Ceramic Chip Capacitor KEMET 0204 reflow solder
+Metric Code Size 1005</description>
+<packageinstances>
+<packageinstance name="C0402K"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="R-EU" urn="urn:adsk.eagle:symbol:5122065/1" library_version="21" library_locally_modified="yes">
+<wire x1="-2.54" y1="-0.889" x2="2.54" y2="-0.889" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-0.889" x2="2.54" y2="0.889" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
+<text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="R_0402" urn="urn:adsk.eagle:component:5122071/3" prefix="R" uservalue="yes" library_version="22">
+<gates>
+<gate name="G$1" symbol="R-EU" x="0" y="0"/>
+</gates>
+<devices>
+<device name="WEB_0402" package="C0402K">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23679/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9458,6 +9520,8 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/104239-1430.p
 <part name="R29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="100k"/>
 <part name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="100k"/>
 <part name="R31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="100k"/>
+<part name="R1" library="sicom_universal" library_urn="urn:adsk.eagle:library:5101580" deviceset="R_0402" device="WEB_0402" package3d_urn="urn:adsk.eagle:package:23679/2" value="4.7k"/>
+<part name="R2" library="sicom_universal" library_urn="urn:adsk.eagle:library:5101580" deviceset="R_0402" device="WEB_0402" package3d_urn="urn:adsk.eagle:package:23679/2" value="4.7k"/>
 </parts>
 <sheets>
 <sheet>
@@ -9658,7 +9722,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/104239-1430.p
 <segment>
 <pinref part="STM32F4" gate="G$5" pin="PG15"/>
 <wire x1="236.22" y1="66.04" x2="223.52" y2="66.04" width="0.1524" layer="91"/>
-<label x="213.36" y="66.04" size="1.778" layer="95"/>
+<label x="210.82" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_SDNRAS" class="0">
@@ -9670,7 +9734,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/104239-1430.p
 <segment>
 <pinref part="STM32F4" gate="G$6" pin="PF11"/>
 <wire x1="43.18" y1="60.96" x2="30.48" y2="60.96" width="0.1524" layer="91"/>
-<label x="22.86" y="60.96" size="1.778" layer="95"/>
+<label x="20.32" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -9874,7 +9938,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/104239-1430.p
 <segment>
 <pinref part="STM32F4" gate="G$6" pin="PG8"/>
 <wire x1="43.18" y1="55.88" x2="30.48" y2="55.88" width="0.1524" layer="91"/>
-<label x="22.86" y="55.88" size="1.778" layer="95"/>
+<label x="20.32" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_SDCKE0" class="0">
@@ -9985,22 +10049,25 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/104239-1430.p
 <label x="25.4" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$23" class="0">
+<net name="SDIO_D2" class="0">
 <segment>
 <pinref part="STM32F4" gate="G$5" pin="PC10"/>
 <wire x1="266.7" y1="144.78" x2="279.4" y2="144.78" width="0.1524" layer="91"/>
+<label x="271.78" y="144.78" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$25" class="0">
+<net name="SDIO_CK" class="0">
 <segment>
 <pinref part="STM32F4" gate="G$5" pin="PC12"/>
 <wire x1="266.7" y1="142.24" x2="279.4" y2="142.24" width="0.1524" layer="91"/>
+<label x="271.78" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$54" class="0">
+<net name="SDIO_CMD" class="0">
 <segment>
 <pinref part="STM32F4" gate="G$5" pin="PD2"/>
 <wire x1="236.22" y1="142.24" x2="223.52" y2="142.24" width="0.1524" layer="91"/>
+<label x="218.44" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$55" class="0">
@@ -10250,34 +10317,16 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/104239-1430.p
 <wire x1="236.22" y1="76.2" x2="223.52" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$103" class="0">
-<segment>
-<pinref part="STM32F4" gate="G$5" pin="PE1"/>
-<wire x1="266.7" y1="68.58" x2="279.4" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$107" class="0">
 <segment>
 <pinref part="STM32F4" gate="G$5" pin="PG12"/>
 <wire x1="266.7" y1="63.5" x2="279.4" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$108" class="0">
-<segment>
-<pinref part="STM32F4" gate="G$5" pin="PG10"/>
-<wire x1="236.22" y1="63.5" x2="223.52" y2="63.5" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$109" class="0">
 <segment>
 <pinref part="STM32F4" gate="G$5" pin="PG13"/>
 <wire x1="236.22" y1="60.96" x2="223.52" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$111" class="0">
-<segment>
-<pinref part="STM32F4" gate="G$5" pin="PG11"/>
-<wire x1="236.22" y1="58.42" x2="223.52" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$48" class="0">
@@ -10460,12 +10509,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/104239-1430.p
 <wire x1="73.66" y1="60.96" x2="86.36" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$160" class="0">
-<segment>
-<pinref part="STM32F4" gate="G$6" pin="PE0"/>
-<wire x1="43.18" y1="58.42" x2="30.48" y2="58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$163" class="0">
 <segment>
 <pinref part="STM32F4" gate="G$6" pin="PG7"/>
@@ -10639,7 +10682,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/104239-1430.p
 <segment>
 <pinref part="STM32F4" gate="G$5" pin="PE5"/>
 <wire x1="236.22" y1="83.82" x2="223.52" y2="83.82" width="0.1524" layer="91"/>
-<label x="218.44" y="83.82" size="1.9304" layer="95"/>
+<label x="215.9" y="83.82" size="1.9304" layer="95"/>
 </segment>
 </net>
 <net name="DCMI_D5" class="0">
@@ -10673,9 +10716,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/104239-1430.p
 <label x="-40.64" y="20.32" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PC9"/>
-<wire x1="73.66" y1="137.16" x2="86.36" y2="137.16" width="0.1524" layer="91"/>
-<label x="81.28" y="137.16" size="1.9304" layer="95"/>
+<pinref part="STM32F4" gate="G$5" pin="PE1"/>
+<wire x1="266.7" y1="68.58" x2="279.4" y2="68.58" width="0.1524" layer="91"/>
+<label x="274.32" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DCMI_D2" class="0">
@@ -10685,9 +10728,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/104239-1430.p
 <label x="-7.62" y="20.32" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PC8"/>
-<wire x1="43.18" y1="137.16" x2="30.48" y2="137.16" width="0.1524" layer="91"/>
-<label x="25.4" y="137.16" size="1.9304" layer="95"/>
+<pinref part="STM32F4" gate="G$6" pin="PE0"/>
+<wire x1="43.18" y1="58.42" x2="30.48" y2="58.42" width="0.1524" layer="91"/>
+<label x="25.4" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DCMI_D1" class="0">
@@ -10728,12 +10771,46 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/104239-1430.p
 <label x="-7.62" y="15.24" size="1.9304" layer="95"/>
 </segment>
 </net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="STM32F4" gate="G$6" pin="PB8"/>
+<wire x1="73.66" y1="134.62" x2="86.36" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SDIO_D1" class="0">
+<segment>
+<pinref part="STM32F4" gate="G$6" pin="PC9"/>
+<wire x1="73.66" y1="137.16" x2="86.36" y2="137.16" width="0.1524" layer="91"/>
+<label x="78.74" y="137.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SDIO_D0" class="0">
+<segment>
+<pinref part="STM32F4" gate="G$6" pin="PC8"/>
+<wire x1="43.18" y1="137.16" x2="30.48" y2="137.16" width="0.1524" layer="91"/>
+<label x="27.94" y="137.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SDIO_D3" class="0">
+<segment>
+<pinref part="STM32F4" gate="G$5" pin="PC11"/>
+<wire x1="236.22" y1="144.78" x2="223.52" y2="144.78" width="0.1524" layer="91"/>
+<label x="220.98" y="144.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="STM32F4" gate="G$5" pin="PG10"/>
+<wire x1="236.22" y1="63.5" x2="223.52" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
 <description>SDCARD</description>
 <plain>
 <text x="66.04" y="88.9" size="3.81" layer="91">SDCARD_MODUL</text>
+<text x="205.232" y="95.758" size="3.81" layer="90">I2C</text>
 </plain>
 <instances>
 <instance part="GND7" gate="1" x="7.62" y="30.48" smashed="yes">
@@ -10766,6 +10843,14 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/104239-1430.p
 <instance part="R31" gate="G$1" x="137.16" y="104.14" smashed="yes" rot="R270">
 <attribute name="NAME" x="138.6586" y="107.95" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="133.858" y="107.95" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="R1" gate="G$1" x="223.012" y="72.898" smashed="yes" rot="R90">
+<attribute name="NAME" x="221.5134" y="69.088" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="226.314" y="69.088" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R2" gate="G$1" x="230.632" y="72.898" smashed="yes" rot="R90">
+<attribute name="NAME" x="229.1334" y="69.088" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="233.934" y="69.088" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -10921,6 +11006,37 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/104239-1430.p
 <wire x1="132.08" y1="127" x2="132.08" y2="132.08" width="0.1524" layer="91"/>
 <junction x="132.08" y="127"/>
 <label x="132.08" y="132.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="223.012" y1="77.978" x2="223.012" y2="83.058" width="0.1524" layer="91"/>
+<wire x1="223.012" y1="83.058" x2="223.012" y2="93.218" width="0.1524" layer="91"/>
+<wire x1="230.632" y1="77.978" x2="230.632" y2="83.058" width="0.1524" layer="91"/>
+<wire x1="230.632" y1="83.058" x2="223.012" y2="83.058" width="0.1524" layer="91"/>
+<junction x="223.012" y="83.058"/>
+<wire x1="223.012" y1="93.218" x2="210.312" y2="93.218" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<label x="212.852" y="93.218" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="I2C1_SDA" class="0">
+<segment>
+<wire x1="210.312" y1="60.198" x2="223.012" y2="60.198" width="0.1524" layer="91"/>
+<wire x1="223.012" y1="60.198" x2="245.872" y2="60.198" width="0.1524" layer="91"/>
+<wire x1="223.012" y1="60.198" x2="223.012" y2="67.818" width="0.1524" layer="91"/>
+<junction x="223.012" y="60.198"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<label x="207.772" y="60.198" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="I2C1_SCL" class="0">
+<segment>
+<wire x1="210.312" y1="57.658" x2="230.632" y2="57.658" width="0.1524" layer="91"/>
+<wire x1="230.632" y1="57.658" x2="245.872" y2="57.658" width="0.1524" layer="91"/>
+<wire x1="230.632" y1="57.658" x2="230.632" y2="67.818" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<label x="207.772" y="57.658" size="1.778" layer="95"/>
+<junction x="230.632" y="57.658"/>
 </segment>
 </net>
 </nets>
