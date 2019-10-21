@@ -3,7 +3,7 @@
 <eagle version="9.5.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
@@ -3576,6 +3576,17 @@ design rules under a new name.</description>
 <wire x1="16.296003125" y1="75.773996875" x2="16.296003125" y2="74.866003125" width="0.2032" layer="1"/>
 <wire x1="29.34" y1="16.24" x2="30.68" y2="16.24" width="0.2032" layer="1"/>
 <wire x1="30.68" y1="16.24" x2="31.44" y2="17" width="0.2032" layer="1"/>
+<polygon width="0.1524" layer="1">
+<vertex x="1.96" y="118.57"/>
+<vertex x="90.69" y="118.57"/>
+<vertex x="92.05" y="117.21"/>
+<vertex x="92.05" y="2.12"/>
+<vertex x="90.99" y="1.06"/>
+<vertex x="2.86" y="1.06"/>
+<vertex x="1.81" y="2.11"/>
+<vertex x="1.81" y="118.39"/>
+<vertex x="1.95" y="118.53"/>
+</polygon>
 </signal>
 <signal name="I2C1_SCL">
 <contactref element="JP1" pad="3"/>
@@ -4115,11 +4126,11 @@ design rules under a new name.</description>
 <signal name="CARD_DET">
 <contactref element="J1" pad="23"/>
 </signal>
-<signal name="N$1">
-<contactref element="STM32F4" pad="CN12_3"/>
-</signal>
 <signal name="N$2">
 <contactref element="STM32F4" pad="CN11_66"/>
+</signal>
+<signal name="A">
+<contactref element="STM32F4" pad="CN12_3"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
