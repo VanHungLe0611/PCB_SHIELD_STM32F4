@@ -13,15 +13,15 @@
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -2046,14 +2046,13 @@ design rules under a new name.</description>
 <attribute name="MOUSER_PART_NUMBER" value="913-4C16M16SA-6TCN" x="49.67" y="79.49" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=913-4C16M16SA-6TCN" x="49.67" y="79.49" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="50.94" y="83.3" size="1.27" layer="25" rot="R180" align="center"/>
-<attribute name="VALUE" x="49.67" y="75.68" size="1.27" layer="27" rot="R180" align="center"/>
 </element>
 <element name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="2X09" package3d_urn="urn:adsk.eagle:package:22484/2" value="" x="47.1" y="39.07" smashed="yes" rot="R180">
 <attribute name="NAME" x="58.53" y="37.165" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="POPULARITY" value="1" x="47.1" y="39.07" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="58.53" y="43.515" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X02" package3d_urn="urn:adsk.eagle:package:22435/2" value="" x="62.72" y="21.85" smashed="yes" rot="R90">
+<element name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X02" package3d_urn="urn:adsk.eagle:package:22435/2" value="a" x="62.72" y="21.85" smashed="yes" rot="R90">
 <attribute name="NAME" x="60.8912" y="19.2338" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="POPULARITY" value="98" x="62.72" y="21.85" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="65.895" y="19.31" size="1.27" layer="27" rot="R90"/>
@@ -2489,9 +2488,9 @@ design rules under a new name.</description>
 <signal name="FMC_A2">
 <contactref element="STM32F4" pad="CN11_52"/>
 <contactref element="IC1" pad="25"/>
-<wire x1="76.2" y1="74.29" x2="72.274" y2="78.216" width="0.2032" layer="1"/>
-<wire x1="72.274" y1="78.216" x2="72.274" y2="79.84800625" width="0.2032" layer="1"/>
-<wire x1="71.1" y1="81.02200625" x2="72.274" y2="79.84800625" width="0.2032" layer="1"/>
+<wire x1="76.2" y1="74.29" x2="73.424" y2="77.066" width="0.2032" layer="1"/>
+<wire x1="73.424" y1="77.066" x2="73.424" y2="80.69800625" width="0.2032" layer="1"/>
+<wire x1="71.1" y1="83.02200625" x2="73.424" y2="80.69800625" width="0.2032" layer="1"/>
 <wire x1="55.398" y1="88.29" x2="56.783275" y2="88.29" width="0.2032" layer="1"/>
 <wire x1="56.783275" y1="88.29" x2="57.34" y2="88.846725" width="0.2032" layer="1"/>
 <wire x1="57.34" y1="109.3922" x2="57.5078" y2="109.56" width="0.2032" layer="1"/>
@@ -2501,7 +2500,7 @@ design rules under a new name.</description>
 <via x="70.6878" y="109.6" extent="1-16" drill="0.35"/>
 <wire x1="70.6878" y1="109.6" x2="71.1" y2="109.1878" width="0.2032" layer="1"/>
 <wire x1="57.34" y1="88.846725" x2="57.34" y2="109.3922" width="0.2032" layer="1"/>
-<wire x1="71.1" y1="109.1878" x2="71.1" y2="81.02200625" width="0.2032" layer="1"/>
+<wire x1="71.1" y1="109.1878" x2="71.1" y2="83.02200625" width="0.2032" layer="1"/>
 </signal>
 <signal name="FMC_A3">
 <contactref element="STM32F4" pad="CN12_58"/>
@@ -2713,9 +2712,6 @@ design rules under a new name.</description>
 <wire x1="42.2" y1="78.69" x2="43.942" y2="78.69" width="0.1524" layer="1"/>
 <wire x1="35.1341125" y1="85.7" x2="42.1441125" y2="78.69" width="0.1524" layer="1"/>
 <wire x1="42.1441125" y1="78.69" x2="42.2" y2="78.69" width="0.1524" layer="1"/>
-</signal>
-<signal name="N$41">
-<contactref element="IC1" pad="40"/>
 </signal>
 <signal name="UDQM">
 <contactref element="JP3" pad="2"/>
@@ -3003,36 +2999,8 @@ design rules under a new name.</description>
 <wire x1="4.56738125" y1="115.01738125" x2="4.16" y2="114.61" width="0.2032" layer="1"/>
 <wire x1="4.16" y1="114.61" x2="4.16" y2="67.59" width="0.2032" layer="1"/>
 </signal>
-<signal name="N$55">
-<contactref element="STM32F4" pad="CN11_5"/>
-</signal>
-<signal name="N$56">
-<contactref element="STM32F4" pad="CN11_6"/>
-</signal>
-<signal name="N$57">
-<contactref element="STM32F4" pad="CN11_7"/>
-</signal>
-<signal name="N$58">
-<contactref element="STM32F4" pad="CN11_9"/>
-</signal>
-<signal name="N$59">
-<contactref element="STM32F4" pad="CN11_11"/>
-</signal>
-<signal name="N$60">
-<contactref element="STM32F4" pad="CN11_12"/>
-</signal>
-<signal name="N$61">
-<contactref element="STM32F4" pad="CN11_13"/>
-</signal>
-<signal name="N$62">
-<contactref element="STM32F4" pad="CN11_14"/>
-</signal>
-<signal name="N$63">
-<contactref element="STM32F4" pad="CN11_15"/>
-</signal>
 <signal name="3.3V">
 <contactref element="JP2" pad="1"/>
-<contactref element="C18" pad="1"/>
 <contactref element="STM32F4" pad="CN11_16"/>
 <contactref element="IC1" pad="1"/>
 <contactref element="IC1" pad="3"/>
@@ -3098,7 +3066,6 @@ design rules under a new name.</description>
 <wire x1="62.38" y1="11.13" x2="64.11" y2="11.13" width="0.2032" layer="1"/>
 <wire x1="64.11" y1="11.13" x2="66.82" y2="11.13" width="0.2032" layer="1"/>
 <wire x1="66.82" y1="11.13" x2="66.97" y2="10.98" width="0.2032" layer="1"/>
-<wire x1="62.53" y1="16.49" x2="63.14" y2="16.49" width="0.2032" layer="1"/>
 <via x="65.012034375" y="13.242034375" extent="1-16" drill="0.35"/>
 <wire x1="63.6478" y1="15.13813125" x2="63.6478" y2="15.9822" width="0.2032" layer="1"/>
 <wire x1="65.012034375" y1="13.773896875" x2="65.012034375" y2="13.242034375" width="0.2032" layer="1"/>
@@ -3132,46 +3099,22 @@ design rules under a new name.</description>
 <wire x1="64.87" y1="62.46" x2="64.87" y2="50.44" width="0.2032" layer="1"/>
 <wire x1="63.19" y1="47.12" x2="67.97" y2="42.34" width="0.2032" layer="16"/>
 <contactref element="R3" pad="2"/>
-<wire x1="45.83" y1="11.29" x2="45.83" y2="8.79" width="0.1524" layer="1"/>
+<wire x1="45.83" y1="11.29" x2="45.83" y2="11.16" width="0.1524" layer="1"/>
+<wire x1="45.83" y1="11.16" x2="45.83" y2="8.79" width="0.1524" layer="1"/>
 <wire x1="45.83" y1="8.79" x2="46.59" y2="8.03" width="0.1524" layer="1"/>
 <wire x1="46.59" y1="8.03" x2="50.07" y2="8.03" width="0.1524" layer="1"/>
 <wire x1="50.07" y1="8.03" x2="50.19" y2="8.15" width="0.1524" layer="1"/>
-</signal>
-<signal name="N$65">
-<contactref element="STM32F4" pad="CN11_17"/>
-</signal>
-<signal name="N$66">
-<contactref element="STM32F4" pad="CN11_18"/>
-</signal>
-<signal name="N$69">
-<contactref element="STM32F4" pad="CN11_23"/>
-</signal>
-<signal name="N$70">
-<contactref element="STM32F4" pad="CN11_24"/>
-</signal>
-<signal name="N$71">
-<contactref element="STM32F4" pad="CN11_25"/>
-</signal>
-<signal name="N$72">
-<contactref element="STM32F4" pad="CN11_27"/>
-</signal>
-<signal name="N$73">
-<contactref element="STM32F4" pad="CN11_28"/>
-</signal>
-<signal name="N$74">
-<contactref element="STM32F4" pad="CN11_29"/>
-</signal>
-<signal name="N$75">
-<contactref element="STM32F4" pad="CN11_30"/>
-</signal>
-<signal name="N$76">
-<contactref element="STM32F4" pad="CN11_31"/>
-</signal>
-<signal name="N$78">
-<contactref element="STM32F4" pad="CN11_33"/>
-</signal>
-<signal name="N$79">
-<contactref element="STM32F4" pad="CN11_34"/>
+<contactref element="J1" pad="10"/>
+<wire x1="42.04" y1="18.04" x2="44.5" y2="18.04" width="0.1524" layer="1"/>
+<wire x1="44.5" y1="18.04" x2="44.55" y2="17.99" width="0.1524" layer="1"/>
+<via x="44.55" y="17.99" extent="1-16" drill="0.35"/>
+<wire x1="44.55" y1="17.99" x2="44.55" y2="15.54" width="0.1524" layer="16"/>
+<wire x1="44.55" y1="15.54" x2="44.7" y2="15.39" width="0.1524" layer="16"/>
+<via x="44.7" y="15.39" extent="1-16" drill="0.35"/>
+<wire x1="44.7" y1="15.39" x2="44.7" y2="12.29" width="0.1524" layer="1"/>
+<wire x1="44.7" y1="12.29" x2="45.83" y2="11.16" width="0.1524" layer="1"/>
+<contactref element="C18" pad="1"/>
+<wire x1="63.14" y1="16.49" x2="62.53" y2="16.49" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FMC_SDNE0">
 <contactref element="STM32F4" pad="CN11_35"/>
@@ -3208,138 +3151,6 @@ design rules under a new name.</description>
 <wire x1="65.929675" y1="105.8798" x2="75.59084375" y2="105.8798" width="0.1524" layer="16"/>
 <wire x1="76.44" y1="108.570125" x2="77.959675" y2="110.0898" width="0.1524" layer="16"/>
 <wire x1="82.38" y1="117.90871875" x2="87.0402" y2="113.24851875" width="0.1524" layer="1"/>
-</signal>
-<signal name="N$81">
-<contactref element="STM32F4" pad="CN11_36"/>
-</signal>
-<signal name="N$84">
-<contactref element="STM32F4" pad="CN11_39"/>
-</signal>
-<signal name="N$86">
-<contactref element="STM32F4" pad="CN11_41"/>
-</signal>
-<signal name="N$88">
-<contactref element="STM32F4" pad="CN11_43"/>
-</signal>
-<signal name="N$89">
-<contactref element="STM32F4" pad="CN11_44"/>
-</signal>
-<signal name="N$90">
-<contactref element="STM32F4" pad="CN11_45"/>
-</signal>
-<signal name="N$91">
-<contactref element="STM32F4" pad="CN11_46"/>
-</signal>
-<signal name="N$92">
-<contactref element="STM32F4" pad="CN11_47"/>
-</signal>
-<signal name="N$97">
-<contactref element="STM32F4" pad="CN11_54"/>
-</signal>
-<signal name="N$99">
-<contactref element="STM32F4" pad="CN11_56"/>
-</signal>
-<signal name="N$107">
-<contactref element="STM32F4" pad="CN11_65"/>
-</signal>
-<signal name="N$109">
-<contactref element="STM32F4" pad="CN11_68"/>
-</signal>
-<signal name="N$48">
-<contactref element="STM32F4" pad="CN12_5"/>
-</signal>
-<signal name="N$49">
-<contactref element="STM32F4" pad="CN12_6"/>
-</signal>
-<signal name="N$50">
-<contactref element="STM32F4" pad="CN12_7"/>
-</signal>
-<signal name="N$51">
-<contactref element="STM32F4" pad="CN12_8"/>
-</signal>
-<signal name="N$96">
-<contactref element="STM32F4" pad="CN12_11"/>
-</signal>
-<signal name="N$112">
-<contactref element="STM32F4" pad="CN12_12"/>
-</signal>
-<signal name="N$114">
-<contactref element="STM32F4" pad="CN12_14"/>
-</signal>
-<signal name="N$115">
-<contactref element="STM32F4" pad="CN12_15"/>
-</signal>
-<signal name="N$116">
-<contactref element="STM32F4" pad="CN12_16"/>
-</signal>
-<signal name="N$118">
-<contactref element="STM32F4" pad="CN12_18"/>
-</signal>
-<signal name="N$120">
-<contactref element="STM32F4" pad="CN12_21"/>
-</signal>
-<signal name="N$121">
-<contactref element="STM32F4" pad="CN12_22"/>
-</signal>
-<signal name="N$123">
-<contactref element="STM32F4" pad="CN12_24"/>
-</signal>
-<signal name="N$124">
-<contactref element="STM32F4" pad="CN12_25"/>
-</signal>
-<signal name="N$125">
-<contactref element="STM32F4" pad="CN12_26"/>
-</signal>
-<signal name="N$126">
-<contactref element="STM32F4" pad="CN12_27"/>
-</signal>
-<signal name="N$127">
-<contactref element="STM32F4" pad="CN12_28"/>
-</signal>
-<signal name="N$128">
-<contactref element="STM32F4" pad="CN12_29"/>
-</signal>
-<signal name="N$129">
-<contactref element="STM32F4" pad="CN12_30"/>
-</signal>
-<signal name="N$130">
-<contactref element="STM32F4" pad="CN12_31"/>
-</signal>
-<signal name="N$131">
-<contactref element="STM32F4" pad="CN12_32"/>
-</signal>
-<signal name="N$132">
-<contactref element="STM32F4" pad="CN12_33"/>
-</signal>
-<signal name="N$133">
-<contactref element="STM32F4" pad="CN12_34"/>
-</signal>
-<signal name="N$134">
-<contactref element="STM32F4" pad="CN12_35"/>
-</signal>
-<signal name="N$136">
-<contactref element="STM32F4" pad="CN12_37"/>
-</signal>
-<signal name="N$139">
-<contactref element="STM32F4" pad="CN12_41"/>
-</signal>
-<signal name="N$140">
-<contactref element="STM32F4" pad="CN12_42"/>
-</signal>
-<signal name="N$141">
-<contactref element="STM32F4" pad="CN12_43"/>
-</signal>
-<signal name="N$143">
-<contactref element="STM32F4" pad="CN12_45"/>
-</signal>
-<signal name="N$158">
-<contactref element="STM32F4" pad="CN12_61"/>
-</signal>
-<signal name="N$163">
-<contactref element="STM32F4" pad="CN12_67"/>
-</signal>
-<signal name="N$166">
-<contactref element="STM32F4" pad="CN12_70"/>
 </signal>
 <signal name="3.3">
 <contactref element="JP1" pad="1"/>
@@ -3401,9 +3212,17 @@ design rules under a new name.</description>
 <vertex x="1.81" y="118.39"/>
 <vertex x="1.95" y="118.53"/>
 </polygon>
-<wire x1="43.942" y1="75.49" x2="43.942" y2="70.69" width="0" layer="19" extent="1-1"/>
-<wire x1="43.942" y1="79.49" x2="43.942" y2="75.49" width="0" layer="19" extent="1-1"/>
-<wire x1="55.398" y1="73.09" x2="55.398" y2="77.89" width="0" layer="19" extent="1-1"/>
+<via x="54.11" y="74.34" extent="1-16" drill="0.35"/>
+<wire x1="54.11" y1="74.34" x2="54.11" y2="77.48" width="0.1524" layer="16"/>
+<wire x1="54.11" y1="77.48" x2="54.16" y2="77.53" width="0.1524" layer="16"/>
+<via x="54.16" y="77.53" extent="1-16" drill="0.35"/>
+<via x="46.23" y="78.83" extent="1-16" drill="0.35"/>
+<wire x1="46.23" y1="78.83" x2="46.63" y2="78.43" width="0.1524" layer="16"/>
+<wire x1="46.63" y1="78.43" x2="46.63" y2="76.49" width="0.1524" layer="16"/>
+<via x="46.63" y="76.49" extent="1-16" drill="0.35"/>
+<wire x1="46.63" y1="76.49" x2="45.22" y2="76.49" width="0.1524" layer="16"/>
+<wire x1="45.22" y1="76.49" x2="45.2" y2="76.47" width="0.1524" layer="16"/>
+<via x="45.2" y="76.47" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="I2C1_SCL">
 <contactref element="JP1" pad="3"/>
@@ -3787,15 +3606,6 @@ design rules under a new name.</description>
 <wire x1="13.49" y1="15.3" x2="15.24" y2="13.55" width="0.2032" layer="1"/>
 <wire x1="15.24" y1="13.55" x2="15.24" y2="13.33" width="0.2032" layer="1"/>
 </signal>
-<signal name="RESET">
-<contactref element="JP1" pad="17"/>
-</signal>
-<signal name="PWDN">
-<contactref element="JP1" pad="18"/>
-</signal>
-<signal name="3V3">
-<contactref element="J1" pad="10"/>
-</signal>
 <signal name="SDIO_D2">
 <contactref element="J1" pad="7"/>
 <contactref element="R26" pad="2"/>
@@ -3819,10 +3629,10 @@ design rules under a new name.</description>
 <contactref element="J1" pad="9"/>
 <contactref element="R27" pad="2"/>
 <contactref element="STM32F4" pad="CN11_4"/>
-<wire x1="42.04" y1="18.94" x2="44.36" y2="18.94" width="0.2032" layer="1"/>
-<wire x1="45.83" y1="17.47" x2="45.83" y2="14.75" width="0.2032" layer="1"/>
+<wire x1="42.04" y1="18.94" x2="45.48" y2="18.94" width="0.2032" layer="1"/>
+<wire x1="45.83" y1="18.59" x2="45.83" y2="14.75" width="0.2032" layer="1"/>
 <wire x1="45.83" y1="14.75" x2="45.83" y2="12.29" width="0.2032" layer="1"/>
-<wire x1="44.36" y1="18.94" x2="45.83" y2="17.47" width="0.2032" layer="1"/>
+<wire x1="45.48" y1="18.94" x2="45.83" y2="18.59" width="0.2032" layer="1"/>
 <wire x1="76.2" y1="13.33" x2="74.05" y2="15.48" width="0.2032" layer="1"/>
 <wire x1="74.05" y1="15.48" x2="64.28" y2="15.48" width="0.2032" layer="1"/>
 <wire x1="64.28" y1="15.48" x2="64.28" y2="15.4" width="0.2032" layer="1"/>
@@ -3938,12 +3748,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="CARD_DET">
 <contactref element="J1" pad="23"/>
-</signal>
-<signal name="N$2">
-<contactref element="STM32F4" pad="CN11_66"/>
-</signal>
-<signal name="A">
-<contactref element="STM32F4" pad="CN12_3"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
