@@ -9183,9 +9183,9 @@ Metric Code Size 1005</description>
 <parts>
 <part name="STM32" library="NUCLEO-F429ZI" deviceset="NUCLEO-F429ZI" device=""/>
 <part name="SDRAM" library="sdram" deviceset="AS4C16M16SA-6TCN" device=""/>
-<part name="CAMERA" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X9" device="" package3d_urn="urn:adsk.eagle:package:22484/2"/>
-<part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
-<part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
+<part name="CAMERA" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X9" device="" package3d_urn="urn:adsk.eagle:package:22484/2" value="0"/>
+<part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2" value="0"/>
+<part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2" value="0"/>
 <part name="C18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="0.1uF"/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -9221,15 +9221,12 @@ Metric Code Size 1005</description>
 </instance>
 <instance part="CAMERA" gate="A" x="-20.32" y="25.4" smashed="yes">
 <attribute name="NAME" x="-26.67" y="38.735" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-26.67" y="10.16" size="1.778" layer="96"/>
 </instance>
 <instance part="JP2" gate="G$1" x="30.48" y="33.02" smashed="yes">
 <attribute name="NAME" x="24.13" y="38.735" size="1.778" layer="95"/>
-<attribute name="VALUE" x="24.13" y="27.94" size="1.778" layer="96"/>
 </instance>
 <instance part="JP3" gate="G$1" x="30.48" y="20.32" smashed="yes">
 <attribute name="NAME" x="24.13" y="26.035" size="1.778" layer="95"/>
-<attribute name="VALUE" x="24.13" y="15.24" size="1.778" layer="96"/>
 </instance>
 <instance part="C18" gate="G$1" x="-58.42" y="129.54" smashed="yes">
 <attribute name="NAME" x="-56.896" y="129.921" size="1.778" layer="95"/>
@@ -10052,6 +10049,28 @@ Metric Code Size 1005</description>
 <pinref part="STM32" gate="G$5" pin="PC11"/>
 <wire x1="193.04" y1="147.32" x2="180.34" y2="147.32" width="0.1524" layer="91"/>
 <label x="177.8" y="147.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PWDN" class="0">
+<segment>
+<pinref part="STM32" gate="G$6" pin="PB5"/>
+<wire x1="124.46" y1="111.76" x2="137.16" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="111.76" x2="142.24" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="111.76" x2="137.16" y2="111.76" width="0.1524" layer="91"/>
+<label x="132.08" y="111.76" size="1.778" layer="95"/>
+<label x="132.08" y="111.76" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CAMERA" gate="A" pin="18"/>
+<wire x1="-15.24" y1="15.24" x2="2.54" y2="15.24" width="0.1524" layer="91"/>
+<label x="-7.62" y="15.24" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CARD_DET" class="0">
+<segment>
+<pinref part="STM32" gate="G$6" pin="PA5"/>
+<wire x1="124.46" y1="134.62" x2="142.24" y2="134.62" width="0.1524" layer="91"/>
+<label x="132.08" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
