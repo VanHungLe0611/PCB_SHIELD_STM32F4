@@ -9181,15 +9181,15 @@ Metric Code Size 1005</description>
 </class>
 </classes>
 <parts>
-<part name="STM32F4" library="NUCLEO-F429ZI" deviceset="NUCLEO-F429ZI" device=""/>
-<part name="IC1" library="sdram" deviceset="AS4C16M16SA-6TCN" device=""/>
+<part name="STM32" library="NUCLEO-F429ZI" deviceset="NUCLEO-F429ZI" device=""/>
+<part name="SDRAM" library="sdram" deviceset="AS4C16M16SA-6TCN" device=""/>
 <part name="CAMERA" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X9" device="" package3d_urn="urn:adsk.eagle:package:22484/2"/>
 <part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="C18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="0.1uF"/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="J1" library="SamacSys_Parts" deviceset="104239-1430" device=""/>
+<part name="SDCARD" library="SamacSys_Parts" deviceset="104239-1430" device=""/>
 <part name="R26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="100k"/>
 <part name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="100k"/>
 <part name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="100k"/>
@@ -9207,15 +9207,15 @@ Metric Code Size 1005</description>
 <text x="-43.18" y="40.64" size="2.54" layer="91">CAMERA_MODUL</text>
 </plain>
 <instances>
-<instance part="STM32F4" gate="G$5" x="208.28" y="104.14" smashed="yes" rot="MR0">
+<instance part="STM32" gate="G$5" x="208.28" y="104.14" smashed="yes" rot="MR0">
 <attribute name="NAME" x="218.44" y="152.4" size="2.54" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="218.44" y="55.88" size="2.54" layer="96" rot="MR0"/>
 </instance>
-<instance part="STM32F4" gate="G$6" x="109.22" y="104.14" smashed="yes" rot="MR0">
+<instance part="STM32" gate="G$6" x="109.22" y="104.14" smashed="yes" rot="MR0">
 <attribute name="NAME" x="119.38" y="152.4" size="2.54" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="119.38" y="55.88" size="2.54" layer="96" rot="MR0"/>
 </instance>
-<instance part="IC1" gate="G$1" x="-7.62" y="142.24" smashed="yes">
+<instance part="SDRAM" gate="G$1" x="-7.62" y="142.24" smashed="yes">
 <attribute name="NAME" x="-19.05" y="144.78" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="-19.05" y="147.32" size="1.778" layer="96" align="center-left"/>
 </instance>
@@ -9248,115 +9248,115 @@ Metric Code Size 1005</description>
 <nets>
 <net name="FMC_A0" class="0">
 <segment>
-<pinref part="STM32F4" gate="G$5" pin="PF0"/>
+<pinref part="STM32" gate="G$5" pin="PF0"/>
 <wire x1="223.52" y1="81.28" x2="241.3" y2="81.28" width="0.1524" layer="91"/>
 <label x="231.14" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="A0"/>
+<pinref part="SDRAM" gate="G$1" pin="A0"/>
 <wire x1="-7.62" y1="86.36" x2="-17.78" y2="86.36" width="0.1524" layer="91"/>
 <label x="-17.78" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_D0" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="DQ0"/>
+<pinref part="SDRAM" gate="G$1" pin="DQ0"/>
 <wire x1="-7.62" y1="139.7" x2="-20.32" y2="139.7" width="0.1524" layer="91"/>
 <label x="-20.32" y="139.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PD14"/>
+<pinref part="STM32" gate="G$6" pin="PD14"/>
 <wire x1="93.98" y1="91.44" x2="81.28" y2="91.44" width="0.1524" layer="91"/>
 <label x="76.2" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_D1" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="DQ1"/>
+<pinref part="SDRAM" gate="G$1" pin="DQ1"/>
 <wire x1="-7.62" y1="134.62" x2="-20.32" y2="134.62" width="0.1524" layer="91"/>
 <label x="-20.32" y="134.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PD15"/>
+<pinref part="STM32" gate="G$6" pin="PD15"/>
 <wire x1="93.98" y1="88.9" x2="81.28" y2="88.9" width="0.1524" layer="91"/>
 <label x="76.2" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_D2" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="DQ2"/>
+<pinref part="SDRAM" gate="G$1" pin="DQ2"/>
 <wire x1="-7.62" y1="132.08" x2="-20.32" y2="132.08" width="0.1524" layer="91"/>
 <label x="-20.32" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$5" pin="PD0"/>
+<pinref part="STM32" gate="G$5" pin="PD0"/>
 <wire x1="223.52" y1="76.2" x2="236.22" y2="76.2" width="0.1524" layer="91"/>
 <label x="231.14" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_D3" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="DQ3"/>
+<pinref part="SDRAM" gate="G$1" pin="DQ3"/>
 <wire x1="-7.62" y1="127" x2="-20.32" y2="127" width="0.1524" layer="91"/>
 <label x="-20.32" y="127" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$5" pin="PD1"/>
+<pinref part="STM32" gate="G$5" pin="PD1"/>
 <wire x1="223.52" y1="78.74" x2="236.22" y2="78.74" width="0.1524" layer="91"/>
 <label x="231.14" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_D4" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="DQ4"/>
+<pinref part="SDRAM" gate="G$1" pin="DQ4"/>
 <wire x1="-7.62" y1="124.46" x2="-20.32" y2="124.46" width="0.1524" layer="91"/>
 <label x="-20.32" y="124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PE7"/>
+<pinref part="STM32" gate="G$6" pin="PE7"/>
 <wire x1="93.98" y1="93.98" x2="81.28" y2="93.98" width="0.1524" layer="91"/>
 <label x="76.2" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_D5" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="DQ5"/>
+<pinref part="SDRAM" gate="G$1" pin="DQ5"/>
 <wire x1="-7.62" y1="119.38" x2="-20.32" y2="119.38" width="0.1524" layer="91"/>
 <label x="-20.32" y="119.38" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PE8"/>
+<pinref part="STM32" gate="G$6" pin="PE8"/>
 <wire x1="93.98" y1="99.06" x2="81.28" y2="99.06" width="0.1524" layer="91"/>
 <label x="76.2" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_D6" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="DQ6"/>
+<pinref part="SDRAM" gate="G$1" pin="DQ6"/>
 <wire x1="-7.62" y1="116.84" x2="-20.32" y2="116.84" width="0.1524" layer="91"/>
 <label x="-20.32" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PE9"/>
+<pinref part="STM32" gate="G$6" pin="PE9"/>
 <wire x1="93.98" y1="83.82" x2="81.28" y2="83.82" width="0.1524" layer="91"/>
 <label x="76.2" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_D7" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="DQ7"/>
+<pinref part="SDRAM" gate="G$1" pin="DQ7"/>
 <wire x1="-7.62" y1="111.76" x2="-20.32" y2="111.76" width="0.1524" layer="91"/>
 <label x="-17.78" y="111.76" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PE10"/>
+<pinref part="STM32" gate="G$6" pin="PE10"/>
 <wire x1="124.46" y1="88.9" x2="137.16" y2="88.9" width="0.1524" layer="91"/>
 <label x="132.08" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LDQM" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="LDQM"/>
+<pinref part="SDRAM" gate="G$1" pin="LDQM"/>
 <wire x1="-7.62" y1="106.68" x2="-20.32" y2="106.68" width="0.1524" layer="91"/>
 <label x="-17.78" y="106.68" size="1.9304" layer="95"/>
 </segment>
@@ -9368,211 +9368,211 @@ Metric Code Size 1005</description>
 </net>
 <net name="FMC_SDNWE" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="WE#"/>
+<pinref part="SDRAM" gate="G$1" pin="WE#"/>
 <wire x1="-7.62" y1="104.14" x2="-20.32" y2="104.14" width="0.1524" layer="91"/>
 <label x="-25.4" y="104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$5" pin="PC0"/>
+<pinref part="STM32" gate="G$5" pin="PC0"/>
 <wire x1="193.04" y1="101.6" x2="180.34" y2="101.6" width="0.1524" layer="91"/>
 <label x="170.18" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_SDNCAS" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="CAS#"/>
+<pinref part="SDRAM" gate="G$1" pin="CAS#"/>
 <wire x1="-7.62" y1="101.6" x2="-20.32" y2="101.6" width="0.1524" layer="91"/>
 <label x="-25.4" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$5" pin="PG15"/>
+<pinref part="STM32" gate="G$5" pin="PG15"/>
 <wire x1="193.04" y1="68.58" x2="180.34" y2="68.58" width="0.1524" layer="91"/>
 <label x="167.64" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_SDNRAS" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="RAS#"/>
+<pinref part="SDRAM" gate="G$1" pin="RAS#"/>
 <wire x1="-7.62" y1="99.06" x2="-20.32" y2="99.06" width="0.1524" layer="91"/>
 <label x="-25.4" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PF11"/>
+<pinref part="STM32" gate="G$6" pin="PF11"/>
 <wire x1="93.98" y1="71.12" x2="81.28" y2="71.12" width="0.1524" layer="91"/>
 <label x="71.12" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_BA0" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="BA0"/>
+<pinref part="SDRAM" gate="G$1" pin="BA0"/>
 <wire x1="-7.62" y1="93.98" x2="-20.32" y2="93.98" width="0.1524" layer="91"/>
 <label x="-20.32" y="93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PG4"/>
+<pinref part="STM32" gate="G$6" pin="PG4"/>
 <wire x1="124.46" y1="60.96" x2="137.16" y2="60.96" width="0.1524" layer="91"/>
 <label x="132.08" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_BA1" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="BA1"/>
+<pinref part="SDRAM" gate="G$1" pin="BA1"/>
 <wire x1="-7.62" y1="91.44" x2="-20.32" y2="91.44" width="0.1524" layer="91"/>
 <label x="-20.32" y="91.44" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PG5"/>
+<pinref part="STM32" gate="G$6" pin="PG5"/>
 <wire x1="93.98" y1="63.5" x2="81.28" y2="63.5" width="0.1524" layer="91"/>
 <label x="76.2" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_A10" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="A10/AP"/>
+<pinref part="SDRAM" gate="G$1" pin="A10/AP"/>
 <wire x1="-7.62" y1="88.9" x2="-20.32" y2="88.9" width="0.1524" layer="91"/>
 <label x="-20.32" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$5" pin="PG0"/>
+<pinref part="STM32" gate="G$5" pin="PG0"/>
 <wire x1="223.52" y1="73.66" x2="236.22" y2="73.66" width="0.1524" layer="91"/>
 <label x="231.14" y="73.66" size="1.9304" layer="95"/>
 </segment>
 </net>
 <net name="FMC_A1" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="A1"/>
+<pinref part="SDRAM" gate="G$1" pin="A1"/>
 <wire x1="-7.62" y1="83.82" x2="-20.32" y2="83.82" width="0.1524" layer="91"/>
 <label x="-17.78" y="83.82" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$5" pin="PF1"/>
+<pinref part="STM32" gate="G$5" pin="PF1"/>
 <wire x1="223.52" y1="83.82" x2="236.22" y2="83.82" width="0.1524" layer="91"/>
 <label x="231.14" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_A2" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="A2"/>
+<pinref part="SDRAM" gate="G$1" pin="A2"/>
 <wire x1="-7.62" y1="81.28" x2="-20.32" y2="81.28" width="0.1524" layer="91"/>
 <label x="-17.78" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$5" pin="PF2"/>
+<pinref part="STM32" gate="G$5" pin="PF2"/>
 <wire x1="193.04" y1="83.82" x2="180.34" y2="83.82" width="0.1524" layer="91"/>
 <label x="172.72" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_A3" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="A3"/>
+<pinref part="SDRAM" gate="G$1" pin="A3"/>
 <wire x1="-7.62" y1="78.74" x2="-20.32" y2="78.74" width="0.1524" layer="91"/>
 <label x="-17.78" y="78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PF3"/>
+<pinref part="STM32" gate="G$6" pin="PF3"/>
 <wire x1="93.98" y1="76.2" x2="81.28" y2="76.2" width="0.1524" layer="91"/>
 <label x="76.2" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_D15" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="DQ15"/>
+<pinref part="SDRAM" gate="G$1" pin="DQ15"/>
 <wire x1="25.4" y1="139.7" x2="38.1" y2="139.7" width="0.1524" layer="91"/>
 <label x="27.94" y="139.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PD10"/>
+<pinref part="STM32" gate="G$6" pin="PD10"/>
 <wire x1="124.46" y1="66.04" x2="137.16" y2="66.04" width="0.1524" layer="91"/>
 <label x="132.08" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_D14" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="DQ14"/>
+<pinref part="SDRAM" gate="G$1" pin="DQ14"/>
 <wire x1="25.4" y1="134.62" x2="38.1" y2="134.62" width="0.1524" layer="91"/>
 <label x="27.94" y="134.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$5" pin="PD9"/>
+<pinref part="STM32" gate="G$5" pin="PD9"/>
 <wire x1="223.52" y1="60.96" x2="236.22" y2="60.96" width="0.1524" layer="91"/>
 <label x="231.14" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_D13" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="DQ13"/>
+<pinref part="SDRAM" gate="G$1" pin="DQ13"/>
 <wire x1="25.4" y1="132.08" x2="38.1" y2="132.08" width="0.1524" layer="91"/>
 <label x="27.94" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PD8"/>
+<pinref part="STM32" gate="G$6" pin="PD8"/>
 <wire x1="93.98" y1="137.16" x2="81.28" y2="137.16" width="0.1524" layer="91"/>
 <label x="76.2" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_D12" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="DQ12"/>
+<pinref part="SDRAM" gate="G$1" pin="DQ12"/>
 <wire x1="25.4" y1="127" x2="38.1" y2="127" width="0.1524" layer="91"/>
 <label x="27.94" y="127" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PE15"/>
+<pinref part="STM32" gate="G$6" pin="PE15"/>
 <wire x1="124.46" y1="81.28" x2="137.16" y2="81.28" width="0.1524" layer="91"/>
 <label x="132.08" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_D11" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="DQ11"/>
+<pinref part="SDRAM" gate="G$1" pin="DQ11"/>
 <wire x1="25.4" y1="124.46" x2="38.1" y2="124.46" width="0.1524" layer="91"/>
 <label x="27.94" y="124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PE14"/>
+<pinref part="STM32" gate="G$6" pin="PE14"/>
 <wire x1="124.46" y1="83.82" x2="137.16" y2="83.82" width="0.1524" layer="91"/>
 <label x="132.08" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_D10" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="DQ10"/>
+<pinref part="SDRAM" gate="G$1" pin="DQ10"/>
 <wire x1="25.4" y1="119.38" x2="38.1" y2="119.38" width="0.1524" layer="91"/>
 <label x="27.94" y="119.38" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PE13"/>
+<pinref part="STM32" gate="G$6" pin="PE13"/>
 <wire x1="124.46" y1="78.74" x2="137.16" y2="78.74" width="0.1524" layer="91"/>
 <label x="132.08" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_D9" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="DQ9"/>
+<pinref part="SDRAM" gate="G$1" pin="DQ9"/>
 <wire x1="25.4" y1="116.84" x2="38.1" y2="116.84" width="0.1524" layer="91"/>
 <label x="27.94" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PE12"/>
+<pinref part="STM32" gate="G$6" pin="PE12"/>
 <wire x1="124.46" y1="86.36" x2="137.16" y2="86.36" width="0.1524" layer="91"/>
 <label x="132.08" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_D8" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="DQ8"/>
+<pinref part="SDRAM" gate="G$1" pin="DQ8"/>
 <wire x1="25.4" y1="111.76" x2="38.1" y2="111.76" width="0.1524" layer="91"/>
 <label x="27.94" y="111.76" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PE11"/>
+<pinref part="STM32" gate="G$6" pin="PE11"/>
 <wire x1="93.98" y1="78.74" x2="81.28" y2="78.74" width="0.1524" layer="91"/>
 <label x="76.2" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="UDQM" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="UDQM"/>
+<pinref part="SDRAM" gate="G$1" pin="UDQM"/>
 <wire x1="25.4" y1="104.14" x2="40.64" y2="104.14" width="0.1524" layer="91"/>
 <label x="27.94" y="104.14" size="1.9304" layer="95"/>
 </segment>
@@ -9584,148 +9584,148 @@ Metric Code Size 1005</description>
 </net>
 <net name="FMC_SDCLK" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="CLK"/>
+<pinref part="SDRAM" gate="G$1" pin="CLK"/>
 <wire x1="25.4" y1="101.6" x2="38.1" y2="101.6" width="0.1524" layer="91"/>
 <label x="25.4" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PG8"/>
+<pinref part="STM32" gate="G$6" pin="PG8"/>
 <wire x1="93.98" y1="66.04" x2="81.28" y2="66.04" width="0.1524" layer="91"/>
 <label x="71.12" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_SDCKE0" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="CKE"/>
+<pinref part="SDRAM" gate="G$1" pin="CKE"/>
 <wire x1="25.4" y1="99.06" x2="38.1" y2="99.06" width="0.1524" layer="91"/>
 <label x="25.4" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$5" pin="PC3"/>
+<pinref part="STM32" gate="G$5" pin="PC3"/>
 <wire x1="223.52" y1="101.6" x2="236.22" y2="101.6" width="0.1524" layer="91"/>
 <label x="231.14" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_A12" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="A12"/>
+<pinref part="SDRAM" gate="G$1" pin="A12"/>
 <wire x1="25.4" y1="96.52" x2="38.1" y2="96.52" width="0.1524" layer="91"/>
 <label x="25.4" y="96.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$5" pin="PG2"/>
+<pinref part="STM32" gate="G$5" pin="PG2"/>
 <wire x1="193.04" y1="96.52" x2="180.34" y2="96.52" width="0.1524" layer="91"/>
 <label x="172.72" y="96.52" size="1.9304" layer="95"/>
 </segment>
 </net>
 <net name="FMC_A11" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="A11"/>
+<pinref part="SDRAM" gate="G$1" pin="A11"/>
 <wire x1="25.4" y1="93.98" x2="38.1" y2="93.98" width="0.1524" layer="91"/>
 <label x="25.4" y="93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$5" pin="PG1"/>
+<pinref part="STM32" gate="G$5" pin="PG1"/>
 <wire x1="193.04" y1="76.2" x2="180.34" y2="76.2" width="0.1524" layer="91"/>
 <label x="172.72" y="76.2" size="1.9304" layer="95"/>
 </segment>
 </net>
 <net name="FMC_A9" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="A9"/>
+<pinref part="SDRAM" gate="G$1" pin="A9"/>
 <wire x1="25.4" y1="91.44" x2="38.1" y2="91.44" width="0.1524" layer="91"/>
 <label x="25.4" y="91.44" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PF15"/>
+<pinref part="STM32" gate="G$6" pin="PF15"/>
 <wire x1="93.98" y1="73.66" x2="81.28" y2="73.66" width="0.1524" layer="91"/>
 <label x="76.2" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_A8" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="A8"/>
+<pinref part="SDRAM" gate="G$1" pin="A8"/>
 <wire x1="25.4" y1="88.9" x2="38.1" y2="88.9" width="0.1524" layer="91"/>
 <label x="25.4" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PF14"/>
+<pinref part="STM32" gate="G$6" pin="PF14"/>
 <wire x1="93.98" y1="86.36" x2="81.28" y2="86.36" width="0.1524" layer="91"/>
 <label x="76.2" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_A7" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="A7"/>
+<pinref part="SDRAM" gate="G$1" pin="A7"/>
 <wire x1="25.4" y1="86.36" x2="38.1" y2="86.36" width="0.1524" layer="91"/>
 <label x="25.4" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PF13"/>
+<pinref part="STM32" gate="G$6" pin="PF13"/>
 <wire x1="124.46" y1="76.2" x2="137.16" y2="76.2" width="0.1524" layer="91"/>
 <label x="132.08" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_A6" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="A6"/>
+<pinref part="SDRAM" gate="G$1" pin="A6"/>
 <wire x1="25.4" y1="83.82" x2="38.1" y2="83.82" width="0.1524" layer="91"/>
 <label x="25.4" y="83.82" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PF12"/>
+<pinref part="STM32" gate="G$6" pin="PF12"/>
 <wire x1="124.46" y1="73.66" x2="137.16" y2="73.66" width="0.1524" layer="91"/>
 <label x="132.08" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_A5" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="A5"/>
+<pinref part="SDRAM" gate="G$1" pin="A5"/>
 <wire x1="25.4" y1="81.28" x2="38.1" y2="81.28" width="0.1524" layer="91"/>
 <label x="25.4" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PF5"/>
+<pinref part="STM32" gate="G$6" pin="PF5"/>
 <wire x1="93.98" y1="104.14" x2="81.28" y2="104.14" width="0.1524" layer="91"/>
 <label x="76.2" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_A4" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="A4"/>
+<pinref part="SDRAM" gate="G$1" pin="A4"/>
 <wire x1="25.4" y1="78.74" x2="38.1" y2="78.74" width="0.1524" layer="91"/>
 <label x="25.4" y="78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PF4"/>
+<pinref part="STM32" gate="G$6" pin="PF4"/>
 <wire x1="93.98" y1="101.6" x2="81.28" y2="101.6" width="0.1524" layer="91"/>
 <label x="76.2" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDIO_D2" class="0">
 <segment>
-<pinref part="STM32F4" gate="G$5" pin="PC10"/>
+<pinref part="STM32" gate="G$5" pin="PC10"/>
 <wire x1="223.52" y1="147.32" x2="236.22" y2="147.32" width="0.1524" layer="91"/>
 <label x="228.6" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDIO_CK" class="0">
 <segment>
-<pinref part="STM32F4" gate="G$5" pin="PC12"/>
+<pinref part="STM32" gate="G$5" pin="PC12"/>
 <wire x1="223.52" y1="144.78" x2="236.22" y2="144.78" width="0.1524" layer="91"/>
 <label x="228.6" y="144.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDIO_CMD" class="0">
 <segment>
-<pinref part="STM32F4" gate="G$5" pin="PD2"/>
+<pinref part="STM32" gate="G$5" pin="PD2"/>
 <wire x1="193.04" y1="144.78" x2="180.34" y2="144.78" width="0.1524" layer="91"/>
 <label x="175.26" y="144.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
-<pinref part="STM32F4" gate="G$5" pin="+3.3V"/>
+<pinref part="STM32" gate="G$5" pin="+3.3V"/>
 <wire x1="193.04" y1="129.54" x2="180.34" y2="129.54" width="0.1524" layer="91"/>
 <label x="177.8" y="129.54" size="1.9304" layer="95"/>
 </segment>
@@ -9735,17 +9735,17 @@ Metric Code Size 1005</description>
 <label x="15.24" y="35.56" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="VDD_2"/>
+<pinref part="SDRAM" gate="G$1" pin="VDD_2"/>
 <wire x1="-7.62" y1="109.22" x2="-27.94" y2="109.22" width="0.1524" layer="91"/>
 <label x="-17.78" y="109.22" size="1.9304" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="VDDQ_2"/>
+<pinref part="SDRAM" gate="G$1" pin="VDDQ_2"/>
 <wire x1="-7.62" y1="121.92" x2="-27.94" y2="121.92" width="0.1524" layer="91"/>
 <label x="-20.32" y="121.92" size="1.9304" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="VDD_1"/>
+<pinref part="SDRAM" gate="G$1" pin="VDD_1"/>
 <wire x1="-7.62" y1="142.24" x2="-27.94" y2="142.24" width="0.1524" layer="91"/>
 <label x="-17.78" y="142.24" size="1.9304" layer="95"/>
 <wire x1="-27.94" y1="142.24" x2="-27.94" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="VDDQ_1"/>
+<pinref part="SDRAM" gate="G$1" pin="VDDQ_1"/>
 <wire x1="-7.62" y1="137.16" x2="-27.94" y2="137.16" width="0.1524" layer="91"/>
 <label x="-17.78" y="137.16" size="1.9304" layer="95"/>
 <wire x1="-27.94" y1="121.92" x2="-27.94" y2="137.16" width="0.1524" layer="91"/>
@@ -9761,17 +9761,17 @@ Metric Code Size 1005</description>
 <junction x="-58.42" y="137.16"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="VDDQ_4"/>
+<pinref part="SDRAM" gate="G$1" pin="VDDQ_4"/>
 <wire x1="25.4" y1="129.54" x2="38.1" y2="129.54" width="0.1524" layer="91"/>
 <label x="27.94" y="129.54" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="VDDQ_3"/>
+<pinref part="SDRAM" gate="G$1" pin="VDDQ_3"/>
 <wire x1="25.4" y1="114.3" x2="38.1" y2="114.3" width="0.1524" layer="91"/>
 <label x="27.94" y="114.3" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="VDD_3"/>
+<pinref part="SDRAM" gate="G$1" pin="VDD_3"/>
 <wire x1="-7.62" y1="76.2" x2="-20.32" y2="76.2" width="0.1524" layer="91"/>
 <label x="-17.78" y="76.2" size="1.9304" layer="95"/>
 </segment>
@@ -9783,12 +9783,12 @@ Metric Code Size 1005</description>
 </net>
 <net name="FMC_SDNE0" class="0">
 <segment>
-<pinref part="STM32F4" gate="G$5" pin="PC2"/>
+<pinref part="STM32" gate="G$5" pin="PC2"/>
 <wire x1="223.52" y1="104.14" x2="236.22" y2="104.14" width="0.1524" layer="91"/>
 <label x="231.14" y="104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="CS#"/>
+<pinref part="SDRAM" gate="G$1" pin="CS#"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="-38.1" y1="99.06" x2="-38.1" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="96.52" x2="-7.62" y2="96.52" width="0.1524" layer="91"/>
@@ -9820,47 +9820,47 @@ Metric Code Size 1005</description>
 <pinref part="C18" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="VSSQ_1"/>
+<pinref part="SDRAM" gate="G$1" pin="VSSQ_1"/>
 <wire x1="-7.62" y1="129.54" x2="-20.32" y2="129.54" width="0.1524" layer="91"/>
 <label x="-20.32" y="129.54" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="VSSQ_2"/>
+<pinref part="SDRAM" gate="G$1" pin="VSSQ_2"/>
 <wire x1="-7.62" y1="114.3" x2="-20.32" y2="114.3" width="0.1524" layer="91"/>
 <label x="-20.32" y="114.3" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="VSS_1"/>
+<pinref part="SDRAM" gate="G$1" pin="VSS_1"/>
 <wire x1="25.4" y1="76.2" x2="38.1" y2="76.2" width="0.1524" layer="91"/>
 <label x="25.4" y="76.2" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="VSS_2"/>
+<pinref part="SDRAM" gate="G$1" pin="VSS_2"/>
 <wire x1="25.4" y1="109.22" x2="38.1" y2="109.22" width="0.1524" layer="91"/>
 <label x="27.94" y="109.22" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="VSS_3"/>
+<pinref part="SDRAM" gate="G$1" pin="VSS_3"/>
 <wire x1="25.4" y1="142.24" x2="38.1" y2="142.24" width="0.1524" layer="91"/>
 <label x="27.94" y="142.24" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="VSSQ_4"/>
+<pinref part="SDRAM" gate="G$1" pin="VSSQ_4"/>
 <wire x1="25.4" y1="137.16" x2="38.1" y2="137.16" width="0.1524" layer="91"/>
 <label x="27.94" y="137.16" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="VSSQ_3"/>
+<pinref part="SDRAM" gate="G$1" pin="VSSQ_3"/>
 <wire x1="25.4" y1="121.92" x2="38.1" y2="121.92" width="0.1524" layer="91"/>
 <label x="27.94" y="121.92" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$5" pin="GND_CN11"/>
+<pinref part="STM32" gate="G$5" pin="GND_CN11"/>
 <wire x1="223.52" y1="124.46" x2="236.22" y2="124.46" width="0.1524" layer="91"/>
 <label x="231.14" y="124.46" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="GND_CN12"/>
+<pinref part="STM32" gate="G$6" pin="GND_CN12"/>
 <wire x1="124.46" y1="137.16" x2="137.16" y2="137.16" width="0.1524" layer="91"/>
 <label x="132.08" y="137.16" size="1.9304" layer="95"/>
 </segment>
@@ -9872,7 +9872,7 @@ Metric Code Size 1005</description>
 <label x="-40.64" y="33.02" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PB6"/>
+<pinref part="STM32" gate="G$6" pin="PB6"/>
 <wire x1="124.46" y1="127" x2="137.16" y2="127" width="0.1524" layer="91"/>
 <label x="132.08" y="127" size="1.9304" layer="95"/>
 </segment>
@@ -9884,7 +9884,7 @@ Metric Code Size 1005</description>
 <label x="-7.62" y="33.02" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$5" pin="PB7"/>
+<pinref part="STM32" gate="G$5" pin="PB7"/>
 <wire x1="223.52" y1="121.92" x2="236.22" y2="121.92" width="0.1524" layer="91"/>
 <label x="231.14" y="121.92" size="1.9304" layer="95"/>
 </segment>
@@ -9896,7 +9896,7 @@ Metric Code Size 1005</description>
 <label x="-45.72" y="30.48" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$5" pin="PG9"/>
+<pinref part="STM32" gate="G$5" pin="PG9"/>
 <wire x1="223.52" y1="68.58" x2="236.22" y2="68.58" width="0.1524" layer="91"/>
 <label x="231.14" y="68.58" size="1.9304" layer="95"/>
 </segment>
@@ -9908,7 +9908,7 @@ Metric Code Size 1005</description>
 <label x="-7.62" y="30.48" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$5" pin="PA4"/>
+<pinref part="STM32" gate="G$5" pin="PA4"/>
 <wire x1="193.04" y1="109.22" x2="180.34" y2="109.22" width="0.1524" layer="91"/>
 <label x="170.18" y="109.22" size="1.9304" layer="95"/>
 </segment>
@@ -9920,7 +9920,7 @@ Metric Code Size 1005</description>
 <label x="-45.72" y="27.94" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PA6"/>
+<pinref part="STM32" gate="G$6" pin="PA6"/>
 <wire x1="124.46" y1="132.08" x2="137.16" y2="132.08" width="0.1524" layer="91"/>
 <label x="132.08" y="132.08" size="1.9304" layer="95"/>
 </segment>
@@ -9932,7 +9932,7 @@ Metric Code Size 1005</description>
 <label x="-7.62" y="27.94" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PA8"/>
+<pinref part="STM32" gate="G$6" pin="PA8"/>
 <wire x1="124.46" y1="119.38" x2="137.16" y2="119.38" width="0.1524" layer="91"/>
 <label x="132.08" y="119.38" size="1.9304" layer="95"/>
 </segment>
@@ -9944,7 +9944,7 @@ Metric Code Size 1005</description>
 <label x="-40.64" y="25.4" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$5" pin="PE6"/>
+<pinref part="STM32" gate="G$5" pin="PE6"/>
 <wire x1="193.04" y1="71.12" x2="180.34" y2="71.12" width="0.1524" layer="91"/>
 <label x="172.72" y="71.12" size="1.9304" layer="95"/>
 </segment>
@@ -9956,7 +9956,7 @@ Metric Code Size 1005</description>
 <label x="-7.62" y="25.4" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$5" pin="PE5"/>
+<pinref part="STM32" gate="G$5" pin="PE5"/>
 <wire x1="193.04" y1="86.36" x2="180.34" y2="86.36" width="0.1524" layer="91"/>
 <label x="172.72" y="86.36" size="1.9304" layer="95"/>
 </segment>
@@ -9968,7 +9968,7 @@ Metric Code Size 1005</description>
 <label x="-40.64" y="22.86" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$5" pin="PD3"/>
+<pinref part="STM32" gate="G$5" pin="PD3"/>
 <wire x1="193.04" y1="99.06" x2="180.34" y2="99.06" width="0.1524" layer="91"/>
 <label x="172.72" y="99.06" size="1.9304" layer="95"/>
 </segment>
@@ -9980,7 +9980,7 @@ Metric Code Size 1005</description>
 <label x="-7.62" y="22.86" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$5" pin="PE4"/>
+<pinref part="STM32" gate="G$5" pin="PE4"/>
 <wire x1="193.04" y1="88.9" x2="180.34" y2="88.9" width="0.1524" layer="91"/>
 <label x="172.72" y="88.9" size="1.9304" layer="95"/>
 </segment>
@@ -9992,7 +9992,7 @@ Metric Code Size 1005</description>
 <label x="-40.64" y="20.32" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$5" pin="PE1"/>
+<pinref part="STM32" gate="G$5" pin="PE1"/>
 <wire x1="223.52" y1="71.12" x2="236.22" y2="71.12" width="0.1524" layer="91"/>
 <label x="231.14" y="71.12" size="1.778" layer="95"/>
 </segment>
@@ -10004,7 +10004,7 @@ Metric Code Size 1005</description>
 <label x="-7.62" y="20.32" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PE0"/>
+<pinref part="STM32" gate="G$6" pin="PE0"/>
 <wire x1="93.98" y1="68.58" x2="81.28" y2="68.58" width="0.1524" layer="91"/>
 <label x="76.2" y="68.58" size="1.778" layer="95"/>
 </segment>
@@ -10016,7 +10016,7 @@ Metric Code Size 1005</description>
 <label x="-40.64" y="17.78" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PC7"/>
+<pinref part="STM32" gate="G$6" pin="PC7"/>
 <wire x1="124.46" y1="124.46" x2="137.16" y2="124.46" width="0.1524" layer="91"/>
 <label x="132.08" y="124.46" size="1.9304" layer="95"/>
 </segment>
@@ -10028,30 +10028,45 @@ Metric Code Size 1005</description>
 <label x="-7.62" y="17.78" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PC6"/>
+<pinref part="STM32" gate="G$6" pin="PC6"/>
 <wire x1="93.98" y1="144.78" x2="81.28" y2="144.78" width="0.1524" layer="91"/>
 <label x="76.2" y="144.78" size="1.9304" layer="95"/>
 </segment>
 </net>
 <net name="SDIO_D1" class="0">
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PC9"/>
+<pinref part="STM32" gate="G$6" pin="PC9"/>
 <wire x1="124.46" y1="147.32" x2="137.16" y2="147.32" width="0.1524" layer="91"/>
 <label x="129.54" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDIO_D0" class="0">
 <segment>
-<pinref part="STM32F4" gate="G$6" pin="PC8"/>
+<pinref part="STM32" gate="G$6" pin="PC8"/>
 <wire x1="93.98" y1="147.32" x2="81.28" y2="147.32" width="0.1524" layer="91"/>
 <label x="78.74" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDIO_D3" class="0">
 <segment>
-<pinref part="STM32F4" gate="G$5" pin="PC11"/>
+<pinref part="STM32" gate="G$5" pin="PC11"/>
 <wire x1="193.04" y1="147.32" x2="180.34" y2="147.32" width="0.1524" layer="91"/>
 <label x="177.8" y="147.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PWDN" class="0">
+<segment>
+<pinref part="STM32" gate="G$6" pin="PB5"/>
+<wire x1="124.46" y1="111.76" x2="137.16" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="111.76" x2="142.24" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="111.76" x2="137.16" y2="111.76" width="0.1524" layer="91"/>
+<label x="132.08" y="111.76" size="1.778" layer="95"/>
+<label x="132.08" y="111.76" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CAMERA" gate="A" pin="18"/>
+<wire x1="-15.24" y1="15.24" x2="2.54" y2="15.24" width="0.1524" layer="91"/>
+<label x="-7.62" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -10066,7 +10081,7 @@ Metric Code Size 1005</description>
 <instance part="GND7" gate="1" x="7.62" y="30.48" smashed="yes">
 <attribute name="VALUE" x="5.08" y="27.94" size="1.778" layer="96"/>
 </instance>
-<instance part="J1" gate="G$1" x="60.96" y="73.66" smashed="yes">
+<instance part="SDCARD" gate="G$1" x="60.96" y="73.66" smashed="yes">
 <attribute name="NAME" x="64.77" y="81.28" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="64.77" y="78.74" size="1.778" layer="96" align="center-left"/>
 </instance>
@@ -10110,21 +10125,21 @@ Metric Code Size 1005</description>
 <segment>
 <wire x1="7.62" y1="38.1" x2="7.62" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<pinref part="J1" gate="G$1" pin="G2_GND"/>
+<pinref part="SDCARD" gate="G$1" pin="G2_GND"/>
 <wire x1="116.84" y1="55.88" x2="129.54" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="55.88" x2="129.54" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="G8_GND"/>
+<pinref part="SDCARD" gate="G$1" pin="G8_GND"/>
 <wire x1="129.54" y1="53.34" x2="129.54" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="50.8" x2="129.54" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="48.26" x2="116.84" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="G6_GND"/>
+<pinref part="SDCARD" gate="G$1" pin="G6_GND"/>
 <wire x1="116.84" y1="50.8" x2="129.54" y2="50.8" width="0.1524" layer="91"/>
 <junction x="129.54" y="50.8"/>
-<pinref part="J1" gate="G$1" pin="G4_GND"/>
+<pinref part="SDCARD" gate="G$1" pin="G4_GND"/>
 <wire x1="116.84" y1="53.34" x2="129.54" y2="53.34" width="0.1524" layer="91"/>
 <junction x="129.54" y="53.34"/>
 <junction x="129.54" y="48.26"/>
-<pinref part="J1" gate="G$1" pin="G1_GND"/>
+<pinref part="SDCARD" gate="G$1" pin="G1_GND"/>
 <wire x1="60.96" y1="55.88" x2="50.8" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="55.88" x2="50.8" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="53.34" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
@@ -10132,18 +10147,18 @@ Metric Code Size 1005</description>
 <wire x1="50.8" y1="48.26" x2="50.8" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="38.1" x2="129.54" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="38.1" x2="129.54" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="G3_GND"/>
+<pinref part="SDCARD" gate="G$1" pin="G3_GND"/>
 <wire x1="60.96" y1="53.34" x2="50.8" y2="53.34" width="0.1524" layer="91"/>
 <junction x="50.8" y="53.34"/>
-<pinref part="J1" gate="G$1" pin="G5_GND"/>
+<pinref part="SDCARD" gate="G$1" pin="G5_GND"/>
 <wire x1="60.96" y1="50.8" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
 <junction x="50.8" y="50.8"/>
-<pinref part="J1" gate="G$1" pin="G7_GND"/>
+<pinref part="SDCARD" gate="G$1" pin="G7_GND"/>
 <wire x1="60.96" y1="48.26" x2="50.8" y2="48.26" width="0.1524" layer="91"/>
 <junction x="50.8" y="48.26"/>
 <junction x="50.8" y="38.1"/>
 <wire x1="7.62" y1="38.1" x2="50.8" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="T6_VSS_(GND)"/>
+<pinref part="SDCARD" gate="G$1" pin="T6_VSS_(GND)"/>
 <wire x1="116.84" y1="60.96" x2="129.54" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="55.88" x2="129.54" y2="60.96" width="0.1524" layer="91"/>
 <junction x="129.54" y="55.88"/>
@@ -10151,7 +10166,7 @@ Metric Code Size 1005</description>
 </net>
 <net name="SDIO_D2" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="T1_DAT"/>
+<pinref part="SDCARD" gate="G$1" pin="T1_DAT"/>
 <label x="10.16" y="66.04" size="1.778" layer="95"/>
 <wire x1="60.96" y1="66.04" x2="27.94" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="R26" gate="G$1" pin="2"/>
@@ -10162,7 +10177,7 @@ Metric Code Size 1005</description>
 </net>
 <net name="SDIO_CMD" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="T3_CMD"/>
+<pinref part="SDCARD" gate="G$1" pin="T3_CMD"/>
 <label x="10.16" y="63.5" size="1.778" layer="95"/>
 <wire x1="10.16" y1="63.5" x2="33.02" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="R27" gate="G$1" pin="2"/>
@@ -10173,7 +10188,7 @@ Metric Code Size 1005</description>
 </net>
 <net name="SDIO_CK" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="T5_CLK"/>
+<pinref part="SDCARD" gate="G$1" pin="T5_CLK"/>
 <label x="10.16" y="60.96" size="1.778" layer="95"/>
 <wire x1="60.96" y1="60.96" x2="38.1" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="R29" gate="G$1" pin="2"/>
@@ -10184,7 +10199,7 @@ Metric Code Size 1005</description>
 </net>
 <net name="SDIO_D0" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="T7_DAT0"/>
+<pinref part="SDCARD" gate="G$1" pin="T7_DAT0"/>
 <label x="10.16" y="58.42" size="1.778" layer="95"/>
 <wire x1="10.16" y1="58.42" x2="43.18" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="R28" gate="G$1" pin="2"/>
@@ -10195,7 +10210,7 @@ Metric Code Size 1005</description>
 </net>
 <net name="SDIO_D1" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="T8_DAT1"/>
+<pinref part="SDCARD" gate="G$1" pin="T8_DAT1"/>
 <wire x1="116.84" y1="58.42" x2="137.16" y2="58.42" width="0.1524" layer="91"/>
 <label x="147.32" y="58.42" size="1.778" layer="95"/>
 <pinref part="R31" gate="G$1" pin="2"/>
@@ -10206,7 +10221,7 @@ Metric Code Size 1005</description>
 </net>
 <net name="SDIO_D3" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="T2_CD/DAT3"/>
+<pinref part="SDCARD" gate="G$1" pin="T2_CD/DAT3"/>
 <wire x1="116.84" y1="66.04" x2="132.08" y2="66.04" width="0.1524" layer="91"/>
 <label x="147.32" y="66.04" size="1.778" layer="95"/>
 <pinref part="R30" gate="G$1" pin="2"/>
@@ -10217,7 +10232,7 @@ Metric Code Size 1005</description>
 </net>
 <net name="CARD_DET" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="S/W_CARD_DETECTOR"/>
+<pinref part="SDCARD" gate="G$1" pin="S/W_CARD_DETECTOR"/>
 <wire x1="60.96" y1="45.72" x2="10.16" y2="45.72" width="0.1524" layer="91"/>
 <label x="10.16" y="45.72" size="1.778" layer="95"/>
 </segment>
@@ -10262,7 +10277,7 @@ Metric Code Size 1005</description>
 <label x="212.852" y="93.218" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="T4_VDD"/>
+<pinref part="SDCARD" gate="G$1" pin="T4_VDD"/>
 <wire x1="116.84" y1="63.5" x2="149.86" y2="63.5" width="0.1524" layer="91"/>
 <label x="147.32" y="63.5" size="1.778" layer="95"/>
 </segment>
