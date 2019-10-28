@@ -10373,20 +10373,6 @@ Metric Code Size 1005</description>
 <label x="25.4" y="134.62" size="1.9304" layer="95"/>
 </segment>
 </net>
-<net name="RESET" class="0">
-<segment>
-<pinref part="JP1" gate="A" pin="17"/>
-<wire x1="-22.86" y1="15.24" x2="-38.1" y2="15.24" width="0.1524" layer="91"/>
-<label x="-38.1" y="15.24" size="1.9304" layer="95"/>
-</segment>
-</net>
-<net name="PWDN" class="0">
-<segment>
-<pinref part="JP1" gate="A" pin="18"/>
-<wire x1="-15.24" y1="15.24" x2="0" y2="15.24" width="0.1524" layer="91"/>
-<label x="-7.62" y="15.24" size="1.9304" layer="95"/>
-</segment>
-</net>
 <net name="SDIO_D1" class="0">
 <segment>
 <pinref part="STM32F4" gate="G$6" pin="PC9"/>

@@ -9531,14 +9531,6 @@ Metric Code Size 1005</description>
 <text x="-43.18" y="40.64" size="2.54" layer="91">CAMERA_MODUL</text>
 </plain>
 <instances>
-<instance part="STM32F4" gate="G$3" x="154.94" y="101.6" smashed="yes">
-<attribute name="NAME" x="127" y="124.46" size="2.54" layer="95"/>
-<attribute name="VALUE" x="127" y="78.74" size="2.54" layer="96"/>
-</instance>
-<instance part="STM32F4" gate="G$4" x="152.4" y="55.88" smashed="yes">
-<attribute name="NAME" x="119.38" y="81.28" size="2.54" layer="95"/>
-<attribute name="VALUE" x="119.38" y="30.48" size="2.54" layer="96"/>
-</instance>
 <instance part="STM32F4" gate="G$5" x="251.46" y="101.6" smashed="yes" rot="MR0">
 <attribute name="NAME" x="261.62" y="149.86" size="2.54" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="261.62" y="53.34" size="2.54" layer="96" rot="MR0"/>

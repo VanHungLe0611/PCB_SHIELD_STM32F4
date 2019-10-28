@@ -9203,7 +9203,7 @@ Metric Code Size 1005</description>
 <sheets>
 <sheet>
 <plain>
-<text x="-38.1" y="129.54" size="2.54" layer="91">SDRAM_MODUL</text>
+<text x="-12.7" y="149.86" size="2.54" layer="91">SDRAM_MODUL</text>
 <text x="-43.18" y="40.64" size="2.54" layer="91">CAMERA_MODUL</text>
 </plain>
 <instances>
@@ -9215,9 +9215,9 @@ Metric Code Size 1005</description>
 <attribute name="NAME" x="119.38" y="152.4" size="2.54" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="119.38" y="55.88" size="2.54" layer="96" rot="MR0"/>
 </instance>
-<instance part="IC1" gate="G$1" x="-33.02" y="121.92" smashed="yes">
-<attribute name="NAME" x="-44.45" y="124.46" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="-44.45" y="127" size="1.778" layer="96" align="center-left"/>
+<instance part="IC1" gate="G$1" x="-7.62" y="142.24" smashed="yes">
+<attribute name="NAME" x="-19.05" y="144.78" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="-19.05" y="147.32" size="1.778" layer="96" align="center-left"/>
 </instance>
 <instance part="JP1" gate="A" x="-20.32" y="25.4" smashed="yes">
 <attribute name="NAME" x="-26.67" y="38.735" size="1.778" layer="95"/>
@@ -9231,16 +9231,16 @@ Metric Code Size 1005</description>
 <attribute name="NAME" x="24.13" y="26.035" size="1.778" layer="95"/>
 <attribute name="VALUE" x="24.13" y="15.24" size="1.778" layer="96"/>
 </instance>
-<instance part="C18" gate="G$1" x="-83.82" y="109.22" smashed="yes">
-<attribute name="NAME" x="-82.296" y="109.601" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-82.296" y="104.521" size="1.778" layer="96"/>
+<instance part="C18" gate="G$1" x="-58.42" y="129.54" smashed="yes">
+<attribute name="NAME" x="-56.896" y="129.921" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-56.896" y="124.841" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY2" gate="GND" x="-83.82" y="101.6" smashed="yes">
-<attribute name="VALUE" x="-85.725" y="98.425" size="1.778" layer="96"/>
+<instance part="SUPPLY2" gate="GND" x="-58.42" y="121.92" smashed="yes">
+<attribute name="VALUE" x="-60.325" y="118.745" size="1.778" layer="96"/>
 </instance>
-<instance part="R3" gate="G$1" x="-63.5" y="83.82" smashed="yes" rot="R90">
-<attribute name="NAME" x="-64.9986" y="80.01" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-60.198" y="80.01" size="1.778" layer="96" rot="R90"/>
+<instance part="R3" gate="G$1" x="-38.1" y="104.14" smashed="yes" rot="R90">
+<attribute name="NAME" x="-39.5986" y="100.33" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-34.798" y="100.33" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -9254,15 +9254,15 @@ Metric Code Size 1005</description>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="A0"/>
-<wire x1="-33.02" y1="66.04" x2="-43.18" y2="66.04" width="0.1524" layer="91"/>
-<label x="-43.18" y="66.04" size="1.778" layer="95"/>
+<wire x1="-7.62" y1="86.36" x2="-17.78" y2="86.36" width="0.1524" layer="91"/>
+<label x="-17.78" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_D0" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ0"/>
-<wire x1="-33.02" y1="119.38" x2="-45.72" y2="119.38" width="0.1524" layer="91"/>
-<label x="-45.72" y="119.38" size="1.778" layer="95"/>
+<wire x1="-7.62" y1="139.7" x2="-20.32" y2="139.7" width="0.1524" layer="91"/>
+<label x="-20.32" y="139.7" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$6" pin="PD14"/>
@@ -9273,8 +9273,8 @@ Metric Code Size 1005</description>
 <net name="FMC_D1" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ1"/>
-<wire x1="-33.02" y1="114.3" x2="-45.72" y2="114.3" width="0.1524" layer="91"/>
-<label x="-45.72" y="114.3" size="1.778" layer="95"/>
+<wire x1="-7.62" y1="134.62" x2="-20.32" y2="134.62" width="0.1524" layer="91"/>
+<label x="-20.32" y="134.62" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$6" pin="PD15"/>
@@ -9285,8 +9285,8 @@ Metric Code Size 1005</description>
 <net name="FMC_D2" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ2"/>
-<wire x1="-33.02" y1="111.76" x2="-45.72" y2="111.76" width="0.1524" layer="91"/>
-<label x="-45.72" y="111.76" size="1.778" layer="95"/>
+<wire x1="-7.62" y1="132.08" x2="-20.32" y2="132.08" width="0.1524" layer="91"/>
+<label x="-20.32" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$5" pin="PD0"/>
@@ -9297,8 +9297,8 @@ Metric Code Size 1005</description>
 <net name="FMC_D3" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ3"/>
-<wire x1="-33.02" y1="106.68" x2="-45.72" y2="106.68" width="0.1524" layer="91"/>
-<label x="-45.72" y="106.68" size="1.778" layer="95"/>
+<wire x1="-7.62" y1="127" x2="-20.32" y2="127" width="0.1524" layer="91"/>
+<label x="-20.32" y="127" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$5" pin="PD1"/>
@@ -9309,8 +9309,8 @@ Metric Code Size 1005</description>
 <net name="FMC_D4" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ4"/>
-<wire x1="-33.02" y1="104.14" x2="-45.72" y2="104.14" width="0.1524" layer="91"/>
-<label x="-45.72" y="104.14" size="1.778" layer="95"/>
+<wire x1="-7.62" y1="124.46" x2="-20.32" y2="124.46" width="0.1524" layer="91"/>
+<label x="-20.32" y="124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$6" pin="PE7"/>
@@ -9321,8 +9321,8 @@ Metric Code Size 1005</description>
 <net name="FMC_D5" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ5"/>
-<wire x1="-33.02" y1="99.06" x2="-45.72" y2="99.06" width="0.1524" layer="91"/>
-<label x="-45.72" y="99.06" size="1.778" layer="95"/>
+<wire x1="-7.62" y1="119.38" x2="-20.32" y2="119.38" width="0.1524" layer="91"/>
+<label x="-20.32" y="119.38" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$6" pin="PE8"/>
@@ -9333,8 +9333,8 @@ Metric Code Size 1005</description>
 <net name="FMC_D6" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ6"/>
-<wire x1="-33.02" y1="96.52" x2="-45.72" y2="96.52" width="0.1524" layer="91"/>
-<label x="-45.72" y="96.52" size="1.778" layer="95"/>
+<wire x1="-7.62" y1="116.84" x2="-20.32" y2="116.84" width="0.1524" layer="91"/>
+<label x="-20.32" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$6" pin="PE9"/>
@@ -9345,8 +9345,8 @@ Metric Code Size 1005</description>
 <net name="FMC_D7" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ7"/>
-<wire x1="-33.02" y1="91.44" x2="-45.72" y2="91.44" width="0.1524" layer="91"/>
-<label x="-43.18" y="91.44" size="1.778" layer="95"/>
+<wire x1="-7.62" y1="111.76" x2="-20.32" y2="111.76" width="0.1524" layer="91"/>
+<label x="-17.78" y="111.76" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$6" pin="PE10"/>
@@ -9357,8 +9357,8 @@ Metric Code Size 1005</description>
 <net name="LDQM" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="LDQM"/>
-<wire x1="-33.02" y1="86.36" x2="-45.72" y2="86.36" width="0.1524" layer="91"/>
-<label x="-43.18" y="86.36" size="1.9304" layer="95"/>
+<wire x1="-7.62" y1="106.68" x2="-20.32" y2="106.68" width="0.1524" layer="91"/>
+<label x="-17.78" y="106.68" size="1.9304" layer="95"/>
 </segment>
 <segment>
 <pinref part="JP3" gate="G$1" pin="1"/>
@@ -9369,8 +9369,8 @@ Metric Code Size 1005</description>
 <net name="FMC_SDNWE" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="WE#"/>
-<wire x1="-33.02" y1="83.82" x2="-45.72" y2="83.82" width="0.1524" layer="91"/>
-<label x="-50.8" y="83.82" size="1.778" layer="95"/>
+<wire x1="-7.62" y1="104.14" x2="-20.32" y2="104.14" width="0.1524" layer="91"/>
+<label x="-25.4" y="104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$5" pin="PC0"/>
@@ -9381,8 +9381,8 @@ Metric Code Size 1005</description>
 <net name="FMC_SDNCAS" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="CAS#"/>
-<wire x1="-33.02" y1="81.28" x2="-45.72" y2="81.28" width="0.1524" layer="91"/>
-<label x="-50.8" y="81.28" size="1.778" layer="95"/>
+<wire x1="-7.62" y1="101.6" x2="-20.32" y2="101.6" width="0.1524" layer="91"/>
+<label x="-25.4" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$5" pin="PG15"/>
@@ -9393,8 +9393,8 @@ Metric Code Size 1005</description>
 <net name="FMC_SDNRAS" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="RAS#"/>
-<wire x1="-33.02" y1="78.74" x2="-45.72" y2="78.74" width="0.1524" layer="91"/>
-<label x="-50.8" y="78.74" size="1.778" layer="95"/>
+<wire x1="-7.62" y1="99.06" x2="-20.32" y2="99.06" width="0.1524" layer="91"/>
+<label x="-25.4" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$6" pin="PF11"/>
@@ -9405,8 +9405,8 @@ Metric Code Size 1005</description>
 <net name="FMC_BA0" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="BA0"/>
-<wire x1="-33.02" y1="73.66" x2="-45.72" y2="73.66" width="0.1524" layer="91"/>
-<label x="-45.72" y="73.66" size="1.778" layer="95"/>
+<wire x1="-7.62" y1="93.98" x2="-20.32" y2="93.98" width="0.1524" layer="91"/>
+<label x="-20.32" y="93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$6" pin="PG4"/>
@@ -9417,8 +9417,8 @@ Metric Code Size 1005</description>
 <net name="FMC_BA1" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="BA1"/>
-<wire x1="-33.02" y1="71.12" x2="-45.72" y2="71.12" width="0.1524" layer="91"/>
-<label x="-45.72" y="71.12" size="1.778" layer="95"/>
+<wire x1="-7.62" y1="91.44" x2="-20.32" y2="91.44" width="0.1524" layer="91"/>
+<label x="-20.32" y="91.44" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$6" pin="PG5"/>
@@ -9429,8 +9429,8 @@ Metric Code Size 1005</description>
 <net name="FMC_A10" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="A10/AP"/>
-<wire x1="-33.02" y1="68.58" x2="-45.72" y2="68.58" width="0.1524" layer="91"/>
-<label x="-45.72" y="68.58" size="1.778" layer="95"/>
+<wire x1="-7.62" y1="88.9" x2="-20.32" y2="88.9" width="0.1524" layer="91"/>
+<label x="-20.32" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$5" pin="PG0"/>
@@ -9441,8 +9441,8 @@ Metric Code Size 1005</description>
 <net name="FMC_A1" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="A1"/>
-<wire x1="-33.02" y1="63.5" x2="-45.72" y2="63.5" width="0.1524" layer="91"/>
-<label x="-43.18" y="63.5" size="1.778" layer="95"/>
+<wire x1="-7.62" y1="83.82" x2="-20.32" y2="83.82" width="0.1524" layer="91"/>
+<label x="-17.78" y="83.82" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$5" pin="PF1"/>
@@ -9453,8 +9453,8 @@ Metric Code Size 1005</description>
 <net name="FMC_A2" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="A2"/>
-<wire x1="-33.02" y1="60.96" x2="-45.72" y2="60.96" width="0.1524" layer="91"/>
-<label x="-43.18" y="60.96" size="1.778" layer="95"/>
+<wire x1="-7.62" y1="81.28" x2="-20.32" y2="81.28" width="0.1524" layer="91"/>
+<label x="-17.78" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$5" pin="PF2"/>
@@ -9465,8 +9465,8 @@ Metric Code Size 1005</description>
 <net name="FMC_A3" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="A3"/>
-<wire x1="-33.02" y1="58.42" x2="-45.72" y2="58.42" width="0.1524" layer="91"/>
-<label x="-43.18" y="58.42" size="1.778" layer="95"/>
+<wire x1="-7.62" y1="78.74" x2="-20.32" y2="78.74" width="0.1524" layer="91"/>
+<label x="-17.78" y="78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$6" pin="PF3"/>
@@ -9477,8 +9477,8 @@ Metric Code Size 1005</description>
 <net name="FMC_D15" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ15"/>
-<wire x1="0" y1="119.38" x2="12.7" y2="119.38" width="0.1524" layer="91"/>
-<label x="2.54" y="119.38" size="1.778" layer="95"/>
+<wire x1="25.4" y1="139.7" x2="38.1" y2="139.7" width="0.1524" layer="91"/>
+<label x="27.94" y="139.7" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$6" pin="PD10"/>
@@ -9489,8 +9489,8 @@ Metric Code Size 1005</description>
 <net name="FMC_D14" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ14"/>
-<wire x1="0" y1="114.3" x2="12.7" y2="114.3" width="0.1524" layer="91"/>
-<label x="2.54" y="114.3" size="1.778" layer="95"/>
+<wire x1="25.4" y1="134.62" x2="38.1" y2="134.62" width="0.1524" layer="91"/>
+<label x="27.94" y="134.62" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$5" pin="PD9"/>
@@ -9501,8 +9501,8 @@ Metric Code Size 1005</description>
 <net name="FMC_D13" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ13"/>
-<wire x1="0" y1="111.76" x2="12.7" y2="111.76" width="0.1524" layer="91"/>
-<label x="2.54" y="111.76" size="1.778" layer="95"/>
+<wire x1="25.4" y1="132.08" x2="38.1" y2="132.08" width="0.1524" layer="91"/>
+<label x="27.94" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$6" pin="PD8"/>
@@ -9513,8 +9513,8 @@ Metric Code Size 1005</description>
 <net name="FMC_D12" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ12"/>
-<wire x1="0" y1="106.68" x2="12.7" y2="106.68" width="0.1524" layer="91"/>
-<label x="2.54" y="106.68" size="1.778" layer="95"/>
+<wire x1="25.4" y1="127" x2="38.1" y2="127" width="0.1524" layer="91"/>
+<label x="27.94" y="127" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$6" pin="PE15"/>
@@ -9525,8 +9525,8 @@ Metric Code Size 1005</description>
 <net name="FMC_D11" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ11"/>
-<wire x1="0" y1="104.14" x2="12.7" y2="104.14" width="0.1524" layer="91"/>
-<label x="2.54" y="104.14" size="1.778" layer="95"/>
+<wire x1="25.4" y1="124.46" x2="38.1" y2="124.46" width="0.1524" layer="91"/>
+<label x="27.94" y="124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$6" pin="PE14"/>
@@ -9537,8 +9537,8 @@ Metric Code Size 1005</description>
 <net name="FMC_D10" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ10"/>
-<wire x1="0" y1="99.06" x2="12.7" y2="99.06" width="0.1524" layer="91"/>
-<label x="2.54" y="99.06" size="1.778" layer="95"/>
+<wire x1="25.4" y1="119.38" x2="38.1" y2="119.38" width="0.1524" layer="91"/>
+<label x="27.94" y="119.38" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$6" pin="PE13"/>
@@ -9549,8 +9549,8 @@ Metric Code Size 1005</description>
 <net name="FMC_D9" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ9"/>
-<wire x1="0" y1="96.52" x2="12.7" y2="96.52" width="0.1524" layer="91"/>
-<label x="2.54" y="96.52" size="1.778" layer="95"/>
+<wire x1="25.4" y1="116.84" x2="38.1" y2="116.84" width="0.1524" layer="91"/>
+<label x="27.94" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$6" pin="PE12"/>
@@ -9561,8 +9561,8 @@ Metric Code Size 1005</description>
 <net name="FMC_D8" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DQ8"/>
-<wire x1="0" y1="91.44" x2="12.7" y2="91.44" width="0.1524" layer="91"/>
-<label x="2.54" y="91.44" size="1.778" layer="95"/>
+<wire x1="25.4" y1="111.76" x2="38.1" y2="111.76" width="0.1524" layer="91"/>
+<label x="27.94" y="111.76" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$6" pin="PE11"/>
@@ -9573,8 +9573,8 @@ Metric Code Size 1005</description>
 <net name="UDQM" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="UDQM"/>
-<wire x1="0" y1="83.82" x2="15.24" y2="83.82" width="0.1524" layer="91"/>
-<label x="2.54" y="83.82" size="1.9304" layer="95"/>
+<wire x1="25.4" y1="104.14" x2="40.64" y2="104.14" width="0.1524" layer="91"/>
+<label x="27.94" y="104.14" size="1.9304" layer="95"/>
 </segment>
 <segment>
 <pinref part="JP3" gate="G$1" pin="2"/>
@@ -9585,8 +9585,8 @@ Metric Code Size 1005</description>
 <net name="FMC_SDCLK" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="CLK"/>
-<wire x1="0" y1="81.28" x2="12.7" y2="81.28" width="0.1524" layer="91"/>
-<label x="0" y="81.28" size="1.778" layer="95"/>
+<wire x1="25.4" y1="101.6" x2="38.1" y2="101.6" width="0.1524" layer="91"/>
+<label x="25.4" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$6" pin="PG8"/>
@@ -9597,8 +9597,8 @@ Metric Code Size 1005</description>
 <net name="FMC_SDCKE0" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="CKE"/>
-<wire x1="0" y1="78.74" x2="12.7" y2="78.74" width="0.1524" layer="91"/>
-<label x="0" y="78.74" size="1.778" layer="95"/>
+<wire x1="25.4" y1="99.06" x2="38.1" y2="99.06" width="0.1524" layer="91"/>
+<label x="25.4" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$5" pin="PC3"/>
@@ -9609,8 +9609,8 @@ Metric Code Size 1005</description>
 <net name="FMC_A12" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="A12"/>
-<wire x1="0" y1="76.2" x2="12.7" y2="76.2" width="0.1524" layer="91"/>
-<label x="0" y="76.2" size="1.778" layer="95"/>
+<wire x1="25.4" y1="96.52" x2="38.1" y2="96.52" width="0.1524" layer="91"/>
+<label x="25.4" y="96.52" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$5" pin="PG2"/>
@@ -9621,8 +9621,8 @@ Metric Code Size 1005</description>
 <net name="FMC_A11" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="A11"/>
-<wire x1="0" y1="73.66" x2="12.7" y2="73.66" width="0.1524" layer="91"/>
-<label x="0" y="73.66" size="1.778" layer="95"/>
+<wire x1="25.4" y1="93.98" x2="38.1" y2="93.98" width="0.1524" layer="91"/>
+<label x="25.4" y="93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$5" pin="PG1"/>
@@ -9633,8 +9633,8 @@ Metric Code Size 1005</description>
 <net name="FMC_A9" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="A9"/>
-<wire x1="0" y1="71.12" x2="12.7" y2="71.12" width="0.1524" layer="91"/>
-<label x="0" y="71.12" size="1.778" layer="95"/>
+<wire x1="25.4" y1="91.44" x2="38.1" y2="91.44" width="0.1524" layer="91"/>
+<label x="25.4" y="91.44" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$6" pin="PF15"/>
@@ -9645,8 +9645,8 @@ Metric Code Size 1005</description>
 <net name="FMC_A8" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="A8"/>
-<wire x1="0" y1="68.58" x2="12.7" y2="68.58" width="0.1524" layer="91"/>
-<label x="0" y="68.58" size="1.778" layer="95"/>
+<wire x1="25.4" y1="88.9" x2="38.1" y2="88.9" width="0.1524" layer="91"/>
+<label x="25.4" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$6" pin="PF14"/>
@@ -9657,8 +9657,8 @@ Metric Code Size 1005</description>
 <net name="FMC_A7" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="A7"/>
-<wire x1="0" y1="66.04" x2="12.7" y2="66.04" width="0.1524" layer="91"/>
-<label x="0" y="66.04" size="1.778" layer="95"/>
+<wire x1="25.4" y1="86.36" x2="38.1" y2="86.36" width="0.1524" layer="91"/>
+<label x="25.4" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$6" pin="PF13"/>
@@ -9669,8 +9669,8 @@ Metric Code Size 1005</description>
 <net name="FMC_A6" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="A6"/>
-<wire x1="0" y1="63.5" x2="12.7" y2="63.5" width="0.1524" layer="91"/>
-<label x="0" y="63.5" size="1.778" layer="95"/>
+<wire x1="25.4" y1="83.82" x2="38.1" y2="83.82" width="0.1524" layer="91"/>
+<label x="25.4" y="83.82" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$6" pin="PF12"/>
@@ -9681,8 +9681,8 @@ Metric Code Size 1005</description>
 <net name="FMC_A5" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="A5"/>
-<wire x1="0" y1="60.96" x2="12.7" y2="60.96" width="0.1524" layer="91"/>
-<label x="0" y="60.96" size="1.778" layer="95"/>
+<wire x1="25.4" y1="81.28" x2="38.1" y2="81.28" width="0.1524" layer="91"/>
+<label x="25.4" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$6" pin="PF5"/>
@@ -9693,8 +9693,8 @@ Metric Code Size 1005</description>
 <net name="FMC_A4" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="A4"/>
-<wire x1="0" y1="58.42" x2="12.7" y2="58.42" width="0.1524" layer="91"/>
-<label x="0" y="58.42" size="1.778" layer="95"/>
+<wire x1="25.4" y1="78.74" x2="38.1" y2="78.74" width="0.1524" layer="91"/>
+<label x="25.4" y="78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$6" pin="PF4"/>
@@ -9736,49 +9736,49 @@ Metric Code Size 1005</description>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="VDD_2"/>
-<wire x1="-33.02" y1="88.9" x2="-53.34" y2="88.9" width="0.1524" layer="91"/>
-<label x="-43.18" y="88.9" size="1.9304" layer="95"/>
+<wire x1="-7.62" y1="109.22" x2="-27.94" y2="109.22" width="0.1524" layer="91"/>
+<label x="-17.78" y="109.22" size="1.9304" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="VDDQ_2"/>
-<wire x1="-33.02" y1="101.6" x2="-53.34" y2="101.6" width="0.1524" layer="91"/>
-<label x="-45.72" y="101.6" size="1.9304" layer="95"/>
+<wire x1="-7.62" y1="121.92" x2="-27.94" y2="121.92" width="0.1524" layer="91"/>
+<label x="-20.32" y="121.92" size="1.9304" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="VDD_1"/>
-<wire x1="-33.02" y1="121.92" x2="-53.34" y2="121.92" width="0.1524" layer="91"/>
-<label x="-43.18" y="121.92" size="1.9304" layer="95"/>
-<wire x1="-53.34" y1="121.92" x2="-53.34" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="142.24" x2="-27.94" y2="142.24" width="0.1524" layer="91"/>
+<label x="-17.78" y="142.24" size="1.9304" layer="95"/>
+<wire x1="-27.94" y1="142.24" x2="-27.94" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="VDDQ_1"/>
-<wire x1="-33.02" y1="116.84" x2="-53.34" y2="116.84" width="0.1524" layer="91"/>
-<label x="-43.18" y="116.84" size="1.9304" layer="95"/>
-<wire x1="-53.34" y1="101.6" x2="-53.34" y2="116.84" width="0.1524" layer="91"/>
-<junction x="-53.34" y="116.84"/>
-<wire x1="-53.34" y1="88.9" x2="-53.34" y2="101.6" width="0.1524" layer="91"/>
-<junction x="-53.34" y="101.6"/>
-<wire x1="-83.82" y1="129.54" x2="-83.82" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="-83.82" y1="129.54" x2="-73.66" y2="129.54" width="0.1524" layer="91"/>
-<label x="-81.28" y="129.54" size="1.9304" layer="95"/>
-<wire x1="-53.34" y1="116.84" x2="-83.82" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="137.16" x2="-27.94" y2="137.16" width="0.1524" layer="91"/>
+<label x="-17.78" y="137.16" size="1.9304" layer="95"/>
+<wire x1="-27.94" y1="121.92" x2="-27.94" y2="137.16" width="0.1524" layer="91"/>
+<junction x="-27.94" y="137.16"/>
+<wire x1="-27.94" y1="109.22" x2="-27.94" y2="121.92" width="0.1524" layer="91"/>
+<junction x="-27.94" y="121.92"/>
+<wire x1="-58.42" y1="149.86" x2="-58.42" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="-58.42" y1="149.86" x2="-48.26" y2="149.86" width="0.1524" layer="91"/>
+<label x="-55.88" y="149.86" size="1.9304" layer="95"/>
+<wire x1="-27.94" y1="137.16" x2="-58.42" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="C18" gate="G$1" pin="1"/>
-<wire x1="-83.82" y1="116.84" x2="-83.82" y2="111.76" width="0.1524" layer="91"/>
-<junction x="-83.82" y="116.84"/>
+<wire x1="-58.42" y1="137.16" x2="-58.42" y2="132.08" width="0.1524" layer="91"/>
+<junction x="-58.42" y="137.16"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="VDDQ_4"/>
-<wire x1="0" y1="109.22" x2="12.7" y2="109.22" width="0.1524" layer="91"/>
-<label x="2.54" y="109.22" size="1.9304" layer="95"/>
+<wire x1="25.4" y1="129.54" x2="38.1" y2="129.54" width="0.1524" layer="91"/>
+<label x="27.94" y="129.54" size="1.9304" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="VDDQ_3"/>
-<wire x1="0" y1="93.98" x2="12.7" y2="93.98" width="0.1524" layer="91"/>
-<label x="2.54" y="93.98" size="1.9304" layer="95"/>
+<wire x1="25.4" y1="114.3" x2="38.1" y2="114.3" width="0.1524" layer="91"/>
+<label x="27.94" y="114.3" size="1.9304" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="VDD_3"/>
-<wire x1="-33.02" y1="55.88" x2="-45.72" y2="55.88" width="0.1524" layer="91"/>
-<label x="-43.18" y="55.88" size="1.9304" layer="95"/>
+<wire x1="-7.62" y1="76.2" x2="-20.32" y2="76.2" width="0.1524" layer="91"/>
+<label x="-17.78" y="76.2" size="1.9304" layer="95"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="-63.5" y1="88.9" x2="-63.5" y2="93.98" width="0.1524" layer="91"/>
-<label x="-63.5" y="93.98" size="1.778" layer="95"/>
+<wire x1="-38.1" y1="109.22" x2="-38.1" y2="114.3" width="0.1524" layer="91"/>
+<label x="-38.1" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_SDNE0" class="0">
@@ -9790,11 +9790,11 @@ Metric Code Size 1005</description>
 <segment>
 <pinref part="IC1" gate="G$1" pin="CS#"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="-63.5" y1="78.74" x2="-63.5" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="-63.5" y1="76.2" x2="-33.02" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="-78.74" y1="76.2" x2="-63.5" y2="76.2" width="0.1524" layer="91"/>
-<junction x="-63.5" y="76.2"/>
-<label x="-78.74" y="76.2" size="1.778" layer="95"/>
+<wire x1="-38.1" y1="99.06" x2="-38.1" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="96.52" x2="-7.62" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="96.52" x2="-38.1" y2="96.52" width="0.1524" layer="91"/>
+<junction x="-38.1" y="96.52"/>
+<label x="-53.34" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3.3" class="0">
@@ -9821,38 +9821,38 @@ Metric Code Size 1005</description>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="VSSQ_1"/>
-<wire x1="-33.02" y1="109.22" x2="-45.72" y2="109.22" width="0.1524" layer="91"/>
-<label x="-45.72" y="109.22" size="1.9304" layer="95"/>
+<wire x1="-7.62" y1="129.54" x2="-20.32" y2="129.54" width="0.1524" layer="91"/>
+<label x="-20.32" y="129.54" size="1.9304" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="VSSQ_2"/>
-<wire x1="-33.02" y1="93.98" x2="-45.72" y2="93.98" width="0.1524" layer="91"/>
-<label x="-45.72" y="93.98" size="1.9304" layer="95"/>
+<wire x1="-7.62" y1="114.3" x2="-20.32" y2="114.3" width="0.1524" layer="91"/>
+<label x="-20.32" y="114.3" size="1.9304" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="VSS_1"/>
-<wire x1="0" y1="55.88" x2="12.7" y2="55.88" width="0.1524" layer="91"/>
-<label x="0" y="55.88" size="1.9304" layer="95"/>
+<wire x1="25.4" y1="76.2" x2="38.1" y2="76.2" width="0.1524" layer="91"/>
+<label x="25.4" y="76.2" size="1.9304" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="VSS_2"/>
-<wire x1="0" y1="88.9" x2="12.7" y2="88.9" width="0.1524" layer="91"/>
-<label x="2.54" y="88.9" size="1.9304" layer="95"/>
+<wire x1="25.4" y1="109.22" x2="38.1" y2="109.22" width="0.1524" layer="91"/>
+<label x="27.94" y="109.22" size="1.9304" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="VSS_3"/>
-<wire x1="0" y1="121.92" x2="12.7" y2="121.92" width="0.1524" layer="91"/>
-<label x="2.54" y="121.92" size="1.9304" layer="95"/>
+<wire x1="25.4" y1="142.24" x2="38.1" y2="142.24" width="0.1524" layer="91"/>
+<label x="27.94" y="142.24" size="1.9304" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="VSSQ_4"/>
-<wire x1="0" y1="116.84" x2="12.7" y2="116.84" width="0.1524" layer="91"/>
-<label x="2.54" y="116.84" size="1.9304" layer="95"/>
+<wire x1="25.4" y1="137.16" x2="38.1" y2="137.16" width="0.1524" layer="91"/>
+<label x="27.94" y="137.16" size="1.9304" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="VSSQ_3"/>
-<wire x1="0" y1="101.6" x2="12.7" y2="101.6" width="0.1524" layer="91"/>
-<label x="2.54" y="101.6" size="1.9304" layer="95"/>
+<wire x1="25.4" y1="121.92" x2="38.1" y2="121.92" width="0.1524" layer="91"/>
+<label x="27.94" y="121.92" size="1.9304" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32F4" gate="G$5" pin="GND_CN11"/>
