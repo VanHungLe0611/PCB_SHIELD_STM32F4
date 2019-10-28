@@ -9183,13 +9183,13 @@ Metric Code Size 1005</description>
 <parts>
 <part name="STM32F4" library="NUCLEO-F429ZI" deviceset="NUCLEO-F429ZI" device=""/>
 <part name="IC1" library="sdram" deviceset="AS4C16M16SA-6TCN" device=""/>
-<part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X9" device="" package3d_urn="urn:adsk.eagle:package:22484/2"/>
+<part name="CAMERA" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X9" device="" package3d_urn="urn:adsk.eagle:package:22484/2"/>
 <part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="C18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="0.1uF"/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="J1" library="SamacSys_Parts" deviceset="104239-1430" device=""/>
+<part name="SDCARD" library="SamacSys_Parts" deviceset="104239-1430" device=""/>
 <part name="R26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="100k"/>
 <part name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="100k"/>
 <part name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="100k"/>
@@ -9219,7 +9219,7 @@ Metric Code Size 1005</description>
 <attribute name="NAME" x="-19.05" y="144.78" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="-19.05" y="147.32" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="JP1" gate="A" x="-20.32" y="25.4" smashed="yes">
+<instance part="CAMERA" gate="A" x="-20.32" y="25.4" smashed="yes">
 <attribute name="NAME" x="-26.67" y="38.735" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-26.67" y="10.16" size="1.778" layer="96"/>
 </instance>
@@ -9799,7 +9799,7 @@ Metric Code Size 1005</description>
 </net>
 <net name="3.3" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="1"/>
+<pinref part="CAMERA" gate="A" pin="1"/>
 <wire x1="-22.86" y1="35.56" x2="-38.1" y2="35.56" width="0.1524" layer="91"/>
 <label x="-35.56" y="35.56" size="1.9304" layer="95"/>
 </segment>
@@ -9811,7 +9811,7 @@ Metric Code Size 1005</description>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="2"/>
+<pinref part="CAMERA" gate="A" pin="2"/>
 <wire x1="-15.24" y1="35.56" x2="0" y2="35.56" width="0.1524" layer="91"/>
 <label x="-7.62" y="35.56" size="1.9304" layer="95"/>
 </segment>
@@ -9867,7 +9867,7 @@ Metric Code Size 1005</description>
 </net>
 <net name="I2C1_SCL" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="3"/>
+<pinref part="CAMERA" gate="A" pin="3"/>
 <wire x1="-22.86" y1="33.02" x2="-38.1" y2="33.02" width="0.1524" layer="91"/>
 <label x="-40.64" y="33.02" size="1.9304" layer="95"/>
 </segment>
@@ -9879,7 +9879,7 @@ Metric Code Size 1005</description>
 </net>
 <net name="I2C1_SDA" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="4"/>
+<pinref part="CAMERA" gate="A" pin="4"/>
 <wire x1="-15.24" y1="33.02" x2="0" y2="33.02" width="0.1524" layer="91"/>
 <label x="-7.62" y="33.02" size="1.9304" layer="95"/>
 </segment>
@@ -9891,7 +9891,7 @@ Metric Code Size 1005</description>
 </net>
 <net name="DCMI_VSYNC" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="5"/>
+<pinref part="CAMERA" gate="A" pin="5"/>
 <wire x1="-22.86" y1="30.48" x2="-38.1" y2="30.48" width="0.1524" layer="91"/>
 <label x="-45.72" y="30.48" size="1.9304" layer="95"/>
 </segment>
@@ -9903,7 +9903,7 @@ Metric Code Size 1005</description>
 </net>
 <net name="DCMI_HSYNC" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="6"/>
+<pinref part="CAMERA" gate="A" pin="6"/>
 <wire x1="-15.24" y1="30.48" x2="0" y2="30.48" width="0.1524" layer="91"/>
 <label x="-7.62" y="30.48" size="1.9304" layer="95"/>
 </segment>
@@ -9915,7 +9915,7 @@ Metric Code Size 1005</description>
 </net>
 <net name="DCMI_PIXCK" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="7"/>
+<pinref part="CAMERA" gate="A" pin="7"/>
 <wire x1="-22.86" y1="27.94" x2="-38.1" y2="27.94" width="0.1524" layer="91"/>
 <label x="-45.72" y="27.94" size="1.9304" layer="95"/>
 </segment>
@@ -9927,7 +9927,7 @@ Metric Code Size 1005</description>
 </net>
 <net name="RCC_MCO_1" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="8"/>
+<pinref part="CAMERA" gate="A" pin="8"/>
 <wire x1="-15.24" y1="27.94" x2="0" y2="27.94" width="0.1524" layer="91"/>
 <label x="-7.62" y="27.94" size="1.9304" layer="95"/>
 </segment>
@@ -9939,7 +9939,7 @@ Metric Code Size 1005</description>
 </net>
 <net name="DCMI_D7" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="9"/>
+<pinref part="CAMERA" gate="A" pin="9"/>
 <wire x1="-22.86" y1="25.4" x2="-38.1" y2="25.4" width="0.1524" layer="91"/>
 <label x="-40.64" y="25.4" size="1.9304" layer="95"/>
 </segment>
@@ -9951,7 +9951,7 @@ Metric Code Size 1005</description>
 </net>
 <net name="DCMI_D6" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="10"/>
+<pinref part="CAMERA" gate="A" pin="10"/>
 <wire x1="-15.24" y1="25.4" x2="0" y2="25.4" width="0.1524" layer="91"/>
 <label x="-7.62" y="25.4" size="1.9304" layer="95"/>
 </segment>
@@ -9963,7 +9963,7 @@ Metric Code Size 1005</description>
 </net>
 <net name="DCMI_D5" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="11"/>
+<pinref part="CAMERA" gate="A" pin="11"/>
 <wire x1="-22.86" y1="22.86" x2="-38.1" y2="22.86" width="0.1524" layer="91"/>
 <label x="-40.64" y="22.86" size="1.9304" layer="95"/>
 </segment>
@@ -9975,7 +9975,7 @@ Metric Code Size 1005</description>
 </net>
 <net name="DCMI_D4" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="12"/>
+<pinref part="CAMERA" gate="A" pin="12"/>
 <wire x1="-15.24" y1="22.86" x2="0" y2="22.86" width="0.1524" layer="91"/>
 <label x="-7.62" y="22.86" size="1.9304" layer="95"/>
 </segment>
@@ -9987,7 +9987,7 @@ Metric Code Size 1005</description>
 </net>
 <net name="DCMI_D3" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="13"/>
+<pinref part="CAMERA" gate="A" pin="13"/>
 <wire x1="-22.86" y1="20.32" x2="-38.1" y2="20.32" width="0.1524" layer="91"/>
 <label x="-40.64" y="20.32" size="1.9304" layer="95"/>
 </segment>
@@ -9999,7 +9999,7 @@ Metric Code Size 1005</description>
 </net>
 <net name="DCMI_D2" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="14"/>
+<pinref part="CAMERA" gate="A" pin="14"/>
 <wire x1="-15.24" y1="20.32" x2="0" y2="20.32" width="0.1524" layer="91"/>
 <label x="-7.62" y="20.32" size="1.9304" layer="95"/>
 </segment>
@@ -10011,7 +10011,7 @@ Metric Code Size 1005</description>
 </net>
 <net name="DCMI_D1" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="15"/>
+<pinref part="CAMERA" gate="A" pin="15"/>
 <wire x1="-22.86" y1="17.78" x2="-38.1" y2="17.78" width="0.1524" layer="91"/>
 <label x="-40.64" y="17.78" size="1.9304" layer="95"/>
 </segment>
@@ -10023,7 +10023,7 @@ Metric Code Size 1005</description>
 </net>
 <net name="DCMI_D0" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="16"/>
+<pinref part="CAMERA" gate="A" pin="16"/>
 <wire x1="-15.24" y1="17.78" x2="0" y2="17.78" width="0.1524" layer="91"/>
 <label x="-7.62" y="17.78" size="1.9304" layer="95"/>
 </segment>
@@ -10066,7 +10066,7 @@ Metric Code Size 1005</description>
 <instance part="GND7" gate="1" x="7.62" y="30.48" smashed="yes">
 <attribute name="VALUE" x="5.08" y="27.94" size="1.778" layer="96"/>
 </instance>
-<instance part="J1" gate="G$1" x="60.96" y="73.66" smashed="yes">
+<instance part="SDCARD" gate="G$1" x="60.96" y="73.66" smashed="yes">
 <attribute name="NAME" x="64.77" y="81.28" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="64.77" y="78.74" size="1.778" layer="96" align="center-left"/>
 </instance>
@@ -10110,21 +10110,21 @@ Metric Code Size 1005</description>
 <segment>
 <wire x1="7.62" y1="38.1" x2="7.62" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<pinref part="J1" gate="G$1" pin="G2_GND"/>
+<pinref part="SDCARD" gate="G$1" pin="G2_GND"/>
 <wire x1="116.84" y1="55.88" x2="129.54" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="55.88" x2="129.54" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="G8_GND"/>
+<pinref part="SDCARD" gate="G$1" pin="G8_GND"/>
 <wire x1="129.54" y1="53.34" x2="129.54" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="50.8" x2="129.54" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="48.26" x2="116.84" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="G6_GND"/>
+<pinref part="SDCARD" gate="G$1" pin="G6_GND"/>
 <wire x1="116.84" y1="50.8" x2="129.54" y2="50.8" width="0.1524" layer="91"/>
 <junction x="129.54" y="50.8"/>
-<pinref part="J1" gate="G$1" pin="G4_GND"/>
+<pinref part="SDCARD" gate="G$1" pin="G4_GND"/>
 <wire x1="116.84" y1="53.34" x2="129.54" y2="53.34" width="0.1524" layer="91"/>
 <junction x="129.54" y="53.34"/>
 <junction x="129.54" y="48.26"/>
-<pinref part="J1" gate="G$1" pin="G1_GND"/>
+<pinref part="SDCARD" gate="G$1" pin="G1_GND"/>
 <wire x1="60.96" y1="55.88" x2="50.8" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="55.88" x2="50.8" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="53.34" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
@@ -10132,18 +10132,18 @@ Metric Code Size 1005</description>
 <wire x1="50.8" y1="48.26" x2="50.8" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="38.1" x2="129.54" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="38.1" x2="129.54" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="G3_GND"/>
+<pinref part="SDCARD" gate="G$1" pin="G3_GND"/>
 <wire x1="60.96" y1="53.34" x2="50.8" y2="53.34" width="0.1524" layer="91"/>
 <junction x="50.8" y="53.34"/>
-<pinref part="J1" gate="G$1" pin="G5_GND"/>
+<pinref part="SDCARD" gate="G$1" pin="G5_GND"/>
 <wire x1="60.96" y1="50.8" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
 <junction x="50.8" y="50.8"/>
-<pinref part="J1" gate="G$1" pin="G7_GND"/>
+<pinref part="SDCARD" gate="G$1" pin="G7_GND"/>
 <wire x1="60.96" y1="48.26" x2="50.8" y2="48.26" width="0.1524" layer="91"/>
 <junction x="50.8" y="48.26"/>
 <junction x="50.8" y="38.1"/>
 <wire x1="7.62" y1="38.1" x2="50.8" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="T6_VSS_(GND)"/>
+<pinref part="SDCARD" gate="G$1" pin="T6_VSS_(GND)"/>
 <wire x1="116.84" y1="60.96" x2="129.54" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="55.88" x2="129.54" y2="60.96" width="0.1524" layer="91"/>
 <junction x="129.54" y="55.88"/>
@@ -10151,7 +10151,7 @@ Metric Code Size 1005</description>
 </net>
 <net name="SDIO_D2" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="T1_DAT"/>
+<pinref part="SDCARD" gate="G$1" pin="T1_DAT"/>
 <label x="10.16" y="66.04" size="1.778" layer="95"/>
 <wire x1="60.96" y1="66.04" x2="27.94" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="R26" gate="G$1" pin="2"/>
@@ -10162,7 +10162,7 @@ Metric Code Size 1005</description>
 </net>
 <net name="SDIO_CMD" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="T3_CMD"/>
+<pinref part="SDCARD" gate="G$1" pin="T3_CMD"/>
 <label x="10.16" y="63.5" size="1.778" layer="95"/>
 <wire x1="10.16" y1="63.5" x2="33.02" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="R27" gate="G$1" pin="2"/>
@@ -10173,7 +10173,7 @@ Metric Code Size 1005</description>
 </net>
 <net name="SDIO_CK" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="T5_CLK"/>
+<pinref part="SDCARD" gate="G$1" pin="T5_CLK"/>
 <label x="10.16" y="60.96" size="1.778" layer="95"/>
 <wire x1="60.96" y1="60.96" x2="38.1" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="R29" gate="G$1" pin="2"/>
@@ -10184,7 +10184,7 @@ Metric Code Size 1005</description>
 </net>
 <net name="SDIO_D0" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="T7_DAT0"/>
+<pinref part="SDCARD" gate="G$1" pin="T7_DAT0"/>
 <label x="10.16" y="58.42" size="1.778" layer="95"/>
 <wire x1="10.16" y1="58.42" x2="43.18" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="R28" gate="G$1" pin="2"/>
@@ -10195,7 +10195,7 @@ Metric Code Size 1005</description>
 </net>
 <net name="SDIO_D1" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="T8_DAT1"/>
+<pinref part="SDCARD" gate="G$1" pin="T8_DAT1"/>
 <wire x1="116.84" y1="58.42" x2="137.16" y2="58.42" width="0.1524" layer="91"/>
 <label x="147.32" y="58.42" size="1.778" layer="95"/>
 <pinref part="R31" gate="G$1" pin="2"/>
@@ -10206,7 +10206,7 @@ Metric Code Size 1005</description>
 </net>
 <net name="SDIO_D3" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="T2_CD/DAT3"/>
+<pinref part="SDCARD" gate="G$1" pin="T2_CD/DAT3"/>
 <wire x1="116.84" y1="66.04" x2="132.08" y2="66.04" width="0.1524" layer="91"/>
 <label x="147.32" y="66.04" size="1.778" layer="95"/>
 <pinref part="R30" gate="G$1" pin="2"/>
@@ -10217,7 +10217,7 @@ Metric Code Size 1005</description>
 </net>
 <net name="CARD_DET" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="S/W_CARD_DETECTOR"/>
+<pinref part="SDCARD" gate="G$1" pin="S/W_CARD_DETECTOR"/>
 <wire x1="60.96" y1="45.72" x2="10.16" y2="45.72" width="0.1524" layer="91"/>
 <label x="10.16" y="45.72" size="1.778" layer="95"/>
 </segment>
@@ -10262,7 +10262,7 @@ Metric Code Size 1005</description>
 <label x="212.852" y="93.218" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="T4_VDD"/>
+<pinref part="SDCARD" gate="G$1" pin="T4_VDD"/>
 <wire x1="116.84" y1="63.5" x2="149.86" y2="63.5" width="0.1524" layer="91"/>
 <label x="147.32" y="63.5" size="1.778" layer="95"/>
 </segment>
