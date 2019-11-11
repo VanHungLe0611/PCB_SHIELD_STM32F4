@@ -9105,6 +9105,32 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="-5" y1="0" x2="5" y2="0" width="0.1" layer="21"/>
 <wire x1="-5" y1="17.9" x2="5" y2="17.9" width="0.1" layer="21"/>
 </package>
+<package name="SSM3J332RLFT">
+<description>&lt;b&gt;SOT23-F (2-3Z1A)&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-0.95" y="-1.05" dx="0.9" dy="0.8" layer="1" rot="R90"/>
+<smd name="2" x="0.95" y="-1.05" dx="0.9" dy="0.8" layer="1" rot="R90"/>
+<smd name="3" x="0" y="1.05" dx="0.9" dy="0.8" layer="1" rot="R90"/>
+<text x="0" y="-0.25" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-0.25" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-1.45" y1="0.9" x2="1.45" y2="0.9" width="0.2" layer="51"/>
+<wire x1="1.45" y1="0.9" x2="1.45" y2="-0.9" width="0.2" layer="51"/>
+<wire x1="1.45" y1="-0.9" x2="-1.45" y2="-0.9" width="0.2" layer="51"/>
+<wire x1="-1.45" y1="-0.9" x2="-1.45" y2="0.9" width="0.2" layer="51"/>
+<wire x1="-1.95" y1="2" x2="1.95" y2="2" width="0.1" layer="51"/>
+<wire x1="1.95" y1="2" x2="1.95" y2="-2.5" width="0.1" layer="51"/>
+<wire x1="1.95" y1="-2.5" x2="-1.95" y2="-2.5" width="0.1" layer="51"/>
+<wire x1="-1.95" y1="-2.5" x2="-1.95" y2="2" width="0.1" layer="51"/>
+<wire x1="-1" y1="0.9" x2="-1.45" y2="0.9" width="0.1" layer="21"/>
+<wire x1="-1.45" y1="0.9" x2="-1.45" y2="-0.5" width="0.1" layer="21"/>
+<wire x1="1" y1="0.9" x2="1.45" y2="0.9" width="0.1" layer="21"/>
+<wire x1="1.45" y1="0.9" x2="1.45" y2="-0.5" width="0.1" layer="21"/>
+<wire x1="-0.4" y1="-0.9" x2="0.4" y2="-0.9" width="0.1" layer="21"/>
+<wire x1="-1.1" y1="-1.9" x2="-1.1" y2="-1.9" width="0.2" layer="21"/>
+<wire x1="-1.1" y1="-1.9" x2="-0.9" y2="-1.9" width="0.2" layer="21" curve="-180"/>
+<wire x1="-0.9" y1="-1.9" x2="-0.9" y2="-1.9" width="0.2" layer="21"/>
+<wire x1="-0.9" y1="-1.9" x2="-1.1" y2="-1.9" width="0.2" layer="21" curve="-180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="104239-1430">
@@ -9137,6 +9163,29 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pin name="G4_GND" x="55.88" y="-20.32" length="middle" rot="R180"/>
 <pin name="G6_GND" x="55.88" y="-22.86" length="middle" rot="R180"/>
 <pin name="G8_GND" x="55.88" y="-25.4" length="middle" rot="R180"/>
+</symbol>
+<symbol name="SSM3J338R,LF">
+<wire x1="7.62" y1="2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="5.842" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="5.842" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.842" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="5.842" y1="5.588" x2="5.842" y2="4.572" width="0.254" layer="94"/>
+<wire x1="5.842" y1="-0.508" x2="5.842" y2="0.508" width="0.254" layer="94"/>
+<wire x1="5.842" y1="2.032" x2="5.842" y2="3.048" width="0.254" layer="94"/>
+<circle x="6.35" y="2.54" radius="3.81" width="0.254" layer="94"/>
+<text x="11.43" y="3.81" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="11.43" y="1.27" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="G" x="0" y="0" visible="pad" length="short"/>
+<pin name="D" x="7.62" y="10.16" visible="pad" length="short" rot="R270"/>
+<pin name="S" x="7.62" y="-5.08" visible="pad" length="short" rot="R90"/>
+<polygon width="0.254" layer="94">
+<vertex x="7.62" y="2.54"/>
+<vertex x="6.604" y="3.048"/>
+<vertex x="6.604" y="2.032"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -9185,6 +9234,31 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/104239-1430.p
 </device>
 </devices>
 </deviceset>
+<deviceset name="SSM3J338R,LF" prefix="Q">
+<description>&lt;b&gt;MOSFET Small-signal MOSFET Vdss= -12V, ID= -6A&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/SSM3J338R,LF.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="SSM3J338R,LF" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SSM3J332RLFT">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="MOSFET Small-signal MOSFET Vdss= -12V, ID= -6A" constant="no"/>
+<attribute name="HEIGHT" value="mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Toshiba" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="SSM3J338R,LF" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="757-SSM3J338RLF" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="sicom_universal" urn="urn:adsk.eagle:library:5101580">
@@ -9205,6 +9279,17 @@ Metric Code Size 1005</description>
 <rectangle x1="-0.5" y1="-0.25" x2="-0.225" y2="0.25" layer="51"/>
 <rectangle x1="0.225" y1="-0.25" x2="0.5" y2="0.25" layer="51"/>
 </package>
+<package name="SENBA_PIR" urn="urn:adsk.eagle:footprint:5216149/4" locally_modified="yes" library_version="44" library_locally_modified="yes">
+<pad name="P$1" x="1.8" y="-1.8" drill="0.75" shape="offset" rot="R270"/>
+<pad name="P$2" x="-1.8" y="-1.8" drill="0.75" shape="offset" rot="R270"/>
+<pad name="P$3" x="1.8" y="1.8" drill="0.75" shape="offset"/>
+<circle x="0" y="0" radius="4.55" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="13" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="0.5" x2="-4.9" y2="0.5" width="0.127" layer="21"/>
+<wire x1="-4.9" y1="0.5" x2="-4.9" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="-4.9" y1="-0.6" x2="-4.5" y2="-0.6" width="0.127" layer="21"/>
+<text x="-2.6" y="4.8" size="1" layer="21">&gt;NAME</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="C0402K" urn="urn:adsk.eagle:package:23679/2" type="model" library_version="21" library_locally_modified="yes">
@@ -9212,6 +9297,11 @@ Metric Code Size 1005</description>
 Metric Code Size 1005</description>
 <packageinstances>
 <packageinstance name="C0402K"/>
+</packageinstances>
+</package3d>
+<package3d name="SENBA_PIR" urn="urn:adsk.eagle:package:5216150/6" locally_modified="yes" type="model" library_version="44" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="SENBA_PIR"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -9225,6 +9315,16 @@ Metric Code Size 1005</description>
 <text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="CON03" urn="urn:adsk.eagle:symbol:5121588/1" library_version="39">
+<pin name="1" x="-7.62" y="7.62" length="middle"/>
+<pin name="2" x="-7.62" y="2.54" length="middle"/>
+<pin name="3" x="-7.62" y="-2.54" length="middle"/>
+<wire x1="-2.54" y1="12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="12.7" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<text x="-2.54" y="15.24" size="1.27" layer="94">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -9240,6 +9340,26 @@ Metric Code Size 1005</description>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23679/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SENBA_PIR_3PIN" urn="urn:adsk.eagle:component:5216151/6" locally_modified="yes" prefix="PIR" library_version="44" library_locally_modified="yes">
+<gates>
+<gate name="G$1" symbol="CON03" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SENBA_PIR">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5216150/6"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -9358,12 +9478,16 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/FDN304P.pdf"&
 <part name="R2" library="sicom_universal" library_urn="urn:adsk.eagle:library:5101580" deviceset="R_0402" device="WEB_0402" package3d_urn="urn:adsk.eagle:package:23679/2" value="4.7k"/>
 <part name="R3" library="sicom_universal" library_urn="urn:adsk.eagle:library:5101580" deviceset="R_0402" device="WEB_0402" package3d_urn="urn:adsk.eagle:package:23679/2" value="10k"/>
 <part name="Q1" library="FDN304P" deviceset="FDN304P" device=""/>
+<part name="PIR" library="sicom_universal" library_urn="urn:adsk.eagle:library:5101580" deviceset="SENBA_PIR_3PIN" device="" package3d_urn="urn:adsk.eagle:package:5216150/6"/>
+<part name="Q4" library="SamacSys_Parts" deviceset="SSM3J338R,LF" device=""/>
+<part name="Q2" library="FDN304P" deviceset="FDN304P" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="-12.7" y="149.86" size="2.54" layer="91">SDRAM_MODUL</text>
 <text x="-43.18" y="40.64" size="2.54" layer="91">CAMERA_MODUL</text>
+<text x="83.82" y="35.56" size="3.81" layer="90">PIR</text>
 </plain>
 <instances>
 <instance part="STM32" gate="G$5" x="208.28" y="104.14" smashed="yes" rot="MR0">
@@ -9395,6 +9519,13 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/FDN304P.pdf"&
 <instance part="Q1" gate="G$1" x="30.48" y="20.32" smashed="yes">
 <attribute name="NAME" x="41.91" y="24.13" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="41.91" y="21.59" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="PIR" gate="G$1" x="165.1" y="22.86" smashed="yes">
+<attribute name="NAME" x="162.56" y="38.1" size="1.27" layer="94"/>
+</instance>
+<instance part="Q4" gate="G$1" x="124.46" y="17.78" smashed="yes" rot="MR90">
+<attribute name="NAME" x="128.27" y="29.21" size="1.778" layer="95" rot="MR90" align="center-left"/>
+<attribute name="VALUE" x="125.73" y="29.21" size="1.778" layer="96" rot="MR90" align="center-left"/>
 </instance>
 </instances>
 <busses>
@@ -9922,6 +10053,11 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/FDN304P.pdf"&
 <wire x1="38.1" y1="15.24" x2="38.1" y2="5.08" width="0.1524" layer="91"/>
 <label x="38.1" y="10.16" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="Q4" gate="G$1" pin="S"/>
+<wire x1="119.38" y1="25.4" x2="104.14" y2="25.4" width="0.1524" layer="91"/>
+<label x="104.14" y="25.4" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="3.3" class="0">
 <segment>
@@ -9989,6 +10125,11 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/FDN304P.pdf"&
 <pinref part="STM32" gate="G$6" pin="GND_CN12"/>
 <wire x1="124.46" y1="137.16" x2="137.16" y2="137.16" width="0.1524" layer="91"/>
 <label x="132.08" y="137.16" size="1.9304" layer="95"/>
+</segment>
+<segment>
+<pinref part="PIR" gate="G$1" pin="3"/>
+<wire x1="157.48" y1="20.32" x2="142.24" y2="20.32" width="0.1524" layer="91"/>
+<label x="142.24" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DCMI_VSYNC" class="0">
@@ -10118,9 +10259,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/FDN304P.pdf"&
 <label x="-40.64" y="17.78" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32" gate="G$6" pin="PC7"/>
-<wire x1="124.46" y1="124.46" x2="137.16" y2="124.46" width="0.1524" layer="91"/>
-<label x="132.08" y="124.46" size="1.9304" layer="95"/>
+<pinref part="STM32" gate="G$6" pin="PA10"/>
+<wire x1="124.46" y1="106.68" x2="144.78" y2="106.68" width="0.1524" layer="91"/>
+<label x="132.08" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DCMI_D0" class="0">
@@ -10130,9 +10271,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/FDN304P.pdf"&
 <label x="-7.62" y="17.78" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32" gate="G$6" pin="PC6"/>
-<wire x1="93.98" y1="144.78" x2="81.28" y2="144.78" width="0.1524" layer="91"/>
-<label x="76.2" y="144.78" size="1.9304" layer="95"/>
+<pinref part="STM32" gate="G$6" pin="PA9"/>
+<wire x1="124.46" y1="121.92" x2="144.78" y2="121.92" width="0.1524" layer="91"/>
+<label x="132.08" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDIO_D1" class="0">
@@ -10163,9 +10304,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/FDN304P.pdf"&
 <label x="-7.62" y="15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32" gate="G$6" pin="PB4"/>
-<wire x1="124.46" y1="114.3" x2="142.24" y2="114.3" width="0.1524" layer="91"/>
-<label x="132.08" y="114.3" size="1.778" layer="95"/>
+<pinref part="STM32" gate="G$6" pin="PB3"/>
+<wire x1="124.46" y1="109.22" x2="144.78" y2="109.22" width="0.1524" layer="91"/>
+<label x="134.62" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CARD_DET" class="0">
@@ -10229,14 +10370,14 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/FDN304P.pdf"&
 </net>
 <net name="GATE" class="0">
 <segment>
-<pinref part="STM32" gate="G$5" pin="PC2"/>
-<wire x1="223.52" y1="104.14" x2="236.22" y2="104.14" width="0.1524" layer="91"/>
-<label x="231.14" y="104.14" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="Q1" gate="G$1" pin="G"/>
 <wire x1="20.32" y1="20.32" x2="30.48" y2="20.32" width="0.1524" layer="91"/>
 <label x="20.32" y="20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="STM32" gate="G$5" pin="PG9"/>
+<wire x1="223.52" y1="68.58" x2="238.76" y2="68.58" width="0.1524" layer="91"/>
+<label x="233.68" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -10246,9 +10387,49 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/FDN304P.pdf"&
 <label x="-38.1" y="15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32" gate="G$6" pin="PB3"/>
-<wire x1="124.46" y1="109.22" x2="144.78" y2="109.22" width="0.1524" layer="91"/>
-<label x="134.62" y="109.22" size="1.778" layer="95"/>
+<pinref part="STM32" gate="G$6" pin="PB4"/>
+<wire x1="124.46" y1="114.3" x2="142.24" y2="114.3" width="0.1524" layer="91"/>
+<label x="132.08" y="114.3" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PIR_INT" class="0">
+<segment>
+<pinref part="PIR" gate="G$1" pin="1"/>
+<wire x1="157.48" y1="30.48" x2="142.24" y2="30.48" width="0.1524" layer="91"/>
+<label x="142.24" y="30.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="STM32" gate="G$5" pin="PG12"/>
+<wire x1="223.52" y1="66.04" x2="238.76" y2="66.04" width="0.1524" layer="91"/>
+<label x="228.6" y="66.04" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PIR_3V3" class="0">
+<segment>
+<pinref part="PIR" gate="G$1" pin="2"/>
+<wire x1="157.48" y1="25.4" x2="134.62" y2="25.4" width="0.1524" layer="91"/>
+<label x="142.24" y="25.4" size="1.778" layer="95"/>
+<pinref part="Q4" gate="G$1" pin="D"/>
+</segment>
+</net>
+<net name="PIR_EN" class="0">
+<segment>
+<pinref part="Q4" gate="G$1" pin="G"/>
+<wire x1="124.46" y1="17.78" x2="124.46" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="12.7" x2="104.14" y2="12.7" width="0.1524" layer="91"/>
+<label x="104.14" y="12.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="STM32" gate="G$5" pin="PG13"/>
+<wire x1="193.04" y1="63.5" x2="180.34" y2="63.5" width="0.1524" layer="91"/>
+<label x="177.8" y="63.5" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MOSFET_SDCARD" class="0">
+<segment>
+<pinref part="STM32" gate="G$5" pin="PA1"/>
+<wire x1="193.04" y1="111.76" x2="177.8" y2="111.76" width="0.1524" layer="91"/>
+<label x="165.1" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -10257,7 +10438,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/FDN304P.pdf"&
 <description>SDCARD</description>
 <plain>
 <text x="66.04" y="88.9" size="3.81" layer="91">SDCARD_MODUL</text>
-<text x="205.232" y="95.758" size="3.81" layer="90">I2C</text>
+<text x="240.792" y="77.978" size="3.81" layer="90">I2C</text>
 </plain>
 <instances>
 <instance part="GND7" gate="1" x="7.62" y="30.48" smashed="yes">
@@ -10291,13 +10472,17 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/FDN304P.pdf"&
 <attribute name="NAME" x="138.6586" y="107.95" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="133.858" y="107.95" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R1" gate="G$1" x="223.012" y="72.898" smashed="yes" rot="R90">
-<attribute name="NAME" x="221.5134" y="69.088" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="226.314" y="69.088" size="1.778" layer="96" rot="R90"/>
+<instance part="R1" gate="G$1" x="258.572" y="55.118" smashed="yes" rot="R90">
+<attribute name="NAME" x="257.0734" y="51.308" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="261.874" y="51.308" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R2" gate="G$1" x="230.632" y="72.898" smashed="yes" rot="R90">
-<attribute name="NAME" x="229.1334" y="69.088" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="233.934" y="69.088" size="1.778" layer="96" rot="R90"/>
+<instance part="R2" gate="G$1" x="266.192" y="55.118" smashed="yes" rot="R90">
+<attribute name="NAME" x="264.6934" y="51.308" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="269.494" y="51.308" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="Q2" gate="G$1" x="170.18" y="43.18" smashed="yes">
+<attribute name="NAME" x="181.61" y="46.99" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="181.61" y="44.45" size="1.778" layer="96" align="center-left"/>
 </instance>
 </instances>
 <busses>
@@ -10448,40 +10633,55 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/FDN304P.pdf"&
 <label x="132.08" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="223.012" y1="77.978" x2="223.012" y2="83.058" width="0.1524" layer="91"/>
-<wire x1="223.012" y1="83.058" x2="223.012" y2="93.218" width="0.1524" layer="91"/>
-<wire x1="230.632" y1="77.978" x2="230.632" y2="83.058" width="0.1524" layer="91"/>
-<wire x1="230.632" y1="83.058" x2="223.012" y2="83.058" width="0.1524" layer="91"/>
-<junction x="223.012" y="83.058"/>
-<wire x1="223.012" y1="93.218" x2="210.312" y2="93.218" width="0.1524" layer="91"/>
+<wire x1="258.572" y1="60.198" x2="258.572" y2="65.278" width="0.1524" layer="91"/>
+<wire x1="258.572" y1="65.278" x2="258.572" y2="75.438" width="0.1524" layer="91"/>
+<wire x1="266.192" y1="60.198" x2="266.192" y2="65.278" width="0.1524" layer="91"/>
+<wire x1="266.192" y1="65.278" x2="258.572" y2="65.278" width="0.1524" layer="91"/>
+<junction x="258.572" y="65.278"/>
+<wire x1="258.572" y1="75.438" x2="245.872" y2="75.438" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<label x="212.852" y="93.218" size="1.778" layer="95"/>
+<label x="248.412" y="75.438" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SDCARD" gate="G$1" pin="T4_VDD"/>
-<wire x1="116.84" y1="63.5" x2="149.86" y2="63.5" width="0.1524" layer="91"/>
-<label x="147.32" y="63.5" size="1.778" layer="95"/>
+<pinref part="Q2" gate="G$1" pin="S"/>
+<wire x1="177.8" y1="38.1" x2="177.8" y2="25.4" width="0.1524" layer="91"/>
+<label x="177.8" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C2_SDA" class="0">
 <segment>
-<wire x1="210.312" y1="60.198" x2="223.012" y2="60.198" width="0.1524" layer="91"/>
-<wire x1="223.012" y1="60.198" x2="245.872" y2="60.198" width="0.1524" layer="91"/>
-<wire x1="223.012" y1="60.198" x2="223.012" y2="67.818" width="0.1524" layer="91"/>
-<junction x="223.012" y="60.198"/>
+<wire x1="245.872" y1="42.418" x2="258.572" y2="42.418" width="0.1524" layer="91"/>
+<wire x1="258.572" y1="42.418" x2="281.432" y2="42.418" width="0.1524" layer="91"/>
+<wire x1="258.572" y1="42.418" x2="258.572" y2="50.038" width="0.1524" layer="91"/>
+<junction x="258.572" y="42.418"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<label x="207.772" y="60.198" size="1.778" layer="95"/>
+<label x="243.332" y="42.418" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C2_SCL" class="0">
 <segment>
-<wire x1="210.312" y1="57.658" x2="230.632" y2="57.658" width="0.1524" layer="91"/>
-<wire x1="230.632" y1="57.658" x2="245.872" y2="57.658" width="0.1524" layer="91"/>
-<wire x1="230.632" y1="57.658" x2="230.632" y2="67.818" width="0.1524" layer="91"/>
+<wire x1="245.872" y1="39.878" x2="266.192" y2="39.878" width="0.1524" layer="91"/>
+<wire x1="266.192" y1="39.878" x2="281.432" y2="39.878" width="0.1524" layer="91"/>
+<wire x1="266.192" y1="39.878" x2="266.192" y2="50.038" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-<label x="207.772" y="57.658" size="1.778" layer="95"/>
-<junction x="230.632" y="57.658"/>
+<label x="243.332" y="39.878" size="1.778" layer="95"/>
+<junction x="266.192" y="39.878"/>
+</segment>
+</net>
+<net name="MOSFET_SDCARD" class="0">
+<segment>
+<pinref part="Q2" gate="G$1" pin="G"/>
+<wire x1="160.02" y1="43.18" x2="170.18" y2="43.18" width="0.1524" layer="91"/>
+<label x="149.86" y="43.18" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="SDCARD" gate="G$1" pin="T4_VDD"/>
+<wire x1="116.84" y1="63.5" x2="177.8" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="Q2" gate="G$1" pin="D"/>
+<wire x1="177.8" y1="63.5" x2="177.8" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
