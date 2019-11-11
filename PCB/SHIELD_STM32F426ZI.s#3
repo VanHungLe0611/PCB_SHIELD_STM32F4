@@ -10265,9 +10265,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/FDN304P.pdf"&
 <label x="-40.64" y="17.78" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32" gate="G$6" pin="PC7"/>
-<wire x1="124.46" y1="124.46" x2="137.16" y2="124.46" width="0.1524" layer="91"/>
-<label x="132.08" y="124.46" size="1.9304" layer="95"/>
+<pinref part="STM32" gate="G$6" pin="PA10"/>
+<wire x1="124.46" y1="106.68" x2="144.78" y2="106.68" width="0.1524" layer="91"/>
+<label x="132.08" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DCMI_D0" class="0">
@@ -10277,9 +10277,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/FDN304P.pdf"&
 <label x="-7.62" y="17.78" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="STM32" gate="G$6" pin="PC6"/>
-<wire x1="93.98" y1="144.78" x2="81.28" y2="144.78" width="0.1524" layer="91"/>
-<label x="76.2" y="144.78" size="1.9304" layer="95"/>
+<pinref part="STM32" gate="G$6" pin="PA9"/>
+<wire x1="124.46" y1="121.92" x2="144.78" y2="121.92" width="0.1524" layer="91"/>
+<label x="132.08" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDIO_D1" class="0">
@@ -10404,11 +10404,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/FDN304P.pdf"&
 <wire x1="157.48" y1="30.48" x2="142.24" y2="30.48" width="0.1524" layer="91"/>
 <label x="142.24" y="30.48" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="STM32" gate="G$5" pin="PB0"/>
-<wire x1="193.04" y1="106.68" x2="177.8" y2="106.68" width="0.1524" layer="91"/>
-<label x="177.8" y="106.68" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="PIR_3V3" class="0">
 <segment>
@@ -10424,11 +10419,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/FDN304P.pdf"&
 <wire x1="124.46" y1="17.78" x2="124.46" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="12.7" x2="104.14" y2="12.7" width="0.1524" layer="91"/>
 <label x="104.14" y="12.7" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="STM32" gate="G$6" pin="PC5"/>
-<wire x1="93.98" y1="142.24" x2="78.74" y2="142.24" width="0.1524" layer="91"/>
-<label x="73.66" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

@@ -10239,6 +10239,18 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/FDN304P.pdf"&
 <label x="20.32" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="RESET" class="0">
+<segment>
+<pinref part="CAMERA" gate="A" pin="17"/>
+<wire x1="-22.86" y1="15.24" x2="-40.64" y2="15.24" width="0.1524" layer="91"/>
+<label x="-38.1" y="15.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="STM32" gate="G$6" pin="PB3"/>
+<wire x1="124.46" y1="109.22" x2="144.78" y2="109.22" width="0.1524" layer="91"/>
+<label x="134.62" y="109.22" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>

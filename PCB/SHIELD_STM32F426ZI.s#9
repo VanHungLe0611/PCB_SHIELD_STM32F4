@@ -9748,13 +9748,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/FDN304P.pdf"&
 <label x="71.12" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="FMC_SDCKE0" class="0">
-<segment>
-<pinref part="STM32" gate="G$5" pin="PC3"/>
-<wire x1="223.52" y1="101.6" x2="236.22" y2="101.6" width="0.1524" layer="91"/>
-<label x="231.14" y="101.6" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="FMC_A12" class="0">
 <segment>
 <pinref part="SDRAM" gate="G$1" pin="A12"/>

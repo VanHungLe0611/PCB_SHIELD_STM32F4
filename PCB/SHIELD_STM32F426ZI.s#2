@@ -9480,6 +9480,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/FDN304P.pdf"&
 <part name="Q1" library="FDN304P" deviceset="FDN304P" device=""/>
 <part name="PIR" library="sicom_universal" library_urn="urn:adsk.eagle:library:5101580" deviceset="SENBA_PIR_3PIN" device="" package3d_urn="urn:adsk.eagle:package:5216150/6"/>
 <part name="Q4" library="SamacSys_Parts" deviceset="SSM3J338R,LF" device=""/>
+<part name="Q2" library="FDN304P" deviceset="FDN304P" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9528,13 +9529,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/FDN304P.pdf"&
 </instance>
 </instances>
 <busses>
-<bus name="DCMI:DCMI_D6">
-<segment>
-<wire x1="0" y1="25.4" x2="15.24" y2="25.4" width="0.762" layer="92"/>
-<wire x1="15.24" y1="25.4" x2="15.24" y2="55.88" width="0.762" layer="92"/>
-<label x="15.24" y="53.34" size="1.778" layer="95"/>
-</segment>
-</bus>
 </busses>
 <nets>
 <net name="FMC_A0" class="0">
@@ -10376,14 +10370,14 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/FDN304P.pdf"&
 </net>
 <net name="GATE" class="0">
 <segment>
-<pinref part="STM32" gate="G$5" pin="PC2"/>
-<wire x1="223.52" y1="104.14" x2="236.22" y2="104.14" width="0.1524" layer="91"/>
-<label x="231.14" y="104.14" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="Q1" gate="G$1" pin="G"/>
 <wire x1="20.32" y1="20.32" x2="30.48" y2="20.32" width="0.1524" layer="91"/>
 <label x="20.32" y="20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="STM32" gate="G$5" pin="PG9"/>
+<wire x1="223.52" y1="68.58" x2="238.76" y2="68.58" width="0.1524" layer="91"/>
+<label x="233.68" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -10404,6 +10398,11 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/FDN304P.pdf"&
 <wire x1="157.48" y1="30.48" x2="142.24" y2="30.48" width="0.1524" layer="91"/>
 <label x="142.24" y="30.48" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="STM32" gate="G$5" pin="PG12"/>
+<wire x1="223.52" y1="66.04" x2="238.76" y2="66.04" width="0.1524" layer="91"/>
+<label x="228.6" y="66.04" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PIR_3V3" class="0">
 <segment>
@@ -10419,6 +10418,18 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/FDN304P.pdf"&
 <wire x1="124.46" y1="17.78" x2="124.46" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="12.7" x2="104.14" y2="12.7" width="0.1524" layer="91"/>
 <label x="104.14" y="12.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="STM32" gate="G$5" pin="PG13"/>
+<wire x1="193.04" y1="63.5" x2="180.34" y2="63.5" width="0.1524" layer="91"/>
+<label x="177.8" y="63.5" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MOSFET_SDCARD" class="0">
+<segment>
+<pinref part="STM32" gate="G$5" pin="PA1"/>
+<wire x1="193.04" y1="111.76" x2="177.8" y2="111.76" width="0.1524" layer="91"/>
+<label x="165.1" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -10468,6 +10479,10 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/FDN304P.pdf"&
 <instance part="R2" gate="G$1" x="230.632" y="72.898" smashed="yes" rot="R90">
 <attribute name="NAME" x="229.1334" y="69.088" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="233.934" y="69.088" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="Q2" gate="G$1" x="170.18" y="43.18" smashed="yes">
+<attribute name="NAME" x="181.61" y="46.99" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="181.61" y="44.45" size="1.778" layer="96" align="center-left"/>
 </instance>
 </instances>
 <busses>
@@ -10629,9 +10644,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/FDN304P.pdf"&
 <label x="212.852" y="93.218" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SDCARD" gate="G$1" pin="T4_VDD"/>
-<wire x1="116.84" y1="63.5" x2="149.86" y2="63.5" width="0.1524" layer="91"/>
-<label x="147.32" y="63.5" size="1.778" layer="95"/>
+<pinref part="Q2" gate="G$1" pin="S"/>
+<wire x1="177.8" y1="38.1" x2="177.8" y2="25.4" width="0.1524" layer="91"/>
+<label x="177.8" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C2_SDA" class="0">
@@ -10652,6 +10667,21 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/FDN304P.pdf"&
 <pinref part="R2" gate="G$1" pin="1"/>
 <label x="207.772" y="57.658" size="1.778" layer="95"/>
 <junction x="230.632" y="57.658"/>
+</segment>
+</net>
+<net name="MOSFET_SDCARD" class="0">
+<segment>
+<pinref part="Q2" gate="G$1" pin="G"/>
+<wire x1="160.02" y1="43.18" x2="170.18" y2="43.18" width="0.1524" layer="91"/>
+<label x="149.86" y="43.18" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="SDCARD" gate="G$1" pin="T4_VDD"/>
+<wire x1="116.84" y1="63.5" x2="177.8" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="Q2" gate="G$1" pin="D"/>
+<wire x1="177.8" y1="63.5" x2="177.8" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
