@@ -10309,13 +10309,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/FDN304P.pdf"&
 <label x="134.62" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CARD_DET" class="0">
-<segment>
-<pinref part="STM32F4/F7" gate="G$6" pin="PA5"/>
-<wire x1="124.46" y1="134.62" x2="142.24" y2="134.62" width="0.1524" layer="91"/>
-<label x="132.08" y="134.62" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="I2C2_SCL" class="0">
 <segment>
 <pinref part="STM32F4/F7" gate="G$6" pin="PB10"/>
@@ -10427,9 +10420,14 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/FDN304P.pdf"&
 </net>
 <net name="MOSFET_SDCARD" class="0">
 <segment>
-<pinref part="STM32F4/F7" gate="G$5" pin="PA1"/>
-<wire x1="193.04" y1="111.76" x2="177.8" y2="111.76" width="0.1524" layer="91"/>
-<label x="165.1" y="111.76" size="1.778" layer="95"/>
+<pinref part="STM32F4/F7" gate="G$5" pin="PA13"/>
+<wire x1="223.52" y1="132.08" x2="241.3" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CARD_DET" class="0">
+<segment>
+<pinref part="STM32F4/F7" gate="G$6" pin="PB8"/>
+<wire x1="124.46" y1="144.78" x2="139.7" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
